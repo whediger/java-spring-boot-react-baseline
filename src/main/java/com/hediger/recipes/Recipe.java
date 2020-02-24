@@ -44,7 +44,7 @@ public class Recipe {
 		return recipeName;
 	}
 
-	public setRecipeName(String recipeName) {
+	public String setRecipeName(String recipeName) {
 		this.recipeName = recipeName;
 	}
 
