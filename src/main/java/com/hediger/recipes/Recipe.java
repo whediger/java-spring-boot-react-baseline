@@ -16,8 +16,8 @@ public class Recipe {
 
 	private Recipe() {}
 
-	private Recipe(String recipeName, String description, String ingredient) {
-		this.recipeName = recipeName;
+	private Recipe(String recipeTitle, String description, String ingredient) {
+		this.recipeTitle = recipeTitle;
 		this.description = description;
 		this.ingredient = ingredient;
 	}
@@ -28,14 +28,14 @@ public class Recipe {
 		if (o == null || getClass() != o.getClass()) return false;
 		Recipe recipe = (Recipe) o;
 		return Objects.equals(id, recipe.id) &&
-			Objects.equals(recipeName, recipe.recipeName) &&
+			Objects.equals(recipeTitle, recipe.recipeTitle) &&
 			Objects.equals(description, recipe.description) &&
 			Objects.equals(ingredient, recipe.ingredient);
 	}
 
 	@Override
 	public int hashCode() {
-		return Objects.hash(id, recipeName, description, ingredient);
+		return Objects.hash(id, recipeTitle, description, ingredient);
 	}
 
 	public Long getId() {
@@ -46,12 +46,12 @@ public class Recipe {
 		this.id = id;
 	}
 
-	public String getRecipeName() {
-		return recipeName;
+	public String getrecipeTitle() {
+		return recipeTitle;
 	}
 
-	public String setRecipeName(String recipeName) {
-		this.recipeName = recipeName;
+	public String setrecipeTitle(String recipeTitle) {
+		this.recipeTitle = recipeTitle;
 	}
 
 	public String getDescription() {
@@ -74,7 +74,7 @@ public class Recipe {
 	public String toString() {
 		return "Recipe{" +
 		"id: " + id +
-		", recipeName: " + recipeName +
+		", recipeTitle: " + recipeTitle +
 		", description: " + description +
 		", ingredient: " + ingredient +
 		"}";
