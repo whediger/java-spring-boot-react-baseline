@@ -1,9 +1,9 @@
 package com.hediger.recipes;
 
-@Entity (1)
+@Entity
 public class Recipe {
 
-	private @Id @GeneratedValue Long id; (2)
+	private @Id @GeneratedValue Long id;
 	private String recipeTitle;
 	private String description;
 	private String ingredient;
