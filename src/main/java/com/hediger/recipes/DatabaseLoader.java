@@ -15,7 +15,7 @@ public class DatabaseLoader implements CommandLineRunner {
 	}
 
 	@Override
-	public void run(String... strings) throws exception {
+	public void run(String... strings) throws Exception {
 		this.repository.save(new Recipe("cheddar Cheese", "open package and eat it", "cheddar from store"));
 	}
 }
