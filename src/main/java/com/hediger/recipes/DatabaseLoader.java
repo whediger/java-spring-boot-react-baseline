@@ -1,6 +1,6 @@
 package com.hediger.recipes;
 
-public class DatabaseLoader impliments CommandLineRunner {
+public class DatabaseLoader implements CommandLineRunner {
 
 	private final RecipeRepository repository;
 
