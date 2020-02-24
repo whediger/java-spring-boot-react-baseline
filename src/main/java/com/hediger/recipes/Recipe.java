@@ -14,9 +14,9 @@ public class Recipe {
 	private String description;
 	private String ingredient;
 
-	private Recipe() {}
+	public Recipe() {}
 
-	private Recipe(String recipeTitle, String description, String ingredient) {
+	public Recipe(String recipeTitle, String description, String ingredient) {
 		this.recipeTitle = recipeTitle;
 		this.description = description;
 		this.ingredient = ingredient;
