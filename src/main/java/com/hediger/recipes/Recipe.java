@@ -50,7 +50,7 @@ public class Recipe {
 		return recipeTitle;
 	}
 
-	public String setrecipeTitle(String recipeTitle) {
+	public void setrecipeTitle(String recipeTitle) {
 		this.recipeTitle = recipeTitle;
 	}
 
