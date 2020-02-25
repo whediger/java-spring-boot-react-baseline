@@ -1,5 +1,5 @@
 import React from 'react'
-import ReactDOM from 'rect-dom'
+import ReactDOM from 'react-dom'
 import client from './client'
 
 class App extends React.Component {
