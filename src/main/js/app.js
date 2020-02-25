@@ -20,11 +20,11 @@ class App extends React.Component {
 	}
 }
 
-class EmployeeList extends React.Component {
+class RecipeList extends React.Component {
 
 	render() {
 		const recipes = this.props.recipes.map(recipe =>
-			<Recipe key={recipe._links.self.href} employee={employee} />
+			<Recipe key={recipe._links.self.href} recipe={recipe} />
 		);
 
 		return (
