@@ -37430,8 +37430,8 @@ function (_React$Component) {
   }
 
   _createClass(App, [{
-    key: "componentsDidMount",
-    value: function componentsDidMount() {
+    key: "componentDidMount",
+    value: function componentDidMount() {
       var _this2 = this;
 
       _client__WEBPACK_IMPORTED_MODULE_2___default()({

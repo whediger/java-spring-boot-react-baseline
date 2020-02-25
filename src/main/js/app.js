@@ -9,7 +9,7 @@ class App extends React.Component {
 		this.state = {recipes: []};
 	}
 
-	componentsDidMount() {
+	componentDidMount() {
 		client({method: 'GET', path: '/api/recipes'}).done(response => {
 			this.setState({recipes: response.entity._embedded.recipes})
 		})
