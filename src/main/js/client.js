@@ -3,7 +3,7 @@
 const rest = require('rest');
 const defaultRequest = require('rest/interceptor/defaultRequest');
 const mime = require('rest/interceptor/mime');
-const uriTemplateInterceptor = require('api/uriTemplateInterceptor');
+const uriTemplateInterceptor = require('./api/uriTemplateInterceptor');
 const errorCode = require('resst/interceptor/errorCode');
 const baseRegistry = require('rest/mime/registry');
 

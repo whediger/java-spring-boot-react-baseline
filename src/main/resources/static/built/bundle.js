@@ -8050,6 +8050,35 @@ var __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_RESULT__ = (function ()
 
 /***/ }),
 
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/demo/src/main/js/api/uriTemplateInterceptor.js":
+/*!***********************************************************************************************************!*\
+  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/demo/src/main/js/api/uriTemplateInterceptor.js ***!
+  \***********************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_RESULT__ = (function (require) {
+  'use strict';
+
+  var interceptor = __webpack_require__(/*! rest/interceptor */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/rest/interceptor.js");
+
+  return interceptor({
+    request: function request(_request
+    /*, config, meta */
+    ) {
+      if (_request.path.indexOf('{') === -1) {
+        return _request;
+      } else {
+        _request.path = _request.path.split('{')[0];
+        return _request;
+      }
+    }
+  });
+}).call(exports, __webpack_require__, exports, module),
+				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+
+/***/ }),
+
 /***/ "../../../../../Documents/React/MyStuff/recipe-app/demo/src/main/js/app.js":
 /*!************************************************************************************!*\
   !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/demo/src/main/js/app.js ***!
@@ -8197,7 +8226,7 @@ var defaultRequest = __webpack_require__(/*! rest/interceptor/defaultRequest */ 
 
 var mime = __webpack_require__(/*! rest/interceptor/mime */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/rest/interceptor/mime.js");
 
-var uriTemplateInterceptor = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module 'api/uriTemplateInterceptor'"); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+var uriTemplateInterceptor = __webpack_require__(/*! ./api/uriTemplateInterceptor */ "../../../../../Documents/React/MyStuff/recipe-app/demo/src/main/js/api/uriTemplateInterceptor.js");
 
 var errorCode = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module 'resst/interceptor/errorCode'"); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
 
