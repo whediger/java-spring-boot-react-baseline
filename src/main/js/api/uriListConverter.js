@@ -7,7 +7,7 @@ define(function() {
 		},
 		write: function(obj /*, opts */) {
 			if(obj instanceof Array) {
-				return.obj.map(resource => resource._links.self.href).join('\n');
+				return obj.map(resource => resource._links.self.href).join('\n');
 			} else {
 				return obj._links.self.href;
 			}

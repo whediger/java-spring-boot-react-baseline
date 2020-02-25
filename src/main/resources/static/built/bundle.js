@@ -8017,6 +8017,39 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/** @license MIT License (c) copyright 2010-20
 
 /***/ }),
 
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/demo/src/main/js/api/uriListConverter.js":
+/*!*****************************************************************************************************!*\
+  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/demo/src/main/js/api/uriListConverter.js ***!
+  \*****************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_RESULT__ = (function () {
+  'use strict';
+
+  return {
+    read: function read(str
+    /*, opts */
+    ) {
+      return str.split('\n');
+    },
+    write: function write(obj
+    /*, opts */
+    ) {
+      if (obj instanceof Array) {
+        return obj.map(function (resource) {
+          return resource._links.self.href;
+        }).join('\n');
+      } else {
+        return obj._links.self.href;
+      }
+    }
+  };
+}).call(exports, __webpack_require__, exports, module),
+				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+
+/***/ }),
+
 /***/ "../../../../../Documents/React/MyStuff/recipe-app/demo/src/main/js/app.js":
 /*!************************************************************************************!*\
   !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/demo/src/main/js/app.js ***!
@@ -8171,7 +8204,7 @@ var errorCode = __webpack_require__(!(function webpackMissingModule() { var e = 
 var baseRegistry = __webpack_require__(/*! rest/mime/registry */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/rest/mime/registry.js");
 
 var registry = baseRegistry.child();
-registry.register('text/uri-list', __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module './api/uriListConverter'"); e.code = 'MODULE_NOT_FOUND'; throw e; }())));
+registry.register('text/uri-list', __webpack_require__(/*! ./api/uriListConverter */ "../../../../../Documents/React/MyStuff/recipe-app/demo/src/main/js/api/uriListConverter.js"));
 registry.register('application/hal+json', __webpack_require__(/*! rest/mime/type/application/hal */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/rest/mime/type/application/hal.js"));
 module.exports = rest.wrap(mime, {
   registry: registry
