@@ -46,11 +46,11 @@ public class Recipe {
 		this.id = id;
 	}
 
-	public String getrecipeTitle() {
+	public String getRecipeTitle() {
 		return recipeTitle;
 	}
 
-	public void setrecipeTitle(String recipeTitle) {
+	public void setRecipeTitle(String recipeTitle) {
 		this.recipeTitle = recipeTitle;
 	}
 
@@ -66,7 +66,7 @@ public class Recipe {
 		return ingredient;
 	}
 
-	public void setingredient(String ingredient) {
+	public void setIngredient(String ingredient) {
 		this.ingredient = ingredient;
 	}
 
