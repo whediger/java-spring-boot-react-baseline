@@ -41,3 +41,21 @@ class RecipeList extends React.Component {
 		)
 	}
 }
+
+class Recipe extends React.Component {
+
+	render() {
+		return (
+			<tr>
+				<td>{this.props.recipe.title}</td>
+				<td>{this.props.recipe.description}</td>
+				<td>{this.props.recipe.ingredient}</td>
+			</tr>
+		)
+	}
+}
+
+ReactDOM.render(
+	<App />,
+	document.getElementById('react-container')
+)
