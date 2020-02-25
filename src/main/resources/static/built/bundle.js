@@ -31666,6 +31666,65 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/*
 
 /***/ }),
 
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/rest/interceptor/errorCode.js":
+/*!************************************************************************************************************!*\
+  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/demo/node_modules/rest/interceptor/errorCode.js ***!
+  \************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __WEBPACK_AMD_DEFINE_RESULT__;/*
+ * Copyright 2012-2013 the original author or authors
+ * @license MIT, see LICENSE.txt for details
+ *
+ * @author Scott Andrews
+ */
+
+(function (define) {
+	'use strict';
+
+	!(__WEBPACK_AMD_DEFINE_RESULT__ = (function (require) {
+
+		var interceptor, when;
+
+		interceptor = __webpack_require__(/*! ../interceptor */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/rest/interceptor.js");
+		when = __webpack_require__(/*! when */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/when/when.js");
+
+		/**
+		 * Rejects the response promise based on the status code.
+		 *
+		 * Codes greater than or equal to the provided value are rejected.  Default
+		 * value 400.
+		 *
+		 * @param {Client} [client] client to wrap
+		 * @param {number} [config.code=400] code to indicate a rejection
+		 *
+		 * @returns {Client}
+		 */
+		return interceptor({
+			init: function (config) {
+				config.code = config.code || 400;
+				return config;
+			},
+			response: function (response, config) {
+				if (response.status && response.status.code >= config.code) {
+					return when.reject(response);
+				}
+				return response;
+			}
+		});
+
+	}).call(exports, __webpack_require__, exports, module),
+				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+
+}(
+	__webpack_require__(/*! !webpack amd define */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/webpack/buildin/amd-define.js")
+	// Boilerplate for AMD and Node
+));
+
+
+/***/ }),
+
 /***/ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/rest/interceptor/mime.js":
 /*!*******************************************************************************************************!*\
   !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/demo/node_modules/rest/interceptor/mime.js ***!
@@ -37466,7 +37525,7 @@ var mime = __webpack_require__(/*! rest/interceptor/mime */ "../../../../../Docu
 
 var uriTemplateInterceptor = __webpack_require__(/*! ./api/uriTemplateInterceptor */ "../../../../../Documents/React/MyStuff/recipe-app/demo/src/main/js/api/uriTemplateInterceptor.js");
 
-var errorCode = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module 'resst/interceptor/errorCode'"); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+var errorCode = __webpack_require__(/*! rest/interceptor/errorCode */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/rest/interceptor/errorCode.js");
 
 var baseRegistry = __webpack_require__(/*! rest/mime/registry */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/rest/mime/registry.js");
 
