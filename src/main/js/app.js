@@ -29,14 +29,16 @@ class RecipeList extends React.Component {
 
 		return (
 			<table>
-				<tbody>
+				<thead>
 					<tr>
 						<th>title</th>
 						<th>description</th>
 						<th>ingredient</th>
 					</tr>
+				</thead>
+				<tbody>
+					{recipes}
 				</tbody>
-				{recipes}
 			</table>
 		)
 	}
@@ -47,7 +49,7 @@ class Recipe extends React.Component {
 	render() {
 		return (
 			<tr>
-				<td>{this.props.recipe.title}</td>
+				<td>{this.props.recipeTitle}</td>
 				<td>{this.props.recipe.description}</td>
 				<td>{this.props.recipe.ingredient}</td>
 			</tr>
