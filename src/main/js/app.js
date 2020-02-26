@@ -49,7 +49,7 @@ class Recipe extends React.Component {
 	render() {
 		return (
 			<tr>
-				<td>{this.props.recipeTitle}</td>
+				<td>{this.props.recipe.recipeTitle}</td>
 				<td>{this.props.recipe.description}</td>
 				<td>{this.props.recipe.ingredient}</td>
 			</tr>
