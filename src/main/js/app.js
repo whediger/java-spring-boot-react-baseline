@@ -94,7 +94,7 @@ class App extends React.Component {
 							pageSize={this.state.pageSize}
 							onNavagate={this.state.onNavigate}
 							onDelete={this.onDelete}
-							updatePageSize={this.updatePageSize}
+							updatePageSize={this.updatePageSize} />
 			</div>
 		)
 	}

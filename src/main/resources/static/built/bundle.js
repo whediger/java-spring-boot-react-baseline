@@ -37400,9 +37400,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
 function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
 
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
 function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
 
@@ -37411,6 +37411,10 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 
 
+
+var follow = __webpack_require__(/*! ./follow */ "../../../../../Documents/React/MyStuff/recipe-app/demo/src/main/js/follow.js");
+
+var root = '/api';
 
 var App =
 /*#__PURE__*/
@@ -37424,86 +37428,341 @@ function (_React$Component) {
 
     _this = _possibleConstructorReturn(this, _getPrototypeOf(App).call(this, props));
     _this.state = {
-      recipes: []
+      recipes: [],
+      attributes: [],
+      pageSize: 2,
+      links: {}
     };
+    _this.updatePageSize = _this.updatePageSize.bind(_assertThisInitialized(_this));
+    _this.onCreate = _this.onCreate.bind(_assertThisInitialized(_this));
+    _this.onDelete = _this.onDelete.bind(_assertThisInitialized(_this));
+    _this.onNavigate = _this.onNavigate.bind(_assertThisInitialized(_this));
     return _this;
   }
 
   _createClass(App, [{
-    key: "componentDidMount",
-    value: function componentDidMount() {
+    key: "loadFromServer",
+    value: function loadFromServer(pageSize) {
       var _this2 = this;
 
-      _client__WEBPACK_IMPORTED_MODULE_2___default()({
-        method: 'GET',
-        path: '/api/recipes'
-      }).done(function (response) {
+      follow(_client__WEBPACK_IMPORTED_MODULE_2___default.a, root, [{
+        rel: 'recipes',
+        params: {
+          size: pageSize
+        }
+      }]).then(function (recipeCollection) {
+        return _client__WEBPACK_IMPORTED_MODULE_2___default()({
+          method: 'GET',
+          path: employeeCollection.entity._links.profile.href,
+          headers: {
+            'Accept': 'application/schema+json'
+          }
+        }).then(function (schema) {
+          _this2.schema = schema.entity;
+          return recipeCollection;
+        });
+      }).done(function (recipeCollection) {
         _this2.setState({
-          recipes: response.entity._embedded.recipes
+          recipes: recipeCollection.entity._embedded.employees,
+          attributes: Object.keys(_this2.shema.properties),
+          pageSize: pageSize,
+          links: employeeCollection.entity._links
         });
       });
     }
   }, {
+    key: "onCreate",
+    value: function onCreate(newRecipe) {
+      var _this3 = this;
+
+      follow(_client__WEBPACK_IMPORTED_MODULE_2___default.a, root, ['recipes']).then(function (recipeCollection) {
+        return _client__WEBPACK_IMPORTED_MODULE_2___default()({
+          method: 'POST',
+          path: employeeCollection.entity._links.self.href,
+          entity: newRecipe,
+          headers: {
+            'Content-Type': 'application/json'
+          }
+        });
+      }).then(function (response) {
+        return follow(_client__WEBPACK_IMPORTED_MODULE_2___default.a, root, [{
+          rel: 'recipes',
+          params: {
+            'size': _this3.state.pageSize
+          }
+        }]);
+      }).done(function (response) {
+        if (typeof response.entity._links.last !== "undefined") {
+          _this3.onNavigate(response.entity._links.last.href);
+        } else {
+          _this3.onNavagate(response.entity._links.self.href);
+        }
+      });
+    }
+  }, {
+    key: "onDelete",
+    value: function onDelete(recipe) {
+      var _this4 = this;
+
+      _client__WEBPACK_IMPORTED_MODULE_2___default()({
+        method: 'DELETE',
+        path: recipe._links.self.href
+      }).done(function (response) {
+        _this4.loadFromServer(_this4.state.pageSize);
+      });
+    }
+  }, {
+    key: "onNavigate",
+    value: function onNavigate(navUri) {
+      var _this5 = this;
+
+      _client__WEBPACK_IMPORTED_MODULE_2___default()({
+        method: 'GET',
+        path: navUri
+      }).done(function (recipeCollection) {
+        _this5.setState({
+          recipes: recipeCollection.entity._embedded.recipes,
+          attributes: _this5.state.attributes,
+          pageSize: _this5.state.pageSize,
+          links: recipeCollection.entity._links
+        });
+      });
+    }
+  }, {
+    key: "updatePageSize",
+    value: function updatePageSize(pageSize) {
+      if (pageSize !== this.state.pageSize) {
+        this.loadFromServer(pageSize);
+      }
+    }
+  }, {
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      this.loadFromServer(this.state.pageSize);
+    }
+  }, {
     key: "render",
     value: function render() {
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(RecipeList, {
-        recipes: this.state.recipes
-      });
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(CreateDialog, {
+        attributes: this.state.attributes,
+        onCreate: this.onCreate
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(RecipeList, {
+        recipes: this.state.recipes,
+        links: this.state.links,
+        pageSize: this.state.pageSize,
+        onNavagate: this.state.onNavigate,
+        onDelete: this.onDelete,
+        updatePageSize: this.updatePageSize
+      }));
     }
   }]);
 
   return App;
 }(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
 
+var CreateDialog =
+/*#__PURE__*/
+function (_Reat$Component) {
+  _inherits(CreateDialog, _Reat$Component);
+
+  function CreateDialog(props) {
+    var _this6;
+
+    _classCallCheck(this, CreateDialog);
+
+    _this6 = _possibleConstructorReturn(this, _getPrototypeOf(CreateDialog).call(this, props));
+    _this6.handleSubmit = _this6.handleSubmit.bind(_assertThisInitialized(_this6));
+    return _this6;
+  }
+
+  _createClass(CreateDialog, [{
+    key: "handleSubmit",
+    value: function handleSubmit(e) {
+      var _this7 = this;
+
+      e.preventDefault();
+      var newRecipe = {};
+      this.props.attributes.forEach(function (attribute) {
+        newRecipe[attribute] = react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.findDOMNode(_this7.refs[attribute]).value.trim();
+      });
+      this.props.onCreate(newRecipe);
+      this.props.attributes.forEach(function (attribute) {
+        react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.findDOMNode(_this7.refs[attribute]).value = '';
+      });
+      window.location = '#';
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var inputs = this.props.attributes.map(function (attribute) {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(P, {
+          key: attribute
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+          type: "text",
+          placeHolder: attribute,
+          ref: attribute,
+          className: "field"
+        }));
+      });
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "#createRecipe"
+      }, "Create"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        id: "createRecipe",
+        className: "modalDialog"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "#",
+        title: "close",
+        className: "close"
+      }, "X"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Create new Recipe"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", null, inputs, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+        onClick: this.handleSubmit
+      }, "Create")))));
+    }
+  }]);
+
+  return CreateDialog;
+}(Reat.Component);
+
 var RecipeList =
 /*#__PURE__*/
 function (_React$Component2) {
   _inherits(RecipeList, _React$Component2);
 
-  function RecipeList() {
+  function RecipeList(props) {
+    var _this8;
+
     _classCallCheck(this, RecipeList);
 
-    return _possibleConstructorReturn(this, _getPrototypeOf(RecipeList).apply(this, arguments));
+    _this8 = _possibleConstructorReturn(this, _getPrototypeOf(RecipeList).call(this, props));
+    _this8.handleNavFirst = _this8.handleNavFirst.bind(_assertThisInitialized(_this8));
+    _this8.handleNavPrev = _this8.handleNavPrev.bind(_assertThisInitialized(_this8));
+    _this8.handleNavNext = _this8.handleNavNext.bind(_assertThisInitialized(_this8));
+    _this8.handleNavLast = _this8.handleNavLast.bind(_assertThisInitialized(_this8));
+    _this8.handleInput = _this8.handleInput.bind(_assertThisInitialized(_this8));
+    return _this8;
   }
 
   _createClass(RecipeList, [{
+    key: "handleInput",
+    value: function handleInput(e) {
+      e.preventDefault();
+      var pageSize = react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.findDOMNode(this.refs.pageSize).value;
+
+      if (/^[0-9]+$/.test(pageSize)) {
+        this.props.updatePageSize(pageSize);
+      } else {
+        react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.findDOMNode(this.refs.pageSize).value = pageSize.subString(0, pageSize.length - 1);
+      }
+    }
+  }, {
+    key: "handleNavFirst",
+    value: function handleNavFirst(e) {
+      e.preventDefault();
+      this.props.onNavigate(this.props.links.first.href);
+    }
+  }, {
+    key: "handleNavPrev",
+    value: function handleNavPrev(e) {
+      e.preventDefault();
+      this.props.onNavagate(this.props.links.prev.href);
+    }
+  }, {
+    key: "handleNavNext",
+    value: function handleNavNext(e) {
+      e.preventDefault();
+      this.props.onNavigate(this.props.links.next.href);
+    }
+  }, {
+    key: "handleNavLast",
+    value: function handleNavLast(e) {
+      e.preventDefault();
+      this.props.onNavigate(this.props.links.last.href);
+    }
+  }, {
     key: "render",
     value: function render() {
+      var _this9 = this;
+
       var recipes = this.props.recipes.map(function (recipe) {
         return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Recipe, {
           key: recipe._links.self.href,
-          recipe: recipe
+          recipe: recipe,
+          onDelete: _this9.props.onDelete
         });
       });
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("table", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("thead", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "title"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "description"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "ingredient"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", null, recipes));
+      var navLinks = [];
+
+      if ("first" in this.props.links) {
+        navLinks.push(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+          key: "first",
+          onClick: this.handleNavFirst
+        }, "<<"));
+      }
+
+      if ("prev" in this.props.links) {
+        navLinks.push(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+          key: "prev",
+          onClick: this.handleNavPrev
+        }, "<"));
+      }
+
+      if ("next" in this.props.links) {
+        navLinks.push(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+          key: "next",
+          onClick: this.handleNavNext
+        }, "<"));
+      }
+
+      if ("last" in this.props.links) {
+        navLinks.push(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+          key: "last",
+          onClick: this.handleNavLast
+        }, "<"));
+      }
+
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+        ref: "pageSize",
+        defaultValue: this.props.pageSize,
+        onInput: this.handleInput
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("table", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "recipe name"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "description"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "ingredient")), recipes)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, navLinks));
     }
   }]);
 
   return RecipeList;
 }(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
 
-var Recipe =
+var Employee =
 /*#__PURE__*/
 function (_React$Component3) {
-  _inherits(Recipe, _React$Component3);
+  _inherits(Employee, _React$Component3);
 
-  function Recipe() {
-    _classCallCheck(this, Recipe);
+  function Employee(props) {
+    var _this10;
 
-    return _possibleConstructorReturn(this, _getPrototypeOf(Recipe).apply(this, arguments));
+    _classCallCheck(this, Employee);
+
+    _this10 = _possibleConstructorReturn(this, _getPrototypeOf(Employee).call(this, props));
+    _this10.handleDelete = _this10.handleDelete.bind(_assertThisInitialized(_this10));
+    return _this10;
   }
 
-  _createClass(Recipe, [{
+  _createClass(Employee, [{
+    key: "handleDelete",
+    value: function handleDelete() {
+      this.props.onDelete(this.props.employee);
+    }
+  }, {
     key: "render",
     value: function render() {
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, this.props.recipe.recipeTitle), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, this.props.recipe.description), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, this.props.recipe.ingredient));
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, this.props.recipe.recipeTitle), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, this.props.recipe.description), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, this.props.recipe.ingredient), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+        onClick: this.handleDelete
+      }, "delete")));
     }
   }]);
 
-  return Recipe;
+  return Employee;
 }(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
 
-react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(App, null), document.getElementById('react-container'));
+react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(App, null), document.getElementById('react'));
 
 /***/ }),
 
@@ -37539,6 +37798,55 @@ module.exports = rest.wrap(mime, {
     'Accept': 'application/hal+json'
   }
 });
+
+/***/ }),
+
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/demo/src/main/js/follow.js":
+/*!***************************************************************************************!*\
+  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/demo/src/main/js/follow.js ***!
+  \***************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = function follow(api, rootPath, relArray) {
+  var root = api({
+    method: 'GET',
+    path: rootPath
+  });
+  return relArray.reduce(function (root, arrayItem) {
+    var rel = typeof arrayItem === 'string' ? arrayItem : arrayItem.rel;
+    return traverseNext(root, rel, arrayItem);
+  }, root);
+
+  function traverseNext(root, rel, arrayItem) {
+    return root.then(function (response) {
+      if (hasEmbededRel(response.entity, rel)) {
+        return response.entity._embeded[rel];
+      }
+
+      if (!response.entity._links) {
+        return [];
+      }
+
+      if (typeof arrayItem === 'string') {
+        return api({
+          method: 'GET',
+          path: response.entity._links[rel].href
+        });
+      } else {
+        return api({
+          method: 'GET',
+          path: response.entity._links[rel].href,
+          params: arrayItem.params
+        });
+      }
+    });
+  }
+
+  function hasEmbededRel(entity, rel) {
+    return entity._embeded && entity._embeded.hasOwnProperty(rel);
+  }
+};
 
 /***/ }),
 
