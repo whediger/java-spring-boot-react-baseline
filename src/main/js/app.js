@@ -23,7 +23,7 @@ class App extends React.Component {
 		).then(recipeCollection => {
 			return client({
 				method: 'GET',
-				path: employeeCollection.entity._links.profile.href,
+				path: recipeCollection.entity._links.profile.href,
 				headers: {'Accept': 'application/schema+json'}
 			}).then(schema => {
 				this.schema = schema.entity
@@ -31,10 +31,10 @@ class App extends React.Component {
 			})
 		}).done(recipeCollection => {
 			this.setState({
-				recipes: recipeCollection.entity._embedded.employees,
+				recipes: recipeCollection.entity._embedded.recipes,
 				attributes: Object.keys(this.shema.properties),
 				pageSize: pageSize,
-				links: employeeCollection.entity._links })
+				links: recipeCollection.entity._links })
 		})
 	}
 
@@ -42,7 +42,7 @@ class App extends React.Component {
 		follow(client, root, ['recipes']).then(recipeCollection => {
 			return client({
 				method: 'POST',
-				path: employeeCollection.entity._links.self.href,
+				path: recipeCollection.entity._links.self.href,
 				entity: newRecipe,
 				headers: {'Content-Type': 'application/json'}
 			})
@@ -100,7 +100,7 @@ class App extends React.Component {
 	}
 }
 
-class CreateDialog extends Reat.Component {
+class CreateDialog extends React.Component {
 
 	constructor(props) {
 		super(props)
@@ -238,7 +238,7 @@ class Employee extends React.Component {
 	}
 
 	handleDelete() {
-		this.props.onDelete(this.props.employee)
+		this.props.onDelete(this.props.recipe)
 	}
 
 	render() {
@@ -257,5 +257,5 @@ class Employee extends React.Component {
 
 ReactDOM.render(
 	<App />,
-	document.getElementById('react')
+	document.getElementById('react-container')
 )

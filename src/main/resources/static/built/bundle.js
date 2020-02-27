@@ -37562,8 +37562,8 @@ function (_React$Component) {
 
 var CreateDialog =
 /*#__PURE__*/
-function (_Reat$Component) {
-  _inherits(CreateDialog, _Reat$Component);
+function (_React$Component2) {
+  _inherits(CreateDialog, _React$Component2);
 
   function CreateDialog(props) {
     var _this6;
@@ -37620,12 +37620,12 @@ function (_Reat$Component) {
   }]);
 
   return CreateDialog;
-}(Reat.Component);
+}(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
 
 var RecipeList =
 /*#__PURE__*/
-function (_React$Component2) {
-  _inherits(RecipeList, _React$Component2);
+function (_React$Component3) {
+  _inherits(RecipeList, _React$Component3);
 
   function RecipeList(props) {
     var _this8;
@@ -37732,8 +37732,8 @@ function (_React$Component2) {
 
 var Employee =
 /*#__PURE__*/
-function (_React$Component3) {
-  _inherits(Employee, _React$Component3);
+function (_React$Component4) {
+  _inherits(Employee, _React$Component4);
 
   function Employee(props) {
     var _this10;
@@ -37762,7 +37762,7 @@ function (_React$Component3) {
   return Employee;
 }(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
 
-react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(App, null), document.getElementById('react'));
+react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(App, null), document.getElementById('react-container'));
 
 /***/ }),
 
