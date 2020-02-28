@@ -324,6 +324,11 @@ class Recipe extends React.Component {
 				<td>{this.props.recipe.description}</td>
 				<td>{this.props.recipe.ingredient}</td>
 				<td>
+					<UpdateDialog recipe={this.props.recipe}
+							attributes={this.props.attributes}
+							onUpdate={this.props.onUpdate} />
+				</td>
+				<td>
 					<button onClick={this.handleDelete}>delete</button>
 				</td>
 			</tr>
