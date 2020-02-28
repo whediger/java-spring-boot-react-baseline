@@ -77,6 +77,11 @@ class App extends React.Component {
 				'Content-Type': 'application-json',
 				'If-Match': recipe.headers.Etag
 			}
+		}).done(response => {
+			if(response.status.code === 412) {
+				alert('DENIED: unable to update ' +
+						recipe.entity._links.self.href + ". your copy is stale")
+			}
 		})
 	}
 
