@@ -37650,7 +37650,7 @@ function (_React$Component3) {
       if (/^[0-9]+$/.test(pageSize)) {
         this.props.updatePageSize(pageSize);
       } else {
-        react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.findDOMNode(this.refs.pageSize).value = pageSize.subString(0, pageSize.length - 1);
+        react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.findDOMNode(this.refs.pageSize).value = pageSize.substring(0, pageSize.length - 1);
       }
     }
   }, {

@@ -166,7 +166,7 @@ class RecipeList extends React.Component {
 			this.props.updatePageSize(pageSize)
 		} else {
 			ReactDOM.findDOMNode(this.refs.pageSize).value =
-				pageSize.subString(0, pageSize.length - 1)
+				pageSize.substring(0, pageSize.length - 1)
 		}
 	}
 
