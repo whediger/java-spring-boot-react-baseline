@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import client from './client'
+import when from 'when'
 
 const follow = require('./follow')
 
@@ -28,6 +29,7 @@ class App extends React.Component {
 				headers: {'Accept': 'application/schema+json'}
 			}).then(schema => {
 				this.schema = schema.entity
+				this.links = recipeCollection.entity._links
 				return recipeCollection
 			})
 		}).then(recipeCollection => {
@@ -49,10 +51,11 @@ class App extends React.Component {
 	}
 
 	onCreate(newRecipe) {
-		follow(client, root, ['recipes']).then(recipeCollection => {
+		const self = this
+		follow(client, root, ['recipes']).then(response => {
 			return client({
 				method: 'POST',
-				path: recipeCollection.entity._links.self.href,
+				path: response.entity._links.self.href,
 				entity: newRecipe,
 				headers: {'Content-Type': 'application/json'}
 			})
@@ -71,13 +74,15 @@ class App extends React.Component {
 	onUpdate(recipe, updatedRecipe) {
 		client({
 			method: 'PUT',
-			path: employee.entity._links.self.href,
+			path: recipe.entity._links.self.href,
 			entity: updatedRecipe,
 			headers: {
-				'Content-Type': 'application-json',
+				'Content-Type': 'application/json',
 				'If-Match': recipe.headers.Etag
 			}
 		}).done(response => {
+			this.loadFromServer(this.state.pageSize)
+		}, response => {
 			if(response.status.code === 412) {
 				alert('DENIED: unable to update ' +
 						recipe.entity._links.self.href + ". your copy is stale")
@@ -86,18 +91,32 @@ class App extends React.Component {
 	}
 
 	onDelete(recipe) {
-		client({method: 'DELETE', path: recipe._links.self.href}).done(response => {
+		client({method: 'DELETE', path: recipe.entity._links.self.href}).done(response => {
 			this.loadFromServer(this.state.pageSize)
 		})
 	}
 
 	onNavigate(navUri) {
-		client({method: 'GET', path: navUri}).done(recipeCollection => {
+		client({
+			method: 'GET',
+			path: navUri
+		}).then(recipeCollection => {
+			this.links = recipeCollection.entity._links
+
+			return recipeCollection.entity._embedded.recipes.map(recipe =>
+				client({
+					method: 'GET',
+					path: recipe._links.self.href
+				})
+			)
+		}).then(recipePromises => {
+			return when.all(recipePromises)
+		}).done(recipes => {
 			this.setState({
-				recipes: recipeCollection.entity._embedded.recipes,
-				attributes: this.state.attributes,
+				recipes: recipes,
+				attributes: Object.keys(this.schema.properties),
 				pageSize: this.state.pageSize,
-				links: recipeCollection.entity._links
+				links: this.links
 			})
 		})
 	}
@@ -119,7 +138,9 @@ class App extends React.Component {
 				<RecipeList recipes={this.state.recipes}
 							links={this.state.links}
 							pageSize={this.state.pageSize}
+							attributes={this.state.attributes}
 							onNavigate={this.onNavigate}
+							onUpdate={this.onUpdate}
 							onDelete={this.onDelete}
 							updatePageSize={this.updatePageSize} />
 			</div>
@@ -161,7 +182,7 @@ class CreateDialog extends React.Component {
 				<a href="#createRecipe">Create</a>
 				<div id="createRecipe" className="modalDialog">
 					<div>
-						<a href="#" title="close" className="close">X</a>
+						<a href="#" title="Close" className="close">X</a>
 						<h2>Create new Recipe</h2>
 
 						<form>
@@ -194,6 +215,7 @@ class UpdateDialog extends React.Component {
 	}
 
 	render() {
+		//TODO: this will create matiching keys if elements have same attribute values
 		const inputs = this.props.attributes.map(attribute =>
 				<p key={this.props.recipe.entity[attribute]}>
 					<input type="text"
@@ -268,7 +290,11 @@ class RecipeList extends React.Component {
 
 	render() {
 		const recipes = this.props.recipes.map(recipe =>
-			<Recipe key={recipe._links.self.href} recipe={recipe} onDelete={this.props.onDelete} />
+			<Recipe key={recipe.entity._links.self.href}
+					recipe={recipe}
+					attributes={this.props.attributes}
+					onUpdate={this.props.onUpdate}
+					onDelete={this.props.onDelete} />
 		)
 
 		const navLinks = [];
@@ -320,9 +346,9 @@ class Recipe extends React.Component {
 	render() {
 		return (
 			<tr>
-				<td>{this.props.recipe.recipeTitle}</td>
-				<td>{this.props.recipe.description}</td>
-				<td>{this.props.recipe.ingredient}</td>
+				<td>{this.props.recipe.entity.recipeTitle}</td>
+				<td>{this.props.recipe.entity.description}</td>
+				<td>{this.props.recipe.entity.ingredient}</td>
 				<td>
 					<UpdateDialog recipe={this.props.recipe}
 							attributes={this.props.attributes}
