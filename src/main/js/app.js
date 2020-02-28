@@ -13,6 +13,7 @@ class App extends React.Component {
 		this.state = {recipes: [], attributes: [], pageSize: 2, links: {}};
 		this.updatePageSize = this.updatePageSize.bind(this)
 		this.onCreate = this.onCreate.bind(this)
+		this.onUpdate = this.onUpdate.bind(this)
 		this.onDelete = this.onDelete.bind(this)
 		this.onNavigate = this.onNavigate.bind(this)
 	}
@@ -29,12 +30,21 @@ class App extends React.Component {
 				this.schema = schema.entity
 				return recipeCollection
 			})
-		}).done(recipeCollection => {
+		}).then(recipeCollection => {
+			return recipeCollection.entity._embedded.recipes.map(recipe =>
+							client({
+								method: 'GET',
+								path: recipe._links.self.href
+							}))
+		}).then(recipePromises => {
+			return when.all(recipePromises);
+		}).done(recipes => {
 			this.setState({
-				recipes: recipeCollection.entity._embedded.recipes,
+				recipes: recipes,
 				attributes: Object.keys(this.schema.properties),
 				pageSize: pageSize,
-				links: recipeCollection.entity._links })
+				links: this.links
+			})
 		})
 	}
 
@@ -54,6 +64,18 @@ class App extends React.Component {
 				this.onNavigate(response.entity._links.last.href)
 			} else {
 				this.onNavigate(response.entity._links.self.href)
+			}
+		})
+	}
+
+	onUpdate(recipe, updatedRecipe) {
+		client({
+			method: 'PUT',
+			path: employee.entity._links.self.href,
+			entity: updatedRecipe,
+			headers: {
+				'Content-Type': 'application-json',
+				'If-Match': recipe.headers.Etag
 			}
 		})
 	}
@@ -140,6 +162,55 @@ class CreateDialog extends React.Component {
 						<form>
 							{inputs}
 							<button onClick={this.handleSubmit}>Create</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		)
+	}
+}
+
+class UpdateDialog extends React.Component {
+
+	constructor(props) {
+		super(props)
+		this.handleSubmit = this.handleSubmit.bind(this)
+	}
+
+	handleSubmit(e) {
+		e.preventDefault()
+		const updatedRecipe = {}
+		this.props.attributes.forEach(attribute => {
+			updatedRecipe[attribute] =
+				ReactDOM.findDOMNode(this.refs[attribute]).value.trim()
+		})
+		this.props.onUpdate(this.props.recipe, updatedRecipe)
+		window.location = '#'
+	}
+
+	render() {
+		const inputs = this.props.attributes.map(attribute =>
+				<p key={this.props.recipe.entity[attribute]}>
+					<input type="text"
+							placeholder={attribute}
+							defaultValue={this.props.recipe.entity[attribute]}
+							ref={attribute}
+							className="field" />
+				</p>
+		)
+
+		const dialogId = "updateRecipe-" + this.props.recipe.entity._links.self.href
+
+		return (
+			<div key={this.props.recipe.entity._links.self.href}>
+				<a href={"#" + dialogId}>Update</a>
+				<div id={dialogId} className="modalDialog">
+					<div>
+						<a href="#" title="Close" className="close">X</a>
+						<h2>Update a Recipe</h2>
+						<form>
+							{inputs}
+							<button onClick={this.handleSubmit}>Update</button>
 						</form>
 					</div>
 				</div>
