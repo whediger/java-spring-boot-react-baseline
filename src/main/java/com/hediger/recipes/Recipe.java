@@ -5,6 +5,10 @@ import java.util.Objects;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistance.Version;
+
+// TODO: create or add package below... JsonIgnore
+//import com.fasterxml.jackson.annotation.JsonIgnore;
 
 @Entity
 public class Recipe {
@@ -30,12 +34,13 @@ public class Recipe {
 		return Objects.equals(id, recipe.id) &&
 			Objects.equals(recipeTitle, recipe.recipeTitle) &&
 			Objects.equals(description, recipe.description) &&
-			Objects.equals(ingredient, recipe.ingredient);
+			Objects.equals(ingredient, recipe.ingredient) &&
+			Objects.equals(version, recipe.version);
 	}
 
 	@Override
 	public int hashCode() {
-		return Objects.hash(id, recipeTitle, description, ingredient);
+		return Objects.hash(id, recipeTitle, description, ingredient, version);
 	}
 
 	public Long getId() {
@@ -70,6 +75,14 @@ public class Recipe {
 		this.ingredient = ingredient;
 	}
 
+	public Long getVersion() {
+		return version;
+	}
+
+	public void setVersion(Long version) {
+		this.version = version;
+	}
+
 	@Override
 	public String toString() {
 		return "Recipe{" +
@@ -77,6 +90,7 @@ public class Recipe {
 		", recipeTitle: " + recipeTitle +
 		", description: " + description +
 		", ingredient: " + ingredient +
+		", version: " + version  +
 		"}";
 	}
 
