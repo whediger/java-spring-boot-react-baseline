@@ -37453,7 +37453,7 @@ function (_React$Component) {
       }]).then(function (recipeCollection) {
         return _client__WEBPACK_IMPORTED_MODULE_2___default()({
           method: 'GET',
-          path: employeeCollection.entity._links.profile.href,
+          path: recipeCollection.entity._links.profile.href,
           headers: {
             'Accept': 'application/schema+json'
           }
@@ -37463,10 +37463,10 @@ function (_React$Component) {
         });
       }).done(function (recipeCollection) {
         _this2.setState({
-          recipes: recipeCollection.entity._embedded.employees,
-          attributes: Object.keys(_this2.shema.properties),
+          recipes: recipeCollection.entity._embedded.recipes,
+          attributes: Object.keys(_this2.schema.properties),
           pageSize: pageSize,
-          links: employeeCollection.entity._links
+          links: recipeCollection.entity._links
         });
       });
     }
@@ -37478,7 +37478,7 @@ function (_React$Component) {
       follow(_client__WEBPACK_IMPORTED_MODULE_2___default.a, root, ['recipes']).then(function (recipeCollection) {
         return _client__WEBPACK_IMPORTED_MODULE_2___default()({
           method: 'POST',
-          path: employeeCollection.entity._links.self.href,
+          path: recipeCollection.entity._links.self.href,
           entity: newRecipe,
           headers: {
             'Content-Type': 'application/json'
@@ -37495,7 +37495,7 @@ function (_React$Component) {
         if (typeof response.entity._links.last !== "undefined") {
           _this3.onNavigate(response.entity._links.last.href);
         } else {
-          _this3.onNavagate(response.entity._links.self.href);
+          _this3.onNavigate(response.entity._links.self.href);
         }
       });
     }
@@ -37550,7 +37550,7 @@ function (_React$Component) {
         recipes: this.state.recipes,
         links: this.state.links,
         pageSize: this.state.pageSize,
-        onNavagate: this.state.onNavigate,
+        onNavigate: this.onNavigate,
         onDelete: this.onDelete,
         updatePageSize: this.updatePageSize
       }));
@@ -37595,11 +37595,11 @@ function (_React$Component2) {
     key: "render",
     value: function render() {
       var inputs = this.props.attributes.map(function (attribute) {
-        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(P, {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
           key: attribute
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
           type: "text",
-          placeHolder: attribute,
+          placeholder: attribute,
           ref: attribute,
           className: "field"
         }));
@@ -37663,7 +37663,7 @@ function (_React$Component3) {
     key: "handleNavPrev",
     value: function handleNavPrev(e) {
       e.preventDefault();
-      this.props.onNavagate(this.props.links.prev.href);
+      this.props.onNavigate(this.props.links.prev.href);
     }
   }, {
     key: "handleNavNext",
@@ -37709,14 +37709,14 @@ function (_React$Component3) {
         navLinks.push(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
           key: "next",
           onClick: this.handleNavNext
-        }, "<"));
+        }, ">"));
       }
 
       if ("last" in this.props.links) {
         navLinks.push(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
           key: "last",
           onClick: this.handleNavLast
-        }, "<"));
+        }, ">>"));
       }
 
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
@@ -37730,25 +37730,25 @@ function (_React$Component3) {
   return RecipeList;
 }(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
 
-var Employee =
+var Recipe =
 /*#__PURE__*/
 function (_React$Component4) {
-  _inherits(Employee, _React$Component4);
+  _inherits(Recipe, _React$Component4);
 
-  function Employee(props) {
+  function Recipe(props) {
     var _this10;
 
-    _classCallCheck(this, Employee);
+    _classCallCheck(this, Recipe);
 
-    _this10 = _possibleConstructorReturn(this, _getPrototypeOf(Employee).call(this, props));
+    _this10 = _possibleConstructorReturn(this, _getPrototypeOf(Recipe).call(this, props));
     _this10.handleDelete = _this10.handleDelete.bind(_assertThisInitialized(_this10));
     return _this10;
   }
 
-  _createClass(Employee, [{
+  _createClass(Recipe, [{
     key: "handleDelete",
     value: function handleDelete() {
-      this.props.onDelete(this.props.employee);
+      this.props.onDelete(this.props.recipe);
     }
   }, {
     key: "render",
@@ -37759,7 +37759,7 @@ function (_React$Component4) {
     }
   }]);
 
-  return Employee;
+  return Recipe;
 }(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
 
 react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(App, null), document.getElementById('react-container'));

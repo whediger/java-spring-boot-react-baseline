@@ -32,7 +32,7 @@ class App extends React.Component {
 		}).done(recipeCollection => {
 			this.setState({
 				recipes: recipeCollection.entity._embedded.recipes,
-				attributes: Object.keys(this.shema.properties),
+				attributes: Object.keys(this.schema.properties),
 				pageSize: pageSize,
 				links: recipeCollection.entity._links })
 		})
@@ -53,7 +53,7 @@ class App extends React.Component {
 			if(typeof response.entity._links.last !== "undefined") {
 				this.onNavigate(response.entity._links.last.href)
 			} else {
-				this.onNavagate(response.entity._links.self.href)
+				this.onNavigate(response.entity._links.self.href)
 			}
 		})
 	}
@@ -92,7 +92,7 @@ class App extends React.Component {
 				<RecipeList recipes={this.state.recipes}
 							links={this.state.links}
 							pageSize={this.state.pageSize}
-							onNavagate={this.state.onNavigate}
+							onNavigate={this.onNavigate}
 							onDelete={this.onDelete}
 							updatePageSize={this.updatePageSize} />
 			</div>
@@ -124,9 +124,9 @@ class CreateDialog extends React.Component {
 
 	render() {
 		const inputs = this.props.attributes.map(attribute =>
-			<P key={attribute}>
-				<input type="text" placeHolder={attribute} ref={attribute} className="field" />
-			</P>
+			<p key={attribute}>
+				<input type="text" placeholder={attribute} ref={attribute} className="field" />
+			</p>
 		)
 
 		return (
@@ -177,7 +177,7 @@ class RecipeList extends React.Component {
 
 	handleNavPrev(e) {
 		e.preventDefault()
-		this.props.onNavagate(this.props.links.prev.href)
+		this.props.onNavigate(this.props.links.prev.href)
 	}
 
 	handleNavNext(e) {
@@ -203,10 +203,10 @@ class RecipeList extends React.Component {
 			navLinks.push(<button key="prev" onClick={this.handleNavPrev}>&lt;</button>)
 		}
 		if ("next" in this.props.links) {
-			navLinks.push(<button key="next" onClick={this.handleNavNext}>&lt;</button>)
+			navLinks.push(<button key="next" onClick={this.handleNavNext}>&gt;</button>)
 		}
 		if ("last" in this.props.links) {
-			navLinks.push(<button key="last" onClick={this.handleNavLast}>&lt;</button>)
+			navLinks.push(<button key="last" onClick={this.handleNavLast}>&gt;&gt;</button>)
 		}
 
 		return (
@@ -230,7 +230,7 @@ class RecipeList extends React.Component {
 	}
 }
 
-class Employee extends React.Component {
+class Recipe extends React.Component {
 
 	constructor(props) {
 		super(props)
