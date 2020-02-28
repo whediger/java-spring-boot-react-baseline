@@ -5,10 +5,9 @@ import java.util.Objects;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-import javax.persistance.Version;
+import javax.persistence.Version;
 
-// TODO: create or add package below... JsonIgnore
-//import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 @Entity
 public class Recipe {
@@ -17,6 +16,8 @@ public class Recipe {
 	private String recipeTitle;
 	private String description;
 	private String ingredient;
+
+	private @Version @JsonIgnore Long version;
 
 	public Recipe() {}
 
