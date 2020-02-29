@@ -51,23 +51,13 @@ class App extends React.Component {
 	}
 
 	onCreate(newRecipe) {
-		const self = this
-		follow(client, root, ['recipes']).then(response => {
-			return client({
+		follow(client, root, ['recipes']).done(response => {
+			client({
 				method: 'POST',
 				path: response.entity._links.self.href,
 				entity: newRecipe,
 				headers: {'Content-Type': 'application/json'}
 			})
-		}).then(response => {
-			return follow(client, root, [
-				{rel: 'recipes', params: {'size': this.state.pageSize}}])
-		}).done(response => {
-			if(typeof response.entity._links.last !== "undefined") {
-				this.onNavigate(response.entity._links.last.href)
-			} else {
-				this.onNavigate(response.entity._links.self.href)
-			}
 		})
 	}
 
@@ -127,8 +117,57 @@ class App extends React.Component {
 		}
 	}
 
+	refreshAndGoToLastPage(message) {
+		follow(client, root, [{
+			rel: 'recipes',
+			params: {size: this.state.pageSize}
+		}]).done(response => {
+			if (response.entity._links.last !== undefined) {
+				this.onNavigate(response.entity._links.last.href)
+			} else {
+				this.onNavigate(response.entity._links.self.href)
+			}
+		})
+	}
+
+	refreshCurrentPage(message) {
+		follow(client, root, [{
+			rel: 'recipes',
+			params: {
+				size: this.state.pageSize,
+				page: this.state.page.number
+			}
+		}]).then(recipeCollection => {
+			this.links = recipeCollection.entity._links
+			this.page = employeeCollection.entity.page
+
+			return recipeCollection.entity._embedded.recipes.map(recipe => {
+				return client({
+					method: 'GET',
+					path: employee._links.self.href
+				})
+			})
+		}).then(recipePromises => {
+			return when.all(recipePromises)
+		}).then(recipes => {
+			this.setState({
+				page: this.page,
+				recipes: recipes,
+				attributes: Object.keys(this.schema.properties),
+				pageSize: this.state.pageSize,
+				links: this.links
+			})
+		})
+	}
+
 	componentDidMount() {
 		this.loadFromServer(this.state.pageSize)
+		stompClient.register([
+			{route: '/topic/newRecipe', callback: this.refreshAndGoToLastPage},
+			{route: '/topic/updateRecipe', callback: this.refreshCurrentPage},
+			{route: '/topic/deleteRecipe', callback: this.refreshCurrentPage},
+
+		])
 	}
 
 	render() {
