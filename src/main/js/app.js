@@ -5,18 +5,22 @@ import when from 'when'
 
 const follow = require('./follow')
 
+const stompClient = require('./websocket-listener')
+
 const root = '/api'
 
 class App extends React.Component {
 
 	constructor(props) {
 		super(props);
-		this.state = {recipes: [], attributes: [], pageSize: 2, links: {}};
+		this.state = {recipes: [], attributes: [], page: 1, pageSize: 2, links: {}};
 		this.updatePageSize = this.updatePageSize.bind(this)
 		this.onCreate = this.onCreate.bind(this)
 		this.onUpdate = this.onUpdate.bind(this)
 		this.onDelete = this.onDelete.bind(this)
 		this.onNavigate = this.onNavigate.bind(this)
+		this.refreshCurrentPage = this.refreshCurrentPage.bind(this)
+		this.refreshAndGoToLastPage = this.refreshAndGoToLastPage.bind(this)
 	}
 
 	loadFromServer(pageSize) {
@@ -138,13 +142,14 @@ class App extends React.Component {
 				page: this.state.page.number
 			}
 		}]).then(recipeCollection => {
+			console.log(recipeCollection.entity);
 			this.links = recipeCollection.entity._links
-			this.page = employeeCollection.entity.page
+			this.page = recipeCollection.entity.page
 
 			return recipeCollection.entity._embedded.recipes.map(recipe => {
 				return client({
 					method: 'GET',
-					path: employee._links.self.href
+					path: recipe._links.self.href
 				})
 			})
 		}).then(recipePromises => {
@@ -165,8 +170,7 @@ class App extends React.Component {
 		stompClient.register([
 			{route: '/topic/newRecipe', callback: this.refreshAndGoToLastPage},
 			{route: '/topic/updateRecipe', callback: this.refreshCurrentPage},
-			{route: '/topic/deleteRecipe', callback: this.refreshCurrentPage},
-
+			{route: '/topic/deleteRecipe', callback: this.refreshCurrentPage}
 		])
 	}
 
@@ -174,7 +178,8 @@ class App extends React.Component {
 		return (
 			<div>
 				<CreateDialog attributes={this.state.attributes} onCreate={this.onCreate} />
-				<RecipeList recipes={this.state.recipes}
+				<RecipeList page={this.state.page}
+							recipes={this.state.recipes}
 							links={this.state.links}
 							pageSize={this.state.pageSize}
 							attributes={this.state.attributes}
@@ -254,7 +259,6 @@ class UpdateDialog extends React.Component {
 	}
 
 	render() {
-		//TODO: this will create matiching keys if elements have same attribute values
 		const inputs = this.props.attributes.map(attribute =>
 				<p key={this.props.recipe.entity[attribute]}>
 					<input type="text"

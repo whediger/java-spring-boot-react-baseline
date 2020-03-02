@@ -7,7 +7,7 @@ import org.springframework.data.rest.core.annotation.HandleAfterCreate;
 import org.springframework.data.rest.core.annotation.HandleAfterDelete;
 import org.springframework.data.rest.core.annotation.HandleAfterSave;
 import org.springframework.data.rest.core.annotation.RepositoryEventHandler;
-import org.springframework.hateoas.server.Entitylinks;
+import org.springframework.hateoas.server.EntityLinks;
 import org.springframework.messaging.simp.SimpMessagingTemplate;
 import org.springframework.stereotype.Component;
 
@@ -47,7 +47,7 @@ public class EventHandler {
 	}
 
 	private String getPath(Recipe recipe) {
-		return this.entityLinks.linkForResource(recipe.getClass(),
+		return this.entityLinks.linkForItemResource(recipe.getClass(),
 			recipe.getId()).toUri().getPath();
 	}
 }

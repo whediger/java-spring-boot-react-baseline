@@ -3,7 +3,7 @@ package com.hediger.recipes;
 import org.springframework.messaging.simp.config.MessageBrokerRegistry;
 import org.springframework.stereotype.Component;
 import org.springframework.web.socket.config.annotation.EnableWebSocketMessageBroker;
-import org.springframework.web.socket.config.annotation.StompEndPointRegistry;
+import org.springframework.web.socket.config.annotation.StompEndpointRegistry;
 import org.springframework.web.socket.config.annotation.WebSocketMessageBrokerConfigurer;
 
 @Component
@@ -13,7 +13,7 @@ public class WebSocketConfiguration implements WebSocketMessageBrokerConfigurer 
 	static final String MESSAGE_PREFIX = "/topic";
 
 	@Override
-	public void registerStompEndpoints(StompEndPointRegistry registry) {
+	public void registerStompEndpoints(StompEndpointRegistry registry) {
 		registry.addEndpoint("/recipes").withSockJS();
 	}
 
