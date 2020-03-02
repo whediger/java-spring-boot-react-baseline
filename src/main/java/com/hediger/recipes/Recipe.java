@@ -5,6 +5,7 @@ import java.util.Objects;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistance.ManyToOne;
 import javax.persistence.Version;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
@@ -21,10 +22,11 @@ public class Recipe {
 
 	public Recipe() {}
 
-	public Recipe(String recipeTitle, String description, String ingredient) {
+	public Recipe(String recipeTitle, String description, String ingredient, Chef chef) {
 		this.recipeTitle = recipeTitle;
 		this.description = description;
 		this.ingredient = ingredient;
+		this.chef = chef;
 	}
 
 	@Override
@@ -37,11 +39,12 @@ public class Recipe {
 			Objects.equals(description, recipe.description) &&
 			Objects.equals(ingredient, recipe.ingredient) &&
 			Objects.equals(version, recipe.version);
+			Objects.equals(chef, recipe.chef);
 	}
 
 	@Override
 	public int hashCode() {
-		return Objects.hash(id, recipeTitle, description, ingredient, version);
+		return Objects.hash(id, recipeTitle, description, ingredient, version, chef);
 	}
 
 	public Long getId() {
@@ -84,6 +87,14 @@ public class Recipe {
 		this.version = version;
 	}
 
+	public Chef getChef() {
+		return chef;
+	}
+
+	public void setChef(Chef chef) {
+		this.chef = chef;
+	}
+
 	@Override
 	public String toString() {
 		return "Recipe{" +
@@ -92,6 +103,7 @@ public class Recipe {
 		", description: " + description +
 		", ingredient: " + ingredient +
 		", version: " + version  +
+		", chef: " + chef  +
 		"}";
 	}
 
