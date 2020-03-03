@@ -3,19 +3,45 @@ package com.hediger.recipes;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
+import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
+import org.springframework.security.core.authority.AuthorityUtils;
+import org.springframework.security.core.context.SecurityContextHolder;
 
 
+@Component
 public class DatabaseLoader implements CommandLineRunner {
 
-	private final RecipeRepository repository;
+	private final RecipeRepository recipes;
+	private final ChefRepository chefs;
 
 	@Autowired
-	public DatabaseLoader(RecipeRepository repository) {
-		this.repository = repository;
+	public DatabaseLoader(RecipeRepository recipeRepository, ChefRepository chefRepository) {
+		this.recipes = recipeRepository;
+		this.chefs = chefRepository;
 	}
 
 	@Override
 	public void run(String... strings) throws Exception {
-		this.repository.save(new Recipe("cheddar Cheese", "open package and eat it", "cheddar from store"));
+
+		Chef greg = this.chefs.save(new Chef("greg", "gamber", "ROLE_CHEF"));
+		Chef oliver = this.chefs.save(new Chef("oliver", "lastname", "ROLE_CHEF"));
+
+		SecurityContextHolder.getContext().setAuthentication(
+			new UsernamePasswordAuthenticationToken("greg", "doesn't matter",
+				AuthorityUtils.createAuthorityList("ROLE_CHEF")));
+
+		this.recipe.save(new Recipe("cheese", "cheesy cheese", "cheddar", greg));
+		this.recipe.save(new Recipe("stuff", "greatest stuffing", "stuffing", greg));
+		this.recipe.save(new Recipe("pizza", "colorado pizza", "cheese, bread, olive oil", greg));
+
+		SecurityContextHolder.getContext().setAuthentication(
+			new UsernamePasswordAuthenticationToken('dude', "dosn't matter",
+				AuthorityUtils.createAuthorityList("ROLE_CHEF")));
+
+		this.recipe.save(new Recipe("pizza", "colorado pizza", "cheese, bread, olive oil", oliver));
+		this.recipe.save(new Recipe("soup", "poboy soup", "water, dirt and rocks", oliver));
+		this.recipe.save(new Recipe("curry", "coconut curry", "cocnut, curry and yummyness", oliver));
+
+		SecurityContextHolder.clearContext();
 	}
 }
