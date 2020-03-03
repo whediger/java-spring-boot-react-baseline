@@ -37,7 +37,7 @@ class App extends React.Component {
 					if(schema.entity.properties[property].hasOwnProperty('format') &&
 							schema.entity.properties[property].format === 'uri') {
 						delete schema.entity.properties[property]
-					} else if(schema.entity.properties[property].hasOwnProperty{'$ref'}) {
+					} else if(schema.entity.properties[property].hasOwnProperty('$ref')) {
 						delete schema.entity.properties[property]
 					}
 				})
@@ -98,8 +98,9 @@ class App extends React.Component {
 						recipe.entity._links.self.href + ". your copy is stale")
 			}
 		})
-	} else {
-		alert("☠ ACCESS DENIED : You are not authorized to update record ☠")
+		} else {
+			alert("☠ ACCESS DENIED : You are not authorized to update record ☠")
+		}
 	}
 
 	onDelete(recipe) {

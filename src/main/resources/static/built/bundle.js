@@ -44487,6 +44487,14 @@ function (_React$Component) {
             'Accept': 'application/schema+json'
           }
         }).then(function (schema) {
+          //filter unneeded JSON schema properties out
+          Object.keys(schema.entity.properties).forEach(function (property) {
+            if (schema.entity.properties[property].hasOwnProperty('format') && schema.entity.properties[property].format === 'uri') {
+              delete schema.entity.properties[property];
+            } else if (schema.entity.properties[property].hasOwnProperty('$ref')) {
+              delete schema.entity.properties[property];
+            }
+          });
           _this2.schema = schema.entity;
           _this2.links = recipeCollection.entity._links;
           return recipeCollection;
@@ -44526,46 +44534,55 @@ function (_React$Component) {
   }, {
     key: "onUpdate",
     value: function onUpdate(recipe, updatedRecipe) {
-      var _this3 = this;
+      if (recipe.entity.chef.name === this.state.loggedInChef) {
+        updatedRecipe['chef'] = recipe.entity.chef;
+        _client__WEBPACK_IMPORTED_MODULE_2___default()({
+          method: 'PUT',
+          path: recipe.entity._links.self.href,
+          entity: updatedRecipe,
+          headers: {
+            'Content-Type': 'application/json',
+            'If-Match': recipe.headers.Etag
+          }
+        }).done(function (response) {
+          /*let the websocket handler update the state*/
+        }, function (response) {
+          if (response.status.code === 403) {
+            alert('ACCESS DENIED: You are not authorized to update' + recipe.entity._links.self.href);
+          }
 
-      _client__WEBPACK_IMPORTED_MODULE_2___default()({
-        method: 'PUT',
-        path: recipe.entity._links.self.href,
-        entity: updatedRecipe,
-        headers: {
-          'Content-Type': 'application/json',
-          'If-Match': recipe.headers.Etag
-        }
-      }).done(function (response) {
-        _this3.loadFromServer(_this3.state.pageSize);
-      }, function (response) {
-        if (response.status.code === 412) {
-          alert('DENIED: unable to update ' + recipe.entity._links.self.href + ". your copy is stale");
-        }
-      });
+          if (response.status.code === 412) {
+            alert('DENIED: unable to update ' + recipe.entity._links.self.href + ". your copy is stale");
+          }
+        });
+      } else {
+        alert("☠ ACCESS DENIED : You are not authorized to update record ☠");
+      }
     }
   }, {
     key: "onDelete",
     value: function onDelete(recipe) {
-      var _this4 = this;
-
       _client__WEBPACK_IMPORTED_MODULE_2___default()({
         method: 'DELETE',
         path: recipe.entity._links.self.href
       }).done(function (response) {
-        _this4.loadFromServer(_this4.state.pageSize);
+        /*let webocket handle updating the UI */
+      }, function (response) {
+        if (response.status.code === 403) {
+          alert("☠ ACCESS DENIED : You are not authorized to update record ☠" + recipe.entity._links.self.href);
+        }
       });
     }
   }, {
     key: "onNavigate",
     value: function onNavigate(navUri) {
-      var _this5 = this;
+      var _this3 = this;
 
       _client__WEBPACK_IMPORTED_MODULE_2___default()({
         method: 'GET',
         path: navUri
       }).then(function (recipeCollection) {
-        _this5.links = recipeCollection.entity._links;
+        _this3.links = recipeCollection.entity._links;
         return recipeCollection.entity._embedded.recipes.map(function (recipe) {
           return _client__WEBPACK_IMPORTED_MODULE_2___default()({
             method: 'GET',
@@ -44575,11 +44592,11 @@ function (_React$Component) {
       }).then(function (recipePromises) {
         return when__WEBPACK_IMPORTED_MODULE_3___default.a.all(recipePromises);
       }).done(function (recipes) {
-        _this5.setState({
+        _this3.setState({
           recipes: recipes,
-          attributes: Object.keys(_this5.schema.properties),
-          pageSize: _this5.state.pageSize,
-          links: _this5.links
+          attributes: Object.keys(_this3.schema.properties),
+          pageSize: _this3.state.pageSize,
+          links: _this3.links
         });
       });
     }
@@ -44593,7 +44610,7 @@ function (_React$Component) {
   }, {
     key: "refreshAndGoToLastPage",
     value: function refreshAndGoToLastPage(message) {
-      var _this6 = this;
+      var _this4 = this;
 
       follow(_client__WEBPACK_IMPORTED_MODULE_2___default.a, root, [{
         rel: 'recipes',
@@ -44602,16 +44619,16 @@ function (_React$Component) {
         }
       }]).done(function (response) {
         if (response.entity._links.last !== undefined) {
-          _this6.onNavigate(response.entity._links.last.href);
+          _this4.onNavigate(response.entity._links.last.href);
         } else {
-          _this6.onNavigate(response.entity._links.self.href);
+          _this4.onNavigate(response.entity._links.self.href);
         }
       });
     }
   }, {
     key: "refreshCurrentPage",
     value: function refreshCurrentPage(message) {
-      var _this7 = this;
+      var _this5 = this;
 
       follow(_client__WEBPACK_IMPORTED_MODULE_2___default.a, root, [{
         rel: 'recipes',
@@ -44621,8 +44638,8 @@ function (_React$Component) {
         }
       }]).then(function (recipeCollection) {
         console.log(recipeCollection.entity);
-        _this7.links = recipeCollection.entity._links;
-        _this7.page = recipeCollection.entity.page;
+        _this5.links = recipeCollection.entity._links;
+        _this5.page = recipeCollection.entity.page;
         return recipeCollection.entity._embedded.recipes.map(function (recipe) {
           return _client__WEBPACK_IMPORTED_MODULE_2___default()({
             method: 'GET',
@@ -44632,12 +44649,12 @@ function (_React$Component) {
       }).then(function (recipePromises) {
         return when__WEBPACK_IMPORTED_MODULE_3___default.a.all(recipePromises);
       }).then(function (recipes) {
-        _this7.setState({
-          page: _this7.page,
+        _this5.setState({
+          page: _this5.page,
           recipes: recipes,
-          attributes: Object.keys(_this7.schema.properties),
-          pageSize: _this7.state.pageSize,
-          links: _this7.links
+          attributes: Object.keys(_this5.schema.properties),
+          pageSize: _this5.state.pageSize,
+          links: _this5.links
         });
       });
     }
@@ -44685,28 +44702,28 @@ function (_React$Component2) {
   _inherits(CreateDialog, _React$Component2);
 
   function CreateDialog(props) {
-    var _this8;
+    var _this6;
 
     _classCallCheck(this, CreateDialog);
 
-    _this8 = _possibleConstructorReturn(this, _getPrototypeOf(CreateDialog).call(this, props));
-    _this8.handleSubmit = _this8.handleSubmit.bind(_assertThisInitialized(_this8));
-    return _this8;
+    _this6 = _possibleConstructorReturn(this, _getPrototypeOf(CreateDialog).call(this, props));
+    _this6.handleSubmit = _this6.handleSubmit.bind(_assertThisInitialized(_this6));
+    return _this6;
   }
 
   _createClass(CreateDialog, [{
     key: "handleSubmit",
     value: function handleSubmit(e) {
-      var _this9 = this;
+      var _this7 = this;
 
       e.preventDefault();
       var newRecipe = {};
       this.props.attributes.forEach(function (attribute) {
-        newRecipe[attribute] = react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.findDOMNode(_this9.refs[attribute]).value.trim();
+        newRecipe[attribute] = react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.findDOMNode(_this7.refs[attribute]).value.trim();
       });
       this.props.onCreate(newRecipe);
       this.props.attributes.forEach(function (attribute) {
-        react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.findDOMNode(_this9.refs[attribute]).value = '';
+        react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.findDOMNode(_this7.refs[attribute]).value = '';
       });
       window.location = '#';
     }
@@ -44747,24 +44764,24 @@ function (_React$Component3) {
   _inherits(UpdateDialog, _React$Component3);
 
   function UpdateDialog(props) {
-    var _this10;
+    var _this8;
 
     _classCallCheck(this, UpdateDialog);
 
-    _this10 = _possibleConstructorReturn(this, _getPrototypeOf(UpdateDialog).call(this, props));
-    _this10.handleSubmit = _this10.handleSubmit.bind(_assertThisInitialized(_this10));
-    return _this10;
+    _this8 = _possibleConstructorReturn(this, _getPrototypeOf(UpdateDialog).call(this, props));
+    _this8.handleSubmit = _this8.handleSubmit.bind(_assertThisInitialized(_this8));
+    return _this8;
   }
 
   _createClass(UpdateDialog, [{
     key: "handleSubmit",
     value: function handleSubmit(e) {
-      var _this11 = this;
+      var _this9 = this;
 
       e.preventDefault();
       var updatedRecipe = {};
       this.props.attributes.forEach(function (attribute) {
-        updatedRecipe[attribute] = react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.findDOMNode(_this11.refs[attribute]).value.trim();
+        updatedRecipe[attribute] = react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.findDOMNode(_this9.refs[attribute]).value.trim();
       });
       this.props.onUpdate(this.props.recipe, updatedRecipe);
       window.location = '#';
@@ -44772,15 +44789,15 @@ function (_React$Component3) {
   }, {
     key: "render",
     value: function render() {
-      var _this12 = this;
+      var _this10 = this;
 
       var inputs = this.props.attributes.map(function (attribute) {
         return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-          key: _this12.props.recipe.entity[attribute]
+          key: _this10.props.recipe.entity[attribute]
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
           type: "text",
           placeholder: attribute,
-          defaultValue: _this12.props.recipe.entity[attribute],
+          defaultValue: _this10.props.recipe.entity[attribute],
           ref: attribute,
           className: "field"
         }));
@@ -44812,17 +44829,17 @@ function (_React$Component4) {
   _inherits(RecipeList, _React$Component4);
 
   function RecipeList(props) {
-    var _this13;
+    var _this11;
 
     _classCallCheck(this, RecipeList);
 
-    _this13 = _possibleConstructorReturn(this, _getPrototypeOf(RecipeList).call(this, props));
-    _this13.handleNavFirst = _this13.handleNavFirst.bind(_assertThisInitialized(_this13));
-    _this13.handleNavPrev = _this13.handleNavPrev.bind(_assertThisInitialized(_this13));
-    _this13.handleNavNext = _this13.handleNavNext.bind(_assertThisInitialized(_this13));
-    _this13.handleNavLast = _this13.handleNavLast.bind(_assertThisInitialized(_this13));
-    _this13.handleInput = _this13.handleInput.bind(_assertThisInitialized(_this13));
-    return _this13;
+    _this11 = _possibleConstructorReturn(this, _getPrototypeOf(RecipeList).call(this, props));
+    _this11.handleNavFirst = _this11.handleNavFirst.bind(_assertThisInitialized(_this11));
+    _this11.handleNavPrev = _this11.handleNavPrev.bind(_assertThisInitialized(_this11));
+    _this11.handleNavNext = _this11.handleNavNext.bind(_assertThisInitialized(_this11));
+    _this11.handleNavLast = _this11.handleNavLast.bind(_assertThisInitialized(_this11));
+    _this11.handleInput = _this11.handleInput.bind(_assertThisInitialized(_this11));
+    return _this11;
   }
 
   _createClass(RecipeList, [{
@@ -44864,15 +44881,15 @@ function (_React$Component4) {
   }, {
     key: "render",
     value: function render() {
-      var _this14 = this;
+      var _this12 = this;
 
       var recipes = this.props.recipes.map(function (recipe) {
         return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Recipe, {
           key: recipe.entity._links.self.href,
           recipe: recipe,
-          attributes: _this14.props.attributes,
-          onUpdate: _this14.props.onUpdate,
-          onDelete: _this14.props.onDelete
+          attributes: _this12.props.attributes,
+          onUpdate: _this12.props.onUpdate,
+          onDelete: _this12.props.onDelete
         });
       });
       var navLinks = [];
@@ -44922,13 +44939,13 @@ function (_React$Component5) {
   _inherits(Recipe, _React$Component5);
 
   function Recipe(props) {
-    var _this15;
+    var _this13;
 
     _classCallCheck(this, Recipe);
 
-    _this15 = _possibleConstructorReturn(this, _getPrototypeOf(Recipe).call(this, props));
-    _this15.handleDelete = _this15.handleDelete.bind(_assertThisInitialized(_this15));
-    return _this15;
+    _this13 = _possibleConstructorReturn(this, _getPrototypeOf(Recipe).call(this, props));
+    _this13.handleDelete = _this13.handleDelete.bind(_assertThisInitialized(_this13));
+    return _this13;
   }
 
   _createClass(Recipe, [{
@@ -44939,10 +44956,11 @@ function (_React$Component5) {
   }, {
     key: "render",
     value: function render() {
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, this.props.recipe.entity.recipeTitle), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, this.props.recipe.entity.description), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, this.props.recipe.entity.ingredient), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(UpdateDialog, {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, this.props.recipe.entity.recipeTitle), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, this.props.recipe.entity.description), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, this.props.recipe.entity.ingredient), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, this.props.recipe.entity.chef.name), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(UpdateDialog, {
         recipe: this.props.recipe,
         attributes: this.props.attributes,
-        onUpdate: this.props.onUpdate
+        onUpdate: this.props.onUpdate,
+        loggedInChef: this.props.loggedInChef
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
         onClick: this.handleDelete
       }, "delete")));

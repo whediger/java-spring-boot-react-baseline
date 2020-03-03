@@ -30,17 +30,17 @@ public class DatabaseLoader implements CommandLineRunner {
 			new UsernamePasswordAuthenticationToken("greg", "doesn't matter",
 				AuthorityUtils.createAuthorityList("ROLE_CHEF")));
 
-		this.recipe.save(new Recipe("cheese", "cheesy cheese", "cheddar", greg));
-		this.recipe.save(new Recipe("stuff", "greatest stuffing", "stuffing", greg));
-		this.recipe.save(new Recipe("pizza", "colorado pizza", "cheese, bread, olive oil", greg));
+		this.recipes.save(new Recipe("cheese", "cheesy cheese", "cheddar", greg));
+		this.recipes.save(new Recipe("stuff", "greatest stuffing", "stuffing", greg));
+		this.recipes.save(new Recipe("pizza", "colorado pizza", "cheese, bread, olive oil", greg));
 
 		SecurityContextHolder.getContext().setAuthentication(
-			new UsernamePasswordAuthenticationToken('dude', "dosn't matter",
+			new UsernamePasswordAuthenticationToken("dude", "doesn't matter",
 				AuthorityUtils.createAuthorityList("ROLE_CHEF")));
 
-		this.recipe.save(new Recipe("pizza", "colorado pizza", "cheese, bread, olive oil", oliver));
-		this.recipe.save(new Recipe("soup", "poboy soup", "water, dirt and rocks", oliver));
-		this.recipe.save(new Recipe("curry", "coconut curry", "cocnut, curry and yummyness", oliver));
+		this.recipes.save(new Recipe("pizza", "colorado pizza", "cheese, bread, olive oil", oliver));
+		this.recipes.save(new Recipe("soup", "poboy soup", "water, dirt and rocks", oliver));
+		this.recipes.save(new Recipe("curry", "coconut curry", "cocnut, curry and yummyness", oliver));
 
 		SecurityContextHolder.clearContext();
 	}

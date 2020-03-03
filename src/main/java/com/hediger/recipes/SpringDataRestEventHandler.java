@@ -1,7 +1,7 @@
 package com.hediger.recipes;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.rest.core.annotation.handleBeforeCreate;
+import org.springframework.data.rest.core.annotation.HandleBeforeCreate;
 import org.springframework.data.rest.core.annotation.HandleBeforeSave;
 import org.springframework.data.rest.core.annotation.RepositoryEventHandler;
 import org.springframework.security.core.context.SecurityContextHolder;
@@ -25,9 +25,9 @@ public class SpringDataRestEventHandler {
 		String name = SecurityContextHolder.getContext().getAuthentication().getName();
 		Chef chef = this.chefRepository.findByName(name);
 		if (chef == null) {
-			Chef newChef = new Manager();
+			Chef newChef = new Chef();
 			newChef.setName(name);
-			newChef.setRoles(new String[]{"ROLE_CHEF"})
+			newChef.setRoles(new String[]{"ROLE_CHEF"});
 			chef = this.chefRepository.save(newChef);
 		}
 		recipe.setChef(chef);

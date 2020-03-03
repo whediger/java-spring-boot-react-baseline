@@ -1,20 +1,21 @@
-package com.hediger.recipies;
+package com.hediger.recipes;
 
 import java.util.Arrays;
 import java.util.Objects;
 
-import javax.persistance.Entity;
-import javax.persistance.GeneratdValue;
-import javax.persistance.Id;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
-import org.springframework.security.crypto.password.passwordEncoder;
+import org.springframework.security.crypto.password.PasswordEncoder;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 
 @Entity
 public class Chef {
+
 	public static final PasswordEncoder PASSWORD_ENCODER = new BCryptPasswordEncoder();
 
 	private @Id @GeneratedValue Long id;
@@ -33,7 +34,7 @@ public class Chef {
 
 	public Chef(String name, String password, String... roles){
 		this.name = name;
-		this.password = password;
+		this.setPassword(password);
 		this.roles = roles;
 	}
 
@@ -49,9 +50,9 @@ public class Chef {
 	}
 
 	@Override
-	public int hashcode() {
+	public int hashCode() {
 		int result = Objects.hash(id, name, password);
-		result = 31 * result + Arrays.hashcode(roles);
+		result = 31 * result + Arrays.hashCode(roles);
 		return result;
 	}
 

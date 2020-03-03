@@ -11,16 +11,16 @@ import org.springframework.stereotype.Component;
 @Component
 public class SpringDataJpaUserDetailsService implements UserDetailsService {
 
-	private final ChefRepository;
+	private final ChefRepository repository;
 
 	@Autowired
-	public SpringDataJpaUserDetailsService(ChefRepository, repository) {
+	public SpringDataJpaUserDetailsService(ChefRepository repository) {
 		this.repository = repository;
 	}
 
 	@Override
 	public UserDetails loadUserByUsername(String name) throws UsernameNotFoundException {
-		Chef chef = this.repository.findbyname(name);
+		Chef chef = this.repository.findByName(name);
 		return new User(chef.getName(), chef.getPassword(), AuthorityUtils.createAuthorityList(chef.getRoles()));
 	}
 }

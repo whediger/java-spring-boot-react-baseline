@@ -5,7 +5,7 @@ import java.util.Objects;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-import javax.persistance.ManyToOne;
+import javax.persistence.ManyToOne;
 import javax.persistence.Version;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
@@ -19,6 +19,8 @@ public class Recipe {
 	private String ingredient;
 
 	private @Version @JsonIgnore Long version;
+
+	private @ManyToOne Chef chef;
 
 	public Recipe() {}
 
@@ -38,7 +40,7 @@ public class Recipe {
 			Objects.equals(recipeTitle, recipe.recipeTitle) &&
 			Objects.equals(description, recipe.description) &&
 			Objects.equals(ingredient, recipe.ingredient) &&
-			Objects.equals(version, recipe.version);
+			Objects.equals(version, recipe.version) &&
 			Objects.equals(chef, recipe.chef);
 	}
 
