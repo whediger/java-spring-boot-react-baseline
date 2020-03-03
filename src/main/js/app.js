@@ -392,10 +392,12 @@ class Recipe extends React.Component {
 				<td>{this.props.recipe.entity.recipeTitle}</td>
 				<td>{this.props.recipe.entity.description}</td>
 				<td>{this.props.recipe.entity.ingredient}</td>
+				<td>{this.props.recipe.entity.chef.name}</td>
 				<td>
 					<UpdateDialog recipe={this.props.recipe}
 							attributes={this.props.attributes}
-							onUpdate={this.props.onUpdate} />
+							onUpdate={this.props.onUpdate}
+							loggedInChef={this.props.loggedInChef} />
 				</td>
 				<td>
 					<button onClick={this.handleDelete}>delete</button>
