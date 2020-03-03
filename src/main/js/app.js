@@ -76,22 +76,30 @@ class App extends React.Component {
 	}
 
 	onUpdate(recipe, updatedRecipe) {
-		client({
-			method: 'PUT',
-			path: recipe.entity._links.self.href,
-			entity: updatedRecipe,
-			headers: {
-				'Content-Type': 'application/json',
-				'If-Match': recipe.headers.Etag
-			}
-		}).done(response => {
-			this.loadFromServer(this.state.pageSize)
+		if(recipe.entity.chef.name === this.state.loggedInChef) {
+			updatedRecipe['chef'] = recipe.entity.chef
+			client({
+				method: 'PUT',
+				path: recipe.entity._links.self.href,
+				entity: updatedRecipe,
+				headers: {
+					'Content-Type': 'application/json',
+					'If-Match': recipe.headers.Etag
+				}
+			}).done(response => {
+			/*let the websocket handler update the state*/
 		}, response => {
+			if(response.status.code === 403) {
+				alert('ACCESS DENIED: You are not authorized to update' +
+					recipe.entity._links.self.href)
+			}
 			if(response.status.code === 412) {
 				alert('DENIED: unable to update ' +
 						recipe.entity._links.self.href + ". your copy is stale")
 			}
 		})
+	} else {
+		alert("☠ ACCESS DENIED : You are not authorized to update record ☠")
 	}
 
 	onDelete(recipe) {
