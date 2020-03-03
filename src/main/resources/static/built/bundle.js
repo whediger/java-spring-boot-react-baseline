@@ -44803,6 +44803,7 @@ function (_React$Component3) {
         }));
       });
       var dialogId = "updateRecipe-" + this.props.recipe.entity._links.self.href;
+      var isChefCorrect = this.props.recipe.entity.chef.name == this.props.loggedInManager;
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         key: this.props.recipe.entity._links.self.href
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
@@ -44956,6 +44957,8 @@ function (_React$Component5) {
   }, {
     key: "render",
     value: function render() {
+      console.log("+++++++++++++++++==========+++++++++++++++++++");
+      console.log(this.props);
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, this.props.recipe.entity.recipeTitle), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, this.props.recipe.entity.description), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, this.props.recipe.entity.ingredient), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, this.props.recipe.entity.chef.name), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(UpdateDialog, {
         recipe: this.props.recipe,
         attributes: this.props.attributes,

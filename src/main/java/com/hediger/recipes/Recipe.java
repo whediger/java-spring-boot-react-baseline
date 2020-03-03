@@ -101,11 +101,11 @@ public class Recipe {
 	public String toString() {
 		return "Recipe{" +
 		"id: " + id +
-		", recipeTitle: " + recipeTitle +
-		", description: " + description +
-		", ingredient: " + ingredient +
-		", version: " + version  +
-		", chef: " + chef  +
+		", recipeTitle= " + recipeTitle +
+		", description= " + description +
+		", ingredient= " + ingredient +
+		", version= " + version  +
+		", chef= " + chef  +
 		"}";
 	}
 

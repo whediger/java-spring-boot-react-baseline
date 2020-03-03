@@ -23,8 +23,8 @@ public class DatabaseLoader implements CommandLineRunner {
 	@Override
 	public void run(String... strings) throws Exception {
 
-		Chef greg = this.chefs.save(new Chef("greg", "gamber", "ROLE_CHEF"));
-		Chef oliver = this.chefs.save(new Chef("oliver", "lastname", "ROLE_CHEF"));
+		Chef greg = this.chefs.save(new Chef("greg", "pass123", "ROLE_CHEF"));
+		Chef oliver = this.chefs.save(new Chef("oliver", "pass123", "ROLE_CHEF"));
 
 		SecurityContextHolder.getContext().setAuthentication(
 			new UsernamePasswordAuthenticationToken("greg", "doesn't matter",
@@ -35,7 +35,7 @@ public class DatabaseLoader implements CommandLineRunner {
 		this.recipes.save(new Recipe("pizza", "colorado pizza", "cheese, bread, olive oil", greg));
 
 		SecurityContextHolder.getContext().setAuthentication(
-			new UsernamePasswordAuthenticationToken("dude", "doesn't matter",
+			new UsernamePasswordAuthenticationToken("oliver", "doesn't matter",
 				AuthorityUtils.createAuthorityList("ROLE_CHEF")));
 
 		this.recipes.save(new Recipe("pizza", "colorado pizza", "cheese, bread, olive oil", oliver));

@@ -296,6 +296,8 @@ class UpdateDialog extends React.Component {
 
 		const dialogId = "updateRecipe-" + this.props.recipe.entity._links.self.href
 
+		const isChefCorrect = this.props.recipe.entity.chef.name == this.props.loggedInManager
+
 		return (
 			<div key={this.props.recipe.entity._links.self.href}>
 				<a href={"#" + dialogId}>Update</a>
@@ -412,6 +414,8 @@ class Recipe extends React.Component {
 	}
 
 	render() {
+		console.log("+++++++++++++++++==========+++++++++++++++++++");
+		console.log(this.props);
 		return (
 			<tr>
 				<td>{this.props.recipe.entity.recipeTitle}</td>
