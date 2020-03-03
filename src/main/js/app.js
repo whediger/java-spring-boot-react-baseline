@@ -32,6 +32,16 @@ class App extends React.Component {
 				path: recipeCollection.entity._links.profile.href,
 				headers: {'Accept': 'application/schema+json'}
 			}).then(schema => {
+				//filter unneeded JSON schema properties out
+				Object.keys(schema.entity.properties).forEach(function (property) {
+					if(schema.entity.properties[property].hasOwnProperty('format') &&
+							schema.entity.properties[property].format === 'uri') {
+						delete schema.entity.properties[property]
+					} else if(schema.entity.properties[property].hasOwnProperty{'$ref'}) {
+						delete schema.entity.properties[property]
+					}
+				})
+
 				this.schema = schema.entity
 				this.links = recipeCollection.entity._links
 				return recipeCollection
