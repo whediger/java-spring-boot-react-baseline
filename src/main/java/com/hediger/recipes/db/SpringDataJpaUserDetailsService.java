@@ -1,4 +1,4 @@
-package com.hediger.recipes;
+package com.hediger.recipes.db;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.authority.AuthorityUtils;
@@ -7,6 +7,8 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Component;
+
+import com.hediger.recipes.models.chef.*;
 
 @Component
 public class SpringDataJpaUserDetailsService implements UserDetailsService {

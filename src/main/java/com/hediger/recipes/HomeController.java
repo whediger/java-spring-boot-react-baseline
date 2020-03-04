@@ -1,4 +1,3 @@
-// https://spring.io/guides/tutorials/react-and-spring-data-rest/
 package com.hediger.recipes;
 
 import org.springframework.stereotype.Controller;

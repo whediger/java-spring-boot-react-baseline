@@ -1,4 +1,4 @@
-package com.hediger.recipes;
+package com.hediger.recipes.db;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
@@ -7,6 +7,8 @@ import org.springframework.security.authentication.UsernamePasswordAuthenticatio
 import org.springframework.security.core.authority.AuthorityUtils;
 import org.springframework.security.core.context.SecurityContextHolder;
 
+import com.hediger.recipes.models.recipe.*;
+import com.hediger.recipes.models.chef.*;
 
 @Component
 public class DatabaseLoader implements CommandLineRunner {

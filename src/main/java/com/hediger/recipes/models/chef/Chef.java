@@ -1,4 +1,4 @@
-package com.hediger.recipes;
+package com.hediger.recipes.models.chef;
 
 import java.util.Arrays;
 import java.util.Objects;
@@ -30,7 +30,7 @@ public class Chef {
 		this.password = PASSWORD_ENCODER.encode(password);
 	}
 
-	protected Chef() {}
+	public Chef() {}
 
 	public Chef(String name, String password, String... roles){
 		this.name = name;

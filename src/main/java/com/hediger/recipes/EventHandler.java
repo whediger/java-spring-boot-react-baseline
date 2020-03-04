@@ -1,7 +1,5 @@
 package com.hediger.recipes;
 
-import static com.hediger.recipes.WebSocketConfiguration.*;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.rest.core.annotation.HandleAfterCreate;
 import org.springframework.data.rest.core.annotation.HandleAfterDelete;
@@ -10,6 +8,10 @@ import org.springframework.data.rest.core.annotation.RepositoryEventHandler;
 import org.springframework.hateoas.server.EntityLinks;
 import org.springframework.messaging.simp.SimpMessagingTemplate;
 import org.springframework.stereotype.Component;
+
+import static com.hediger.recipes.config.WebSocketConfiguration.*;
+import com.hediger.recipes.config.*;
+import com.hediger.recipes.models.recipe.*;
 
 @Component
 @RepositoryEventHandler(Recipe.class)
@@ -42,7 +44,7 @@ public class EventHandler {
 	@HandleAfterSave
 	public void updateRecipe(Recipe recipe) {
 		this.websocket.convertAndSend(
-			MESSAGE_PREFIX+ "/updateRecipe", getPath(recipe)
+			MESSAGE_PREFIX + "/updateRecipe", getPath(recipe)
 		);
 	}
 

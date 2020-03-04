@@ -81,15 +81,15 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "../../../../../Documents/React/MyStuff/recipe-app/demo/src/main/js/app.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/src/main/js/app.js");
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/inherits/inherits_browser.js":
-/*!***********************************************************************************************************!*\
-  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/demo/node_modules/inherits/inherits_browser.js ***!
-  \***********************************************************************************************************/
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/inherits/inherits_browser.js":
+/*!*****************************************************************************************************************!*\
+  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/node_modules/inherits/inherits_browser.js ***!
+  \*****************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -124,10 +124,10 @@ if (typeof Object.create === 'function') {
 
 /***/ }),
 
-/***/ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/json3/lib/json3.js":
-/*!*************************************************************************************************!*\
-  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/demo/node_modules/json3/lib/json3.js ***!
-  \*************************************************************************************************/
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/json3/lib/json3.js":
+/*!*******************************************************************************************************!*\
+  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/node_modules/json3/lib/json3.js ***!
+  \*******************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -135,7 +135,7 @@ if (typeof Object.create === 'function') {
 ;(function () {
   // Detect the `define` function exposed by asynchronous module loaders. The
   // strict `define` check is necessary for compatibility with `r.js`.
-  var isLoader =  true && __webpack_require__(/*! !webpack amd options */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/webpack/buildin/amd-options.js");
+  var isLoader =  true && __webpack_require__(/*! !webpack amd options */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/webpack/buildin/amd-options.js");
 
   // A set of types used to distinguish objects from primitives.
   var objectTypes = {
@@ -1071,14 +1071,14 @@ if (typeof Object.create === 'function') {
   }
 }).call(this);
 
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../webpack/buildin/module.js */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/webpack/buildin/module.js")(module), __webpack_require__(/*! ./../../webpack/buildin/global.js */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/webpack/buildin/global.js")))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../webpack/buildin/module.js */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/webpack/buildin/module.js")(module), __webpack_require__(/*! ./../../webpack/buildin/global.js */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/webpack/buildin/global.js")))
 
 /***/ }),
 
-/***/ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/ms/index.js":
-/*!******************************************************************************************!*\
-  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/demo/node_modules/ms/index.js ***!
-  \******************************************************************************************/
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/ms/index.js":
+/*!************************************************************************************************!*\
+  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/node_modules/ms/index.js ***!
+  \************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -1248,10 +1248,10 @@ function plural(ms, msAbs, n, name) {
 
 /***/ }),
 
-/***/ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/object-assign/index.js":
-/*!*****************************************************************************************************!*\
-  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/demo/node_modules/object-assign/index.js ***!
-  \*****************************************************************************************************/
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/object-assign/index.js":
+/*!***********************************************************************************************************!*\
+  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/node_modules/object-assign/index.js ***!
+  \***********************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1350,10 +1350,10 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 
 /***/ }),
 
-/***/ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/process/browser.js":
-/*!*************************************************************************************************!*\
-  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/demo/node_modules/process/browser.js ***!
-  \*************************************************************************************************/
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/process/browser.js":
+/*!*******************************************************************************************************!*\
+  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/node_modules/process/browser.js ***!
+  \*******************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -1545,10 +1545,10 @@ process.umask = function() { return 0; };
 
 /***/ }),
 
-/***/ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/prop-types/checkPropTypes.js":
-/*!***********************************************************************************************************!*\
-  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/demo/node_modules/prop-types/checkPropTypes.js ***!
-  \***********************************************************************************************************/
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/prop-types/checkPropTypes.js":
+/*!*****************************************************************************************************************!*\
+  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/node_modules/prop-types/checkPropTypes.js ***!
+  \*****************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1565,7 +1565,7 @@ process.umask = function() { return 0; };
 var printWarning = function() {};
 
 if (true) {
-  var ReactPropTypesSecret = __webpack_require__(/*! ./lib/ReactPropTypesSecret */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/prop-types/lib/ReactPropTypesSecret.js");
+  var ReactPropTypesSecret = __webpack_require__(/*! ./lib/ReactPropTypesSecret */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/prop-types/lib/ReactPropTypesSecret.js");
   var loggedTypeFailures = {};
   var has = Function.call.bind(Object.prototype.hasOwnProperty);
 
@@ -1659,10 +1659,10 @@ module.exports = checkPropTypes;
 
 /***/ }),
 
-/***/ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/prop-types/lib/ReactPropTypesSecret.js":
-/*!*********************************************************************************************************************!*\
-  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/demo/node_modules/prop-types/lib/ReactPropTypesSecret.js ***!
-  \*********************************************************************************************************************/
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/prop-types/lib/ReactPropTypesSecret.js":
+/*!***************************************************************************************************************************!*\
+  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/node_modules/prop-types/lib/ReactPropTypesSecret.js ***!
+  \***************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1683,10 +1683,10 @@ module.exports = ReactPropTypesSecret;
 
 /***/ }),
 
-/***/ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/querystringify/index.js":
-/*!******************************************************************************************************!*\
-  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/demo/node_modules/querystringify/index.js ***!
-  \******************************************************************************************************/
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/querystringify/index.js":
+/*!************************************************************************************************************!*\
+  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/node_modules/querystringify/index.js ***!
+  \************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1813,10 +1813,10 @@ exports.parse = querystring;
 
 /***/ }),
 
-/***/ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/react-dom/cjs/react-dom.development.js":
-/*!*********************************************************************************************************************!*\
-  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/demo/node_modules/react-dom/cjs/react-dom.development.js ***!
-  \*********************************************************************************************************************/
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/react-dom/cjs/react-dom.development.js":
+/*!***************************************************************************************************************************!*\
+  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/node_modules/react-dom/cjs/react-dom.development.js ***!
+  \***************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1838,11 +1838,11 @@ if (true) {
   (function() {
 'use strict';
 
-var React = __webpack_require__(/*! react */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/react/index.js");
-var _assign = __webpack_require__(/*! object-assign */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/object-assign/index.js");
-var Scheduler = __webpack_require__(/*! scheduler */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/scheduler/index.js");
-var checkPropTypes = __webpack_require__(/*! prop-types/checkPropTypes */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/prop-types/checkPropTypes.js");
-var tracing = __webpack_require__(/*! scheduler/tracing */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/scheduler/tracing.js");
+var React = __webpack_require__(/*! react */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/react/index.js");
+var _assign = __webpack_require__(/*! object-assign */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/object-assign/index.js");
+var Scheduler = __webpack_require__(/*! scheduler */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/scheduler/index.js");
+var checkPropTypes = __webpack_require__(/*! prop-types/checkPropTypes */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/prop-types/checkPropTypes.js");
+var tracing = __webpack_require__(/*! scheduler/tracing */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/scheduler/tracing.js");
 
 // Do not require this module directly! Use normal `invariant` calls with
 // template literal strings. The messages will be replaced with error codes
@@ -29620,10 +29620,10 @@ module.exports = reactDom;
 
 /***/ }),
 
-/***/ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/react-dom/index.js":
-/*!*************************************************************************************************!*\
-  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/demo/node_modules/react-dom/index.js ***!
-  \*************************************************************************************************/
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/react-dom/index.js":
+/*!*******************************************************************************************************!*\
+  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/node_modules/react-dom/index.js ***!
+  \*******************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -29659,16 +29659,16 @@ function checkDCE() {
 }
 
 if (false) {} else {
-  module.exports = __webpack_require__(/*! ./cjs/react-dom.development.js */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/react-dom/cjs/react-dom.development.js");
+  module.exports = __webpack_require__(/*! ./cjs/react-dom.development.js */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/react-dom/cjs/react-dom.development.js");
 }
 
 
 /***/ }),
 
-/***/ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/react/cjs/react.development.js":
-/*!*************************************************************************************************************!*\
-  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/demo/node_modules/react/cjs/react.development.js ***!
-  \*************************************************************************************************************/
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/react/cjs/react.development.js":
+/*!*******************************************************************************************************************!*\
+  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/node_modules/react/cjs/react.development.js ***!
+  \*******************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -29690,8 +29690,8 @@ if (true) {
   (function() {
 'use strict';
 
-var _assign = __webpack_require__(/*! object-assign */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/object-assign/index.js");
-var checkPropTypes = __webpack_require__(/*! prop-types/checkPropTypes */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/prop-types/checkPropTypes.js");
+var _assign = __webpack_require__(/*! object-assign */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/object-assign/index.js");
+var checkPropTypes = __webpack_require__(/*! prop-types/checkPropTypes */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/prop-types/checkPropTypes.js");
 
 // TODO: this is special because it gets imported during build.
 
@@ -31997,10 +31997,10 @@ module.exports = react;
 
 /***/ }),
 
-/***/ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/react/index.js":
-/*!*********************************************************************************************!*\
-  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/demo/node_modules/react/index.js ***!
-  \*********************************************************************************************/
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/react/index.js":
+/*!***************************************************************************************************!*\
+  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/node_modules/react/index.js ***!
+  \***************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -32008,16 +32008,16 @@ module.exports = react;
 
 
 if (false) {} else {
-  module.exports = __webpack_require__(/*! ./cjs/react.development.js */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/react/cjs/react.development.js");
+  module.exports = __webpack_require__(/*! ./cjs/react.development.js */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/react/cjs/react.development.js");
 }
 
 
 /***/ }),
 
-/***/ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/requires-port/index.js":
-/*!*****************************************************************************************************!*\
-  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/demo/node_modules/requires-port/index.js ***!
-  \*****************************************************************************************************/
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/requires-port/index.js":
+/*!***********************************************************************************************************!*\
+  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/node_modules/requires-port/index.js ***!
+  \***********************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -32064,10 +32064,10 @@ module.exports = function required(port, protocol) {
 
 /***/ }),
 
-/***/ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/rest/UrlBuilder.js":
-/*!*************************************************************************************************!*\
-  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/demo/node_modules/rest/UrlBuilder.js ***!
-  \*************************************************************************************************/
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/rest/UrlBuilder.js":
+/*!*******************************************************************************************************!*\
+  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/node_modules/rest/UrlBuilder.js ***!
+  \*******************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -32087,7 +32087,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/*
 
 		var mixin, origin, urlRE, absoluteUrlRE, fullyQualifiedUrlRE;
 
-		mixin = __webpack_require__(/*! ./util/mixin */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/rest/util/mixin.js");
+		mixin = __webpack_require__(/*! ./util/mixin */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/rest/util/mixin.js");
 
 		urlRE = /([a-z][a-z0-9\+\-\.]*:)\/\/([^@]+@)?(([^:\/]+)(:([0-9]+))?)?(\/[^?#]*)?(\?[^#]*)?(#\S*)?/i;
 		absoluteUrlRE = /^([a-z][a-z0-9\-\+\.]*:\/\/|\/)/i;
@@ -32297,7 +32297,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/*
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
 
 }(
-	__webpack_require__(/*! !webpack amd define */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/webpack/buildin/amd-define.js"),
+	__webpack_require__(/*! !webpack amd define */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/webpack/buildin/amd-define.js"),
 	typeof window !== 'undefined' ? window.location : void 0
 	// Boilerplate for AMD and Node
 ));
@@ -32305,10 +32305,10 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/*
 
 /***/ }),
 
-/***/ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/rest/browser.js":
-/*!**********************************************************************************************!*\
-  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/demo/node_modules/rest/browser.js ***!
-  \**********************************************************************************************/
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/rest/browser.js":
+/*!****************************************************************************************************!*\
+  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/node_modules/rest/browser.js ***!
+  \****************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -32324,8 +32324,8 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/*
 
 	!(__WEBPACK_AMD_DEFINE_RESULT__ = (function (require) {
 
-		var rest = __webpack_require__(/*! ./client/default */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/rest/client/default.js"),
-		    browser = __webpack_require__(/*! ./client/xhr */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/rest/client/xhr.js");
+		var rest = __webpack_require__(/*! ./client/default */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/rest/client/default.js"),
+		    browser = __webpack_require__(/*! ./client/xhr */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/rest/client/xhr.js");
 
 		rest.setPlatformDefaultClient(browser);
 
@@ -32335,17 +32335,17 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/*
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
 
 }(
-	__webpack_require__(/*! !webpack amd define */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/webpack/buildin/amd-define.js")
+	__webpack_require__(/*! !webpack amd define */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/webpack/buildin/amd-define.js")
 	// Boilerplate for AMD and Node
 ));
 
 
 /***/ }),
 
-/***/ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/rest/client.js":
-/*!*********************************************************************************************!*\
-  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/demo/node_modules/rest/client.js ***!
-  \*********************************************************************************************/
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/rest/client.js":
+/*!***************************************************************************************************!*\
+  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/node_modules/rest/client.js ***!
+  \***************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -32411,17 +32411,17 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/*
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
 
 }(
-	__webpack_require__(/*! !webpack amd define */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/webpack/buildin/amd-define.js")
+	__webpack_require__(/*! !webpack amd define */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/webpack/buildin/amd-define.js")
 	// Boilerplate for AMD and Node
 ));
 
 
 /***/ }),
 
-/***/ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/rest/client/default.js":
-/*!*****************************************************************************************************!*\
-  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/demo/node_modules/rest/client/default.js ***!
-  \*****************************************************************************************************/
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/rest/client/default.js":
+/*!***********************************************************************************************************!*\
+  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/node_modules/rest/client/default.js ***!
+  \***********************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -32497,7 +32497,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/*
 
 		var client, target, platformDefault;
 
-		client = __webpack_require__(/*! ../client */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/rest/client.js");
+		client = __webpack_require__(/*! ../client */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/rest/client.js");
 
 		/**
 		 * Make a request with the default client
@@ -32547,17 +32547,17 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/*
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
 
 }(
-	__webpack_require__(/*! !webpack amd define */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/webpack/buildin/amd-define.js")
+	__webpack_require__(/*! !webpack amd define */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/webpack/buildin/amd-define.js")
 	// Boilerplate for AMD and Node
 ));
 
 
 /***/ }),
 
-/***/ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/rest/client/xhr.js":
-/*!*************************************************************************************************!*\
-  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/demo/node_modules/rest/client/xhr.js ***!
-  \*************************************************************************************************/
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/rest/client/xhr.js":
+/*!*******************************************************************************************************!*\
+  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/node_modules/rest/client/xhr.js ***!
+  \*******************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -32575,11 +32575,11 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/*
 
 		var when, UrlBuilder, normalizeHeaderName, responsePromise, client, headerSplitRE;
 
-		when = __webpack_require__(/*! when */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/when/when.js");
-		UrlBuilder = __webpack_require__(/*! ../UrlBuilder */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/rest/UrlBuilder.js");
-		normalizeHeaderName = __webpack_require__(/*! ../util/normalizeHeaderName */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/rest/util/normalizeHeaderName.js");
-		responsePromise = __webpack_require__(/*! ../util/responsePromise */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/rest/util/responsePromise.js");
-		client = __webpack_require__(/*! ../client */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/rest/client.js");
+		when = __webpack_require__(/*! when */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/when/when.js");
+		UrlBuilder = __webpack_require__(/*! ../UrlBuilder */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/rest/UrlBuilder.js");
+		normalizeHeaderName = __webpack_require__(/*! ../util/normalizeHeaderName */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/rest/util/normalizeHeaderName.js");
+		responsePromise = __webpack_require__(/*! ../util/responsePromise */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/rest/util/responsePromise.js");
+		client = __webpack_require__(/*! ../client */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/rest/client.js");
 
 		// according to the spec, the line break is '\r\n', but doesn't hold true in practice
 		headerSplitRE = /[\r|\n]+/;
@@ -32732,7 +32732,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/*
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
 
 }(
-	__webpack_require__(/*! !webpack amd define */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/webpack/buildin/amd-define.js"),
+	__webpack_require__(/*! !webpack amd define */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/webpack/buildin/amd-define.js"),
 	typeof window !== 'undefined' ? window : void 0
 	// Boilerplate for AMD and Node
 ));
@@ -32740,10 +32740,10 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/*
 
 /***/ }),
 
-/***/ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/rest/interceptor.js":
-/*!**************************************************************************************************!*\
-  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/demo/node_modules/rest/interceptor.js ***!
-  \**************************************************************************************************/
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/rest/interceptor.js":
+/*!********************************************************************************************************!*\
+  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/node_modules/rest/interceptor.js ***!
+  \********************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -32761,11 +32761,11 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/*
 
 		var defaultClient, mixin, responsePromise, client, when;
 
-		defaultClient = __webpack_require__(/*! ./client/default */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/rest/client/default.js");
-		mixin = __webpack_require__(/*! ./util/mixin */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/rest/util/mixin.js");
-		responsePromise = __webpack_require__(/*! ./util/responsePromise */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/rest/util/responsePromise.js");
-		client = __webpack_require__(/*! ./client */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/rest/client.js");
-		when = __webpack_require__(/*! when */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/when/when.js");
+		defaultClient = __webpack_require__(/*! ./client/default */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/rest/client/default.js");
+		mixin = __webpack_require__(/*! ./util/mixin */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/rest/util/mixin.js");
+		responsePromise = __webpack_require__(/*! ./util/responsePromise */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/rest/util/responsePromise.js");
+		client = __webpack_require__(/*! ./client */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/rest/client.js");
+		when = __webpack_require__(/*! when */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/when/when.js");
 
 		/**
 		 * Interceptors have the ability to intercept the request and/org response
@@ -32910,17 +32910,17 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/*
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
 
 }(
-	__webpack_require__(/*! !webpack amd define */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/webpack/buildin/amd-define.js")
+	__webpack_require__(/*! !webpack amd define */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/webpack/buildin/amd-define.js")
 	// Boilerplate for AMD and Node
 ));
 
 
 /***/ }),
 
-/***/ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/rest/interceptor/defaultRequest.js":
-/*!*****************************************************************************************************************!*\
-  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/demo/node_modules/rest/interceptor/defaultRequest.js ***!
-  \*****************************************************************************************************************/
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/rest/interceptor/defaultRequest.js":
+/*!***********************************************************************************************************************!*\
+  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/node_modules/rest/interceptor/defaultRequest.js ***!
+  \***********************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -32938,8 +32938,8 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/*
 
 		var interceptor, mixinUtil, defaulter;
 
-		interceptor = __webpack_require__(/*! ../interceptor */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/rest/interceptor.js");
-		mixinUtil = __webpack_require__(/*! ../util/mixin */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/rest/util/mixin.js");
+		interceptor = __webpack_require__(/*! ../interceptor */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/rest/interceptor.js");
+		mixinUtil = __webpack_require__(/*! ../util/mixin */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/rest/util/mixin.js");
 
 		defaulter = (function () {
 
@@ -33001,17 +33001,17 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/*
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
 
 }(
-	__webpack_require__(/*! !webpack amd define */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/webpack/buildin/amd-define.js")
+	__webpack_require__(/*! !webpack amd define */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/webpack/buildin/amd-define.js")
 	// Boilerplate for AMD and Node
 ));
 
 
 /***/ }),
 
-/***/ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/rest/interceptor/errorCode.js":
-/*!************************************************************************************************************!*\
-  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/demo/node_modules/rest/interceptor/errorCode.js ***!
-  \************************************************************************************************************/
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/rest/interceptor/errorCode.js":
+/*!******************************************************************************************************************!*\
+  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/node_modules/rest/interceptor/errorCode.js ***!
+  \******************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -33029,8 +33029,8 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/*
 
 		var interceptor, when;
 
-		interceptor = __webpack_require__(/*! ../interceptor */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/rest/interceptor.js");
-		when = __webpack_require__(/*! when */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/when/when.js");
+		interceptor = __webpack_require__(/*! ../interceptor */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/rest/interceptor.js");
+		when = __webpack_require__(/*! when */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/when/when.js");
 
 		/**
 		 * Rejects the response promise based on the status code.
@@ -33060,17 +33060,17 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/*
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
 
 }(
-	__webpack_require__(/*! !webpack amd define */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/webpack/buildin/amd-define.js")
+	__webpack_require__(/*! !webpack amd define */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/webpack/buildin/amd-define.js")
 	// Boilerplate for AMD and Node
 ));
 
 
 /***/ }),
 
-/***/ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/rest/interceptor/mime.js":
-/*!*******************************************************************************************************!*\
-  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/demo/node_modules/rest/interceptor/mime.js ***!
-  \*******************************************************************************************************/
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/rest/interceptor/mime.js":
+/*!*************************************************************************************************************!*\
+  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/node_modules/rest/interceptor/mime.js ***!
+  \*************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -33088,10 +33088,10 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/*
 
 		var interceptor, mime, registry, noopConverter, when;
 
-		interceptor = __webpack_require__(/*! ../interceptor */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/rest/interceptor.js");
-		mime = __webpack_require__(/*! ../mime */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/rest/mime.js");
-		registry = __webpack_require__(/*! ../mime/registry */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/rest/mime/registry.js");
-		when = __webpack_require__(/*! when */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/when/when.js");
+		interceptor = __webpack_require__(/*! ../interceptor */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/rest/interceptor.js");
+		mime = __webpack_require__(/*! ../mime */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/rest/mime.js");
+		registry = __webpack_require__(/*! ../mime/registry */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/rest/mime/registry.js");
+		when = __webpack_require__(/*! when */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/when/when.js");
 
 		noopConverter = {
 			read: function (obj) { return obj; },
@@ -33182,17 +33182,17 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/*
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
 
 }(
-	__webpack_require__(/*! !webpack amd define */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/webpack/buildin/amd-define.js")
+	__webpack_require__(/*! !webpack amd define */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/webpack/buildin/amd-define.js")
 	// Boilerplate for AMD and Node
 ));
 
 
 /***/ }),
 
-/***/ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/rest/interceptor/pathPrefix.js":
-/*!*************************************************************************************************************!*\
-  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/demo/node_modules/rest/interceptor/pathPrefix.js ***!
-  \*************************************************************************************************************/
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/rest/interceptor/pathPrefix.js":
+/*!*******************************************************************************************************************!*\
+  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/node_modules/rest/interceptor/pathPrefix.js ***!
+  \*******************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -33210,8 +33210,8 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/*
 
 		var interceptor, UrlBuilder;
 
-		interceptor = __webpack_require__(/*! ../interceptor */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/rest/interceptor.js");
-		UrlBuilder = __webpack_require__(/*! ../UrlBuilder */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/rest/UrlBuilder.js");
+		interceptor = __webpack_require__(/*! ../interceptor */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/rest/interceptor.js");
+		UrlBuilder = __webpack_require__(/*! ../UrlBuilder */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/rest/UrlBuilder.js");
 
 		function startsWith(str, prefix) {
 			return str.indexOf(prefix) === 0;
@@ -33253,17 +33253,17 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/*
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
 
 }(
-	__webpack_require__(/*! !webpack amd define */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/webpack/buildin/amd-define.js")
+	__webpack_require__(/*! !webpack amd define */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/webpack/buildin/amd-define.js")
 	// Boilerplate for AMD and Node
 ));
 
 
 /***/ }),
 
-/***/ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/rest/interceptor/template.js":
-/*!***********************************************************************************************************!*\
-  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/demo/node_modules/rest/interceptor/template.js ***!
-  \***********************************************************************************************************/
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/rest/interceptor/template.js":
+/*!*****************************************************************************************************************!*\
+  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/node_modules/rest/interceptor/template.js ***!
+  \*****************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -33281,9 +33281,9 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/*
 
 		var interceptor, uriTemplate, mixin;
 
-		interceptor = __webpack_require__(/*! ../interceptor */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/rest/interceptor.js");
-		uriTemplate = __webpack_require__(/*! ../util/uriTemplate */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/rest/util/uriTemplate.js");
-		mixin = __webpack_require__(/*! ../util/mixin */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/rest/util/mixin.js");
+		interceptor = __webpack_require__(/*! ../interceptor */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/rest/interceptor.js");
+		uriTemplate = __webpack_require__(/*! ../util/uriTemplate */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/rest/util/uriTemplate.js");
+		mixin = __webpack_require__(/*! ../util/mixin */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/rest/util/mixin.js");
 
 		/**
 		 * Applies request params to the path as a URI Template
@@ -33321,17 +33321,17 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/*
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
 
 }(
-	__webpack_require__(/*! !webpack amd define */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/webpack/buildin/amd-define.js")
+	__webpack_require__(/*! !webpack amd define */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/webpack/buildin/amd-define.js")
 	// Boilerplate for AMD and Node
 ));
 
 
 /***/ }),
 
-/***/ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/rest/mime.js":
-/*!*******************************************************************************************!*\
-  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/demo/node_modules/rest/mime.js ***!
-  \*******************************************************************************************/
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/rest/mime.js":
+/*!*************************************************************************************************!*\
+  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/node_modules/rest/mime.js ***!
+  \*************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -33386,17 +33386,17 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/*
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
 
 }(
-	__webpack_require__(/*! !webpack amd define */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/webpack/buildin/amd-define.js")
+	__webpack_require__(/*! !webpack amd define */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/webpack/buildin/amd-define.js")
 	// Boilerplate for AMD and Node
 ));
 
 
 /***/ }),
 
-/***/ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/rest/mime/registry.js":
-/*!****************************************************************************************************!*\
-  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/demo/node_modules/rest/mime/registry.js ***!
-  \****************************************************************************************************/
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/rest/mime/registry.js":
+/*!**********************************************************************************************************!*\
+  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/node_modules/rest/mime/registry.js ***!
+  \**********************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -33414,8 +33414,8 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/*
 
 		var mime, when, registry;
 
-		mime = __webpack_require__(/*! ../mime */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/rest/mime.js");
-		when = __webpack_require__(/*! when */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/when/when.js");
+		mime = __webpack_require__(/*! ../mime */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/rest/mime.js");
+		when = __webpack_require__(/*! when */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/when/when.js");
 
 		function Registry(mimes) {
 
@@ -33499,11 +33499,11 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/*
 		registry = new Registry({});
 
 		// include provided serializers
-		registry.register('application/hal', __webpack_require__(/*! ./type/application/hal */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/rest/mime/type/application/hal.js"));
-		registry.register('application/json', __webpack_require__(/*! ./type/application/json */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/rest/mime/type/application/json.js"));
-		registry.register('application/x-www-form-urlencoded', __webpack_require__(/*! ./type/application/x-www-form-urlencoded */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/rest/mime/type/application/x-www-form-urlencoded.js"));
-		registry.register('multipart/form-data', __webpack_require__(/*! ./type/multipart/form-data */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/rest/mime/type/multipart/form-data.js"));
-		registry.register('text/plain', __webpack_require__(/*! ./type/text/plain */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/rest/mime/type/text/plain.js"));
+		registry.register('application/hal', __webpack_require__(/*! ./type/application/hal */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/rest/mime/type/application/hal.js"));
+		registry.register('application/json', __webpack_require__(/*! ./type/application/json */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/rest/mime/type/application/json.js"));
+		registry.register('application/x-www-form-urlencoded', __webpack_require__(/*! ./type/application/x-www-form-urlencoded */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/rest/mime/type/application/x-www-form-urlencoded.js"));
+		registry.register('multipart/form-data', __webpack_require__(/*! ./type/multipart/form-data */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/rest/mime/type/multipart/form-data.js"));
+		registry.register('text/plain', __webpack_require__(/*! ./type/text/plain */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/rest/mime/type/text/plain.js"));
 
 		registry.register('+json', registry.delegate('application/json'));
 
@@ -33513,17 +33513,17 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/*
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
 
 }(
-	__webpack_require__(/*! !webpack amd define */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/webpack/buildin/amd-define.js")
+	__webpack_require__(/*! !webpack amd define */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/webpack/buildin/amd-define.js")
 	// Boilerplate for AMD and Node
 ));
 
 
 /***/ }),
 
-/***/ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/rest/mime/type/application/hal.js":
-/*!****************************************************************************************************************!*\
-  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/demo/node_modules/rest/mime/type/application/hal.js ***!
-  \****************************************************************************************************************/
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/rest/mime/type/application/hal.js":
+/*!**********************************************************************************************************************!*\
+  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/node_modules/rest/mime/type/application/hal.js ***!
+  \**********************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -33541,12 +33541,12 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/*
 
 		var pathPrefix, template, find, lazyPromise, responsePromise, when;
 
-		pathPrefix = __webpack_require__(/*! ../../../interceptor/pathPrefix */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/rest/interceptor/pathPrefix.js");
-		template = __webpack_require__(/*! ../../../interceptor/template */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/rest/interceptor/template.js");
-		find = __webpack_require__(/*! ../../../util/find */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/rest/util/find.js");
-		lazyPromise = __webpack_require__(/*! ../../../util/lazyPromise */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/rest/util/lazyPromise.js");
-		responsePromise = __webpack_require__(/*! ../../../util/responsePromise */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/rest/util/responsePromise.js");
-		when = __webpack_require__(/*! when */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/when/when.js");
+		pathPrefix = __webpack_require__(/*! ../../../interceptor/pathPrefix */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/rest/interceptor/pathPrefix.js");
+		template = __webpack_require__(/*! ../../../interceptor/template */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/rest/interceptor/template.js");
+		find = __webpack_require__(/*! ../../../util/find */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/rest/util/find.js");
+		lazyPromise = __webpack_require__(/*! ../../../util/lazyPromise */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/rest/util/lazyPromise.js");
+		responsePromise = __webpack_require__(/*! ../../../util/responsePromise */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/rest/util/responsePromise.js");
+		when = __webpack_require__(/*! when */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/when/when.js");
 
 		function defineProperty(obj, name, value) {
 			Object.defineProperty(obj, name, {
@@ -33664,17 +33664,17 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/*
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
 
 }(
-	__webpack_require__(/*! !webpack amd define */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/webpack/buildin/amd-define.js")
+	__webpack_require__(/*! !webpack amd define */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/webpack/buildin/amd-define.js")
 	// Boilerplate for AMD and Node
 ));
 
 
 /***/ }),
 
-/***/ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/rest/mime/type/application/json.js":
-/*!*****************************************************************************************************************!*\
-  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/demo/node_modules/rest/mime/type/application/json.js ***!
-  \*****************************************************************************************************************/
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/rest/mime/type/application/json.js":
+/*!***********************************************************************************************************************!*\
+  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/node_modules/rest/mime/type/application/json.js ***!
+  \***********************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -33723,17 +33723,17 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/*
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
 
 }(
-	__webpack_require__(/*! !webpack amd define */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/webpack/buildin/amd-define.js")
+	__webpack_require__(/*! !webpack amd define */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/webpack/buildin/amd-define.js")
 	// Boilerplate for AMD and Node
 ));
 
 
 /***/ }),
 
-/***/ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/rest/mime/type/application/x-www-form-urlencoded.js":
-/*!**********************************************************************************************************************************!*\
-  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/demo/node_modules/rest/mime/type/application/x-www-form-urlencoded.js ***!
-  \**********************************************************************************************************************************/
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/rest/mime/type/application/x-www-form-urlencoded.js":
+/*!****************************************************************************************************************************************!*\
+  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/node_modules/rest/mime/type/application/x-www-form-urlencoded.js ***!
+  \****************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -33825,17 +33825,17 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/*
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
 
 }(
-	__webpack_require__(/*! !webpack amd define */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/webpack/buildin/amd-define.js")
+	__webpack_require__(/*! !webpack amd define */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/webpack/buildin/amd-define.js")
 	// Boilerplate for AMD and Node
 ));
 
 
 /***/ }),
 
-/***/ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/rest/mime/type/multipart/form-data.js":
-/*!********************************************************************************************************************!*\
-  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/demo/node_modules/rest/mime/type/multipart/form-data.js ***!
-  \********************************************************************************************************************/
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/rest/mime/type/multipart/form-data.js":
+/*!**************************************************************************************************************************!*\
+  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/node_modules/rest/mime/type/multipart/form-data.js ***!
+  \**************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -33910,17 +33910,17 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/*
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
 
 }(
-	__webpack_require__(/*! !webpack amd define */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/webpack/buildin/amd-define.js")
+	__webpack_require__(/*! !webpack amd define */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/webpack/buildin/amd-define.js")
 	// Boilerplate for AMD and Node
 ));
 
 
 /***/ }),
 
-/***/ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/rest/mime/type/text/plain.js":
-/*!***********************************************************************************************************!*\
-  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/demo/node_modules/rest/mime/type/text/plain.js ***!
-  \***********************************************************************************************************/
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/rest/mime/type/text/plain.js":
+/*!*****************************************************************************************************************!*\
+  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/node_modules/rest/mime/type/text/plain.js ***!
+  \*****************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -33951,17 +33951,17 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/*
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
 
 }(
-	__webpack_require__(/*! !webpack amd define */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/webpack/buildin/amd-define.js")
+	__webpack_require__(/*! !webpack amd define */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/webpack/buildin/amd-define.js")
 	// Boilerplate for AMD and Node
 ));
 
 
 /***/ }),
 
-/***/ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/rest/util/find.js":
-/*!************************************************************************************************!*\
-  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/demo/node_modules/rest/util/find.js ***!
-  \************************************************************************************************/
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/rest/util/find.js":
+/*!******************************************************************************************************!*\
+  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/node_modules/rest/util/find.js ***!
+  \******************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -34004,17 +34004,17 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/*
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
 
 }(
-	__webpack_require__(/*! !webpack amd define */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/webpack/buildin/amd-define.js")
+	__webpack_require__(/*! !webpack amd define */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/webpack/buildin/amd-define.js")
 	// Boilerplate for AMD and Node
 ));
 
 
 /***/ }),
 
-/***/ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/rest/util/lazyPromise.js":
-/*!*******************************************************************************************************!*\
-  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/demo/node_modules/rest/util/lazyPromise.js ***!
-  \*******************************************************************************************************/
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/rest/util/lazyPromise.js":
+/*!*************************************************************************************************************!*\
+  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/node_modules/rest/util/lazyPromise.js ***!
+  \*************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -34032,7 +34032,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/*
 
 		var when;
 
-		when = __webpack_require__(/*! when */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/when/when.js");
+		when = __webpack_require__(/*! when */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/when/when.js");
 
 		/**
 		 * Create a promise whose work is started only when a handler is registered.
@@ -34071,17 +34071,17 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/*
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
 
 }(
-	__webpack_require__(/*! !webpack amd define */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/webpack/buildin/amd-define.js")
+	__webpack_require__(/*! !webpack amd define */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/webpack/buildin/amd-define.js")
 	// Boilerplate for AMD and Node
 ));
 
 
 /***/ }),
 
-/***/ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/rest/util/mixin.js":
-/*!*************************************************************************************************!*\
-  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/demo/node_modules/rest/util/mixin.js ***!
-  \*************************************************************************************************/
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/rest/util/mixin.js":
+/*!*******************************************************************************************************!*\
+  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/node_modules/rest/util/mixin.js ***!
+  \*******************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -34131,17 +34131,17 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/*
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
 
 }(
-	__webpack_require__(/*! !webpack amd define */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/webpack/buildin/amd-define.js")
+	__webpack_require__(/*! !webpack amd define */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/webpack/buildin/amd-define.js")
 	// Boilerplate for AMD and Node
 ));
 
 
 /***/ }),
 
-/***/ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/rest/util/normalizeHeaderName.js":
-/*!***************************************************************************************************************!*\
-  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/demo/node_modules/rest/util/normalizeHeaderName.js ***!
-  \***************************************************************************************************************/
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/rest/util/normalizeHeaderName.js":
+/*!*********************************************************************************************************************!*\
+  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/node_modules/rest/util/normalizeHeaderName.js ***!
+  \*********************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -34181,17 +34181,17 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/*
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
 
 }(
-	__webpack_require__(/*! !webpack amd define */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/webpack/buildin/amd-define.js")
+	__webpack_require__(/*! !webpack amd define */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/webpack/buildin/amd-define.js")
 	// Boilerplate for AMD and Node
 ));
 
 
 /***/ }),
 
-/***/ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/rest/util/responsePromise.js":
-/*!***********************************************************************************************************!*\
-  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/demo/node_modules/rest/util/responsePromise.js ***!
-  \***********************************************************************************************************/
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/rest/util/responsePromise.js":
+/*!*****************************************************************************************************************!*\
+  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/node_modules/rest/util/responsePromise.js ***!
+  \*****************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -34207,8 +34207,8 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/*
 
 	!(__WEBPACK_AMD_DEFINE_RESULT__ = (function (require) {
 
-		var when = __webpack_require__(/*! when */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/when/when.js"),
-			normalizeHeaderName = __webpack_require__(/*! ./normalizeHeaderName */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/rest/util/normalizeHeaderName.js");
+		var when = __webpack_require__(/*! when */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/when/when.js"),
+			normalizeHeaderName = __webpack_require__(/*! ./normalizeHeaderName */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/rest/util/normalizeHeaderName.js");
 
 		function property(promise, name) {
 			return promise.then(
@@ -34333,17 +34333,17 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/*
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
 
 }(
-	__webpack_require__(/*! !webpack amd define */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/webpack/buildin/amd-define.js")
+	__webpack_require__(/*! !webpack amd define */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/webpack/buildin/amd-define.js")
 	// Boilerplate for AMD and Node
 ));
 
 
 /***/ }),
 
-/***/ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/rest/util/uriEncoder.js":
-/*!******************************************************************************************************!*\
-  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/demo/node_modules/rest/util/uriEncoder.js ***!
-  \******************************************************************************************************/
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/rest/util/uriEncoder.js":
+/*!************************************************************************************************************!*\
+  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/node_modules/rest/util/uriEncoder.js ***!
+  \************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -34525,17 +34525,17 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/*
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
 
 }(
-	__webpack_require__(/*! !webpack amd define */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/webpack/buildin/amd-define.js")
+	__webpack_require__(/*! !webpack amd define */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/webpack/buildin/amd-define.js")
 	// Boilerplate for AMD and Node
 ));
 
 
 /***/ }),
 
-/***/ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/rest/util/uriTemplate.js":
-/*!*******************************************************************************************************!*\
-  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/demo/node_modules/rest/util/uriTemplate.js ***!
-  \*******************************************************************************************************/
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/rest/util/uriTemplate.js":
+/*!*************************************************************************************************************!*\
+  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/node_modules/rest/util/uriTemplate.js ***!
+  \*************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -34555,7 +34555,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/*
 
 		var uriEncoder, operations, prefixRE;
 
-		uriEncoder = __webpack_require__(/*! ./uriEncoder */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/rest/util/uriEncoder.js");
+		uriEncoder = __webpack_require__(/*! ./uriEncoder */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/rest/util/uriEncoder.js");
 
 		prefixRE = /^([^:]*):([0-9]+)$/;
 		operations = {
@@ -34709,17 +34709,17 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/*
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
 
 }(
-	__webpack_require__(/*! !webpack amd define */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/webpack/buildin/amd-define.js")
+	__webpack_require__(/*! !webpack amd define */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/webpack/buildin/amd-define.js")
 	// Boilerplate for AMD and Node
 ));
 
 
 /***/ }),
 
-/***/ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/scheduler/cjs/scheduler-tracing.development.js":
-/*!*****************************************************************************************************************************!*\
-  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/demo/node_modules/scheduler/cjs/scheduler-tracing.development.js ***!
-  \*****************************************************************************************************************************/
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/scheduler/cjs/scheduler-tracing.development.js":
+/*!***********************************************************************************************************************************!*\
+  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/node_modules/scheduler/cjs/scheduler-tracing.development.js ***!
+  \***********************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -35151,10 +35151,10 @@ exports.unstable_unsubscribe = unstable_unsubscribe;
 
 /***/ }),
 
-/***/ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/scheduler/cjs/scheduler.development.js":
-/*!*********************************************************************************************************************!*\
-  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/demo/node_modules/scheduler/cjs/scheduler.development.js ***!
-  \*********************************************************************************************************************/
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/scheduler/cjs/scheduler.development.js":
+/*!***************************************************************************************************************************!*\
+  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/node_modules/scheduler/cjs/scheduler.development.js ***!
+  \***************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -36067,10 +36067,10 @@ exports.unstable_Profiling = unstable_Profiling;
 
 /***/ }),
 
-/***/ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/scheduler/index.js":
-/*!*************************************************************************************************!*\
-  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/demo/node_modules/scheduler/index.js ***!
-  \*************************************************************************************************/
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/scheduler/index.js":
+/*!*******************************************************************************************************!*\
+  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/node_modules/scheduler/index.js ***!
+  \*******************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -36078,64 +36078,64 @@ exports.unstable_Profiling = unstable_Profiling;
 
 
 if (false) {} else {
-  module.exports = __webpack_require__(/*! ./cjs/scheduler.development.js */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/scheduler/cjs/scheduler.development.js");
+  module.exports = __webpack_require__(/*! ./cjs/scheduler.development.js */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/scheduler/cjs/scheduler.development.js");
 }
 
 
 /***/ }),
 
-/***/ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/scheduler/tracing.js":
-/*!***************************************************************************************************!*\
-  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/demo/node_modules/scheduler/tracing.js ***!
-  \***************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-if (false) {} else {
-  module.exports = __webpack_require__(/*! ./cjs/scheduler-tracing.development.js */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/scheduler/cjs/scheduler-tracing.development.js");
-}
-
-
-/***/ }),
-
-/***/ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/entry.js":
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/scheduler/tracing.js":
 /*!*********************************************************************************************************!*\
-  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/entry.js ***!
+  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/node_modules/scheduler/tracing.js ***!
   \*********************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+if (false) {} else {
+  module.exports = __webpack_require__(/*! ./cjs/scheduler-tracing.development.js */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/scheduler/cjs/scheduler-tracing.development.js");
+}
+
+
+/***/ }),
+
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/entry.js":
+/*!***************************************************************************************************************!*\
+  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/entry.js ***!
+  \***************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(global) {
 
-var transportList = __webpack_require__(/*! ./transport-list */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/transport-list.js");
+var transportList = __webpack_require__(/*! ./transport-list */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/transport-list.js");
 
-module.exports = __webpack_require__(/*! ./main */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/main.js")(transportList);
+module.exports = __webpack_require__(/*! ./main */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/main.js")(transportList);
 
 // TODO can't get rid of this until all servers do
 if ('_sockjs_onload' in global) {
   setTimeout(global._sockjs_onload, 1);
 }
 
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../webpack/buildin/global.js */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/webpack/buildin/global.js")))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../webpack/buildin/global.js */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/webpack/buildin/global.js")))
 
 /***/ }),
 
-/***/ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/event/close.js":
-/*!***************************************************************************************************************!*\
-  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/event/close.js ***!
-  \***************************************************************************************************************/
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/event/close.js":
+/*!*********************************************************************************************************************!*\
+  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/event/close.js ***!
+  \*********************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var inherits = __webpack_require__(/*! inherits */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/inherits/inherits_browser.js")
-  , Event = __webpack_require__(/*! ./event */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/event/event.js")
+var inherits = __webpack_require__(/*! inherits */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/inherits/inherits_browser.js")
+  , Event = __webpack_require__(/*! ./event */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/event/event.js")
   ;
 
 function CloseEvent() {
@@ -36153,18 +36153,18 @@ module.exports = CloseEvent;
 
 /***/ }),
 
-/***/ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/event/emitter.js":
-/*!*****************************************************************************************************************!*\
-  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/event/emitter.js ***!
-  \*****************************************************************************************************************/
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/event/emitter.js":
+/*!***********************************************************************************************************************!*\
+  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/event/emitter.js ***!
+  \***********************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var inherits = __webpack_require__(/*! inherits */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/inherits/inherits_browser.js")
-  , EventTarget = __webpack_require__(/*! ./eventtarget */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/event/eventtarget.js")
+var inherits = __webpack_require__(/*! inherits */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/inherits/inherits_browser.js")
+  , EventTarget = __webpack_require__(/*! ./eventtarget */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/event/eventtarget.js")
   ;
 
 function EventEmitter() {
@@ -36222,10 +36222,10 @@ module.exports.EventEmitter = EventEmitter;
 
 /***/ }),
 
-/***/ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/event/event.js":
-/*!***************************************************************************************************************!*\
-  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/event/event.js ***!
-  \***************************************************************************************************************/
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/event/event.js":
+/*!*********************************************************************************************************************!*\
+  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/event/event.js ***!
+  \*********************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -36256,10 +36256,10 @@ module.exports = Event;
 
 /***/ }),
 
-/***/ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/event/eventtarget.js":
-/*!*********************************************************************************************************************!*\
-  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/event/eventtarget.js ***!
-  \*********************************************************************************************************************/
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/event/eventtarget.js":
+/*!***************************************************************************************************************************!*\
+  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/event/eventtarget.js ***!
+  \***************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -36330,18 +36330,18 @@ module.exports = EventTarget;
 
 /***/ }),
 
-/***/ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/event/trans-message.js":
-/*!***********************************************************************************************************************!*\
-  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/event/trans-message.js ***!
-  \***********************************************************************************************************************/
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/event/trans-message.js":
+/*!*****************************************************************************************************************************!*\
+  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/event/trans-message.js ***!
+  \*****************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var inherits = __webpack_require__(/*! inherits */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/inherits/inherits_browser.js")
-  , Event = __webpack_require__(/*! ./event */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/event/event.js")
+var inherits = __webpack_require__(/*! inherits */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/inherits/inherits_browser.js")
+  , Event = __webpack_require__(/*! ./event */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/event/event.js")
   ;
 
 function TransportMessageEvent(data) {
@@ -36357,18 +36357,18 @@ module.exports = TransportMessageEvent;
 
 /***/ }),
 
-/***/ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/facade.js":
-/*!**********************************************************************************************************!*\
-  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/facade.js ***!
-  \**********************************************************************************************************/
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/facade.js":
+/*!****************************************************************************************************************!*\
+  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/facade.js ***!
+  \****************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var JSON3 = __webpack_require__(/*! json3 */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/json3/lib/json3.js")
-  , iframeUtils = __webpack_require__(/*! ./utils/iframe */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/utils/iframe.js")
+var JSON3 = __webpack_require__(/*! json3 */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/json3/lib/json3.js")
+  , iframeUtils = __webpack_require__(/*! ./utils/iframe */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/utils/iframe.js")
   ;
 
 function FacadeJS(transport) {
@@ -36396,28 +36396,28 @@ module.exports = FacadeJS;
 
 /***/ }),
 
-/***/ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/iframe-bootstrap.js":
-/*!********************************************************************************************************************!*\
-  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/iframe-bootstrap.js ***!
-  \********************************************************************************************************************/
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/iframe-bootstrap.js":
+/*!**************************************************************************************************************************!*\
+  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/iframe-bootstrap.js ***!
+  \**************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var urlUtils = __webpack_require__(/*! ./utils/url */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/utils/url.js")
-  , eventUtils = __webpack_require__(/*! ./utils/event */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/utils/event.js")
-  , JSON3 = __webpack_require__(/*! json3 */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/json3/lib/json3.js")
-  , FacadeJS = __webpack_require__(/*! ./facade */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/facade.js")
-  , InfoIframeReceiver = __webpack_require__(/*! ./info-iframe-receiver */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/info-iframe-receiver.js")
-  , iframeUtils = __webpack_require__(/*! ./utils/iframe */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/utils/iframe.js")
-  , loc = __webpack_require__(/*! ./location */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/location.js")
+var urlUtils = __webpack_require__(/*! ./utils/url */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/utils/url.js")
+  , eventUtils = __webpack_require__(/*! ./utils/event */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/utils/event.js")
+  , JSON3 = __webpack_require__(/*! json3 */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/json3/lib/json3.js")
+  , FacadeJS = __webpack_require__(/*! ./facade */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/facade.js")
+  , InfoIframeReceiver = __webpack_require__(/*! ./info-iframe-receiver */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/info-iframe-receiver.js")
+  , iframeUtils = __webpack_require__(/*! ./utils/iframe */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/utils/iframe.js")
+  , loc = __webpack_require__(/*! ./location */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/location.js")
   ;
 
 var debug = function() {};
 if (true) {
-  debug = __webpack_require__(/*! debug */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/node_modules/debug/src/browser.js")('sockjs-client:iframe-bootstrap');
+  debug = __webpack_require__(/*! debug */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/node_modules/debug/src/browser.js")('sockjs-client:iframe-bootstrap');
 }
 
 module.exports = function(SockJS, availableTransports) {
@@ -36510,25 +36510,25 @@ module.exports = function(SockJS, availableTransports) {
 
 /***/ }),
 
-/***/ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/info-ajax.js":
-/*!*************************************************************************************************************!*\
-  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/info-ajax.js ***!
-  \*************************************************************************************************************/
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/info-ajax.js":
+/*!*******************************************************************************************************************!*\
+  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/info-ajax.js ***!
+  \*******************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var EventEmitter = __webpack_require__(/*! events */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/event/emitter.js").EventEmitter
-  , inherits = __webpack_require__(/*! inherits */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/inherits/inherits_browser.js")
-  , JSON3 = __webpack_require__(/*! json3 */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/json3/lib/json3.js")
-  , objectUtils = __webpack_require__(/*! ./utils/object */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/utils/object.js")
+var EventEmitter = __webpack_require__(/*! events */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/event/emitter.js").EventEmitter
+  , inherits = __webpack_require__(/*! inherits */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/inherits/inherits_browser.js")
+  , JSON3 = __webpack_require__(/*! json3 */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/json3/lib/json3.js")
+  , objectUtils = __webpack_require__(/*! ./utils/object */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/utils/object.js")
   ;
 
 var debug = function() {};
 if (true) {
-  debug = __webpack_require__(/*! debug */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/node_modules/debug/src/browser.js")('sockjs-client:info-ajax');
+  debug = __webpack_require__(/*! debug */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/node_modules/debug/src/browser.js")('sockjs-client:info-ajax');
 }
 
 function InfoAjax(url, AjaxObject) {
@@ -36571,21 +36571,21 @@ module.exports = InfoAjax;
 
 /***/ }),
 
-/***/ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/info-iframe-receiver.js":
-/*!************************************************************************************************************************!*\
-  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/info-iframe-receiver.js ***!
-  \************************************************************************************************************************/
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/info-iframe-receiver.js":
+/*!******************************************************************************************************************************!*\
+  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/info-iframe-receiver.js ***!
+  \******************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var inherits = __webpack_require__(/*! inherits */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/inherits/inherits_browser.js")
-  , EventEmitter = __webpack_require__(/*! events */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/event/emitter.js").EventEmitter
-  , JSON3 = __webpack_require__(/*! json3 */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/json3/lib/json3.js")
-  , XHRLocalObject = __webpack_require__(/*! ./transport/sender/xhr-local */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/transport/sender/xhr-local.js")
-  , InfoAjax = __webpack_require__(/*! ./info-ajax */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/info-ajax.js")
+var inherits = __webpack_require__(/*! inherits */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/inherits/inherits_browser.js")
+  , EventEmitter = __webpack_require__(/*! events */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/event/emitter.js").EventEmitter
+  , JSON3 = __webpack_require__(/*! json3 */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/json3/lib/json3.js")
+  , XHRLocalObject = __webpack_require__(/*! ./transport/sender/xhr-local */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/transport/sender/xhr-local.js")
+  , InfoAjax = __webpack_require__(/*! ./info-ajax */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/info-ajax.js")
   ;
 
 function InfoReceiverIframe(transUrl) {
@@ -36616,27 +36616,27 @@ module.exports = InfoReceiverIframe;
 
 /***/ }),
 
-/***/ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/info-iframe.js":
-/*!***************************************************************************************************************!*\
-  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/info-iframe.js ***!
-  \***************************************************************************************************************/
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/info-iframe.js":
+/*!*********************************************************************************************************************!*\
+  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/info-iframe.js ***!
+  \*********************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(global) {
 
-var EventEmitter = __webpack_require__(/*! events */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/event/emitter.js").EventEmitter
-  , inherits = __webpack_require__(/*! inherits */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/inherits/inherits_browser.js")
-  , JSON3 = __webpack_require__(/*! json3 */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/json3/lib/json3.js")
-  , utils = __webpack_require__(/*! ./utils/event */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/utils/event.js")
-  , IframeTransport = __webpack_require__(/*! ./transport/iframe */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/transport/iframe.js")
-  , InfoReceiverIframe = __webpack_require__(/*! ./info-iframe-receiver */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/info-iframe-receiver.js")
+var EventEmitter = __webpack_require__(/*! events */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/event/emitter.js").EventEmitter
+  , inherits = __webpack_require__(/*! inherits */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/inherits/inherits_browser.js")
+  , JSON3 = __webpack_require__(/*! json3 */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/json3/lib/json3.js")
+  , utils = __webpack_require__(/*! ./utils/event */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/utils/event.js")
+  , IframeTransport = __webpack_require__(/*! ./transport/iframe */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/transport/iframe.js")
+  , InfoReceiverIframe = __webpack_require__(/*! ./info-iframe-receiver */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/info-iframe-receiver.js")
   ;
 
 var debug = function() {};
 if (true) {
-  debug = __webpack_require__(/*! debug */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/node_modules/debug/src/browser.js")('sockjs-client:info-iframe');
+  debug = __webpack_require__(/*! debug */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/node_modules/debug/src/browser.js")('sockjs-client:info-iframe');
 }
 
 function InfoIframe(baseUrl, url) {
@@ -36694,34 +36694,34 @@ InfoIframe.prototype.close = function() {
 
 module.exports = InfoIframe;
 
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../webpack/buildin/global.js */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/webpack/buildin/global.js")))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../webpack/buildin/global.js */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/webpack/buildin/global.js")))
 
 /***/ }),
 
-/***/ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/info-receiver.js":
-/*!*****************************************************************************************************************!*\
-  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/info-receiver.js ***!
-  \*****************************************************************************************************************/
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/info-receiver.js":
+/*!***********************************************************************************************************************!*\
+  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/info-receiver.js ***!
+  \***********************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var EventEmitter = __webpack_require__(/*! events */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/event/emitter.js").EventEmitter
-  , inherits = __webpack_require__(/*! inherits */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/inherits/inherits_browser.js")
-  , urlUtils = __webpack_require__(/*! ./utils/url */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/utils/url.js")
-  , XDR = __webpack_require__(/*! ./transport/sender/xdr */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/transport/sender/xdr.js")
-  , XHRCors = __webpack_require__(/*! ./transport/sender/xhr-cors */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/transport/sender/xhr-cors.js")
-  , XHRLocal = __webpack_require__(/*! ./transport/sender/xhr-local */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/transport/sender/xhr-local.js")
-  , XHRFake = __webpack_require__(/*! ./transport/sender/xhr-fake */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/transport/sender/xhr-fake.js")
-  , InfoIframe = __webpack_require__(/*! ./info-iframe */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/info-iframe.js")
-  , InfoAjax = __webpack_require__(/*! ./info-ajax */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/info-ajax.js")
+var EventEmitter = __webpack_require__(/*! events */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/event/emitter.js").EventEmitter
+  , inherits = __webpack_require__(/*! inherits */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/inherits/inherits_browser.js")
+  , urlUtils = __webpack_require__(/*! ./utils/url */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/utils/url.js")
+  , XDR = __webpack_require__(/*! ./transport/sender/xdr */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/transport/sender/xdr.js")
+  , XHRCors = __webpack_require__(/*! ./transport/sender/xhr-cors */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/transport/sender/xhr-cors.js")
+  , XHRLocal = __webpack_require__(/*! ./transport/sender/xhr-local */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/transport/sender/xhr-local.js")
+  , XHRFake = __webpack_require__(/*! ./transport/sender/xhr-fake */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/transport/sender/xhr-fake.js")
+  , InfoIframe = __webpack_require__(/*! ./info-iframe */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/info-iframe.js")
+  , InfoAjax = __webpack_require__(/*! ./info-ajax */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/info-ajax.js")
   ;
 
 var debug = function() {};
 if (true) {
-  debug = __webpack_require__(/*! debug */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/node_modules/debug/src/browser.js")('sockjs-client:info-receiver');
+  debug = __webpack_require__(/*! debug */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/node_modules/debug/src/browser.js")('sockjs-client:info-receiver');
 }
 
 function InfoReceiver(baseUrl, urlInfo) {
@@ -36799,10 +36799,10 @@ module.exports = InfoReceiver;
 
 /***/ }),
 
-/***/ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/location.js":
-/*!************************************************************************************************************!*\
-  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/location.js ***!
-  \************************************************************************************************************/
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/location.js":
+/*!******************************************************************************************************************!*\
+  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/location.js ***!
+  \******************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -36818,44 +36818,44 @@ module.exports = global.location || {
 , hash: ''
 };
 
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../webpack/buildin/global.js */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/webpack/buildin/global.js")))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../webpack/buildin/global.js */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/webpack/buildin/global.js")))
 
 /***/ }),
 
-/***/ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/main.js":
-/*!********************************************************************************************************!*\
-  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/main.js ***!
-  \********************************************************************************************************/
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/main.js":
+/*!**************************************************************************************************************!*\
+  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/main.js ***!
+  \**************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(global) {
 
-__webpack_require__(/*! ./shims */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/shims.js");
+__webpack_require__(/*! ./shims */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/shims.js");
 
-var URL = __webpack_require__(/*! url-parse */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/url-parse/index.js")
-  , inherits = __webpack_require__(/*! inherits */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/inherits/inherits_browser.js")
-  , JSON3 = __webpack_require__(/*! json3 */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/json3/lib/json3.js")
-  , random = __webpack_require__(/*! ./utils/random */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/utils/random.js")
-  , escape = __webpack_require__(/*! ./utils/escape */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/utils/escape.js")
-  , urlUtils = __webpack_require__(/*! ./utils/url */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/utils/url.js")
-  , eventUtils = __webpack_require__(/*! ./utils/event */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/utils/event.js")
-  , transport = __webpack_require__(/*! ./utils/transport */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/utils/transport.js")
-  , objectUtils = __webpack_require__(/*! ./utils/object */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/utils/object.js")
-  , browser = __webpack_require__(/*! ./utils/browser */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/utils/browser.js")
-  , log = __webpack_require__(/*! ./utils/log */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/utils/log.js")
-  , Event = __webpack_require__(/*! ./event/event */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/event/event.js")
-  , EventTarget = __webpack_require__(/*! ./event/eventtarget */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/event/eventtarget.js")
-  , loc = __webpack_require__(/*! ./location */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/location.js")
-  , CloseEvent = __webpack_require__(/*! ./event/close */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/event/close.js")
-  , TransportMessageEvent = __webpack_require__(/*! ./event/trans-message */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/event/trans-message.js")
-  , InfoReceiver = __webpack_require__(/*! ./info-receiver */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/info-receiver.js")
+var URL = __webpack_require__(/*! url-parse */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/url-parse/index.js")
+  , inherits = __webpack_require__(/*! inherits */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/inherits/inherits_browser.js")
+  , JSON3 = __webpack_require__(/*! json3 */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/json3/lib/json3.js")
+  , random = __webpack_require__(/*! ./utils/random */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/utils/random.js")
+  , escape = __webpack_require__(/*! ./utils/escape */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/utils/escape.js")
+  , urlUtils = __webpack_require__(/*! ./utils/url */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/utils/url.js")
+  , eventUtils = __webpack_require__(/*! ./utils/event */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/utils/event.js")
+  , transport = __webpack_require__(/*! ./utils/transport */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/utils/transport.js")
+  , objectUtils = __webpack_require__(/*! ./utils/object */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/utils/object.js")
+  , browser = __webpack_require__(/*! ./utils/browser */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/utils/browser.js")
+  , log = __webpack_require__(/*! ./utils/log */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/utils/log.js")
+  , Event = __webpack_require__(/*! ./event/event */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/event/event.js")
+  , EventTarget = __webpack_require__(/*! ./event/eventtarget */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/event/eventtarget.js")
+  , loc = __webpack_require__(/*! ./location */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/location.js")
+  , CloseEvent = __webpack_require__(/*! ./event/close */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/event/close.js")
+  , TransportMessageEvent = __webpack_require__(/*! ./event/trans-message */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/event/trans-message.js")
+  , InfoReceiver = __webpack_require__(/*! ./info-receiver */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/info-receiver.js")
   ;
 
 var debug = function() {};
 if (true) {
-  debug = __webpack_require__(/*! debug */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/node_modules/debug/src/browser.js")('sockjs-client:main');
+  debug = __webpack_require__(/*! debug */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/node_modules/debug/src/browser.js")('sockjs-client:main');
 }
 
 var transports;
@@ -36996,7 +36996,7 @@ SockJS.prototype.send = function(data) {
   this._transport.send(escape.quote(data));
 };
 
-SockJS.version = __webpack_require__(/*! ./version */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/version.js");
+SockJS.version = __webpack_require__(/*! ./version */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/version.js");
 
 SockJS.CONNECTING = 0;
 SockJS.OPEN = 1;
@@ -37213,18 +37213,18 @@ SockJS.prototype.countRTO = function(rtt) {
 
 module.exports = function(availableTransports) {
   transports = transport(availableTransports);
-  __webpack_require__(/*! ./iframe-bootstrap */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/iframe-bootstrap.js")(SockJS, availableTransports);
+  __webpack_require__(/*! ./iframe-bootstrap */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/iframe-bootstrap.js")(SockJS, availableTransports);
   return SockJS;
 };
 
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../webpack/buildin/global.js */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/webpack/buildin/global.js")))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../webpack/buildin/global.js */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/webpack/buildin/global.js")))
 
 /***/ }),
 
-/***/ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/shims.js":
-/*!*********************************************************************************************************!*\
-  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/shims.js ***!
-  \*********************************************************************************************************/
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/shims.js":
+/*!***************************************************************************************************************!*\
+  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/shims.js ***!
+  \***************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -37685,10 +37685,10 @@ defineProperties(StringPrototype, {
 
 /***/ }),
 
-/***/ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/transport-list.js":
-/*!******************************************************************************************************************!*\
-  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/transport-list.js ***!
-  \******************************************************************************************************************/
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/transport-list.js":
+/*!************************************************************************************************************************!*\
+  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/transport-list.js ***!
+  \************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -37697,44 +37697,44 @@ defineProperties(StringPrototype, {
 
 module.exports = [
   // streaming transports
-  __webpack_require__(/*! ./transport/websocket */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/transport/websocket.js")
-, __webpack_require__(/*! ./transport/xhr-streaming */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/transport/xhr-streaming.js")
-, __webpack_require__(/*! ./transport/xdr-streaming */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/transport/xdr-streaming.js")
-, __webpack_require__(/*! ./transport/eventsource */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/transport/eventsource.js")
-, __webpack_require__(/*! ./transport/lib/iframe-wrap */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/transport/lib/iframe-wrap.js")(__webpack_require__(/*! ./transport/eventsource */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/transport/eventsource.js"))
+  __webpack_require__(/*! ./transport/websocket */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/transport/websocket.js")
+, __webpack_require__(/*! ./transport/xhr-streaming */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/transport/xhr-streaming.js")
+, __webpack_require__(/*! ./transport/xdr-streaming */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/transport/xdr-streaming.js")
+, __webpack_require__(/*! ./transport/eventsource */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/transport/eventsource.js")
+, __webpack_require__(/*! ./transport/lib/iframe-wrap */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/transport/lib/iframe-wrap.js")(__webpack_require__(/*! ./transport/eventsource */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/transport/eventsource.js"))
 
   // polling transports
-, __webpack_require__(/*! ./transport/htmlfile */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/transport/htmlfile.js")
-, __webpack_require__(/*! ./transport/lib/iframe-wrap */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/transport/lib/iframe-wrap.js")(__webpack_require__(/*! ./transport/htmlfile */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/transport/htmlfile.js"))
-, __webpack_require__(/*! ./transport/xhr-polling */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/transport/xhr-polling.js")
-, __webpack_require__(/*! ./transport/xdr-polling */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/transport/xdr-polling.js")
-, __webpack_require__(/*! ./transport/lib/iframe-wrap */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/transport/lib/iframe-wrap.js")(__webpack_require__(/*! ./transport/xhr-polling */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/transport/xhr-polling.js"))
-, __webpack_require__(/*! ./transport/jsonp-polling */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/transport/jsonp-polling.js")
+, __webpack_require__(/*! ./transport/htmlfile */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/transport/htmlfile.js")
+, __webpack_require__(/*! ./transport/lib/iframe-wrap */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/transport/lib/iframe-wrap.js")(__webpack_require__(/*! ./transport/htmlfile */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/transport/htmlfile.js"))
+, __webpack_require__(/*! ./transport/xhr-polling */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/transport/xhr-polling.js")
+, __webpack_require__(/*! ./transport/xdr-polling */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/transport/xdr-polling.js")
+, __webpack_require__(/*! ./transport/lib/iframe-wrap */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/transport/lib/iframe-wrap.js")(__webpack_require__(/*! ./transport/xhr-polling */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/transport/xhr-polling.js"))
+, __webpack_require__(/*! ./transport/jsonp-polling */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/transport/jsonp-polling.js")
 ];
 
 
 /***/ }),
 
-/***/ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/transport/browser/abstract-xhr.js":
-/*!**********************************************************************************************************************************!*\
-  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/transport/browser/abstract-xhr.js ***!
-  \**********************************************************************************************************************************/
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/transport/browser/abstract-xhr.js":
+/*!****************************************************************************************************************************************!*\
+  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/transport/browser/abstract-xhr.js ***!
+  \****************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(global) {
 
-var EventEmitter = __webpack_require__(/*! events */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/event/emitter.js").EventEmitter
-  , inherits = __webpack_require__(/*! inherits */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/inherits/inherits_browser.js")
-  , utils = __webpack_require__(/*! ../../utils/event */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/utils/event.js")
-  , urlUtils = __webpack_require__(/*! ../../utils/url */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/utils/url.js")
+var EventEmitter = __webpack_require__(/*! events */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/event/emitter.js").EventEmitter
+  , inherits = __webpack_require__(/*! inherits */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/inherits/inherits_browser.js")
+  , utils = __webpack_require__(/*! ../../utils/event */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/utils/event.js")
+  , urlUtils = __webpack_require__(/*! ../../utils/url */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/utils/url.js")
   , XHR = global.XMLHttpRequest
   ;
 
 var debug = function() {};
 if (true) {
-  debug = __webpack_require__(/*! debug */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/node_modules/debug/src/browser.js")('sockjs-client:browser:xhr');
+  debug = __webpack_require__(/*! debug */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/node_modules/debug/src/browser.js")('sockjs-client:browser:xhr');
 }
 
 function AbstractXHRObject(method, url, payload, opts) {
@@ -37917,27 +37917,27 @@ AbstractXHRObject.supportsCORS = cors;
 
 module.exports = AbstractXHRObject;
 
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../../webpack/buildin/global.js */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/webpack/buildin/global.js")))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../../webpack/buildin/global.js */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/webpack/buildin/global.js")))
 
 /***/ }),
 
-/***/ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/transport/browser/eventsource.js":
-/*!*********************************************************************************************************************************!*\
-  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/transport/browser/eventsource.js ***!
-  \*********************************************************************************************************************************/
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/transport/browser/eventsource.js":
+/*!***************************************************************************************************************************************!*\
+  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/transport/browser/eventsource.js ***!
+  \***************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global) {module.exports = global.EventSource;
 
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../../webpack/buildin/global.js */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/webpack/buildin/global.js")))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../../webpack/buildin/global.js */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/webpack/buildin/global.js")))
 
 /***/ }),
 
-/***/ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/transport/browser/websocket.js":
-/*!*******************************************************************************************************************************!*\
-  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/transport/browser/websocket.js ***!
-  \*******************************************************************************************************************************/
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/transport/browser/websocket.js":
+/*!*************************************************************************************************************************************!*\
+  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/transport/browser/websocket.js ***!
+  \*************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -37953,25 +37953,25 @@ if (Driver) {
 	module.exports = undefined;
 }
 
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../../webpack/buildin/global.js */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/webpack/buildin/global.js")))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../../webpack/buildin/global.js */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/webpack/buildin/global.js")))
 
 /***/ }),
 
-/***/ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/transport/eventsource.js":
-/*!*************************************************************************************************************************!*\
-  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/transport/eventsource.js ***!
-  \*************************************************************************************************************************/
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/transport/eventsource.js":
+/*!*******************************************************************************************************************************!*\
+  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/transport/eventsource.js ***!
+  \*******************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var inherits = __webpack_require__(/*! inherits */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/inherits/inherits_browser.js")
-  , AjaxBasedTransport = __webpack_require__(/*! ./lib/ajax-based */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/transport/lib/ajax-based.js")
-  , EventSourceReceiver = __webpack_require__(/*! ./receiver/eventsource */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/transport/receiver/eventsource.js")
-  , XHRCorsObject = __webpack_require__(/*! ./sender/xhr-cors */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/transport/sender/xhr-cors.js")
-  , EventSourceDriver = __webpack_require__(/*! eventsource */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/transport/browser/eventsource.js")
+var inherits = __webpack_require__(/*! inherits */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/inherits/inherits_browser.js")
+  , AjaxBasedTransport = __webpack_require__(/*! ./lib/ajax-based */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/transport/lib/ajax-based.js")
+  , EventSourceReceiver = __webpack_require__(/*! ./receiver/eventsource */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/transport/receiver/eventsource.js")
+  , XHRCorsObject = __webpack_require__(/*! ./sender/xhr-cors */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/transport/sender/xhr-cors.js")
+  , EventSourceDriver = __webpack_require__(/*! eventsource */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/transport/browser/eventsource.js")
   ;
 
 function EventSourceTransport(transUrl) {
@@ -37996,20 +37996,20 @@ module.exports = EventSourceTransport;
 
 /***/ }),
 
-/***/ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/transport/htmlfile.js":
-/*!**********************************************************************************************************************!*\
-  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/transport/htmlfile.js ***!
-  \**********************************************************************************************************************/
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/transport/htmlfile.js":
+/*!****************************************************************************************************************************!*\
+  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/transport/htmlfile.js ***!
+  \****************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var inherits = __webpack_require__(/*! inherits */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/inherits/inherits_browser.js")
-  , HtmlfileReceiver = __webpack_require__(/*! ./receiver/htmlfile */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/transport/receiver/htmlfile.js")
-  , XHRLocalObject = __webpack_require__(/*! ./sender/xhr-local */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/transport/sender/xhr-local.js")
-  , AjaxBasedTransport = __webpack_require__(/*! ./lib/ajax-based */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/transport/lib/ajax-based.js")
+var inherits = __webpack_require__(/*! inherits */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/inherits/inherits_browser.js")
+  , HtmlfileReceiver = __webpack_require__(/*! ./receiver/htmlfile */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/transport/receiver/htmlfile.js")
+  , XHRLocalObject = __webpack_require__(/*! ./sender/xhr-local */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/transport/sender/xhr-local.js")
+  , AjaxBasedTransport = __webpack_require__(/*! ./lib/ajax-based */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/transport/lib/ajax-based.js")
   ;
 
 function HtmlFileTransport(transUrl) {
@@ -38033,10 +38033,10 @@ module.exports = HtmlFileTransport;
 
 /***/ }),
 
-/***/ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/transport/iframe.js":
-/*!********************************************************************************************************************!*\
-  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/transport/iframe.js ***!
-  \********************************************************************************************************************/
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/transport/iframe.js":
+/*!**************************************************************************************************************************!*\
+  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/transport/iframe.js ***!
+  \**************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -38051,19 +38051,19 @@ module.exports = HtmlFileTransport;
 //    http://msdn.microsoft.com/en-us/library/cc197015(v=VS.85).aspx
 //    http://stevesouders.com/misc/test-postmessage.php
 
-var inherits = __webpack_require__(/*! inherits */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/inherits/inherits_browser.js")
-  , JSON3 = __webpack_require__(/*! json3 */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/json3/lib/json3.js")
-  , EventEmitter = __webpack_require__(/*! events */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/event/emitter.js").EventEmitter
-  , version = __webpack_require__(/*! ../version */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/version.js")
-  , urlUtils = __webpack_require__(/*! ../utils/url */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/utils/url.js")
-  , iframeUtils = __webpack_require__(/*! ../utils/iframe */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/utils/iframe.js")
-  , eventUtils = __webpack_require__(/*! ../utils/event */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/utils/event.js")
-  , random = __webpack_require__(/*! ../utils/random */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/utils/random.js")
+var inherits = __webpack_require__(/*! inherits */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/inherits/inherits_browser.js")
+  , JSON3 = __webpack_require__(/*! json3 */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/json3/lib/json3.js")
+  , EventEmitter = __webpack_require__(/*! events */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/event/emitter.js").EventEmitter
+  , version = __webpack_require__(/*! ../version */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/version.js")
+  , urlUtils = __webpack_require__(/*! ../utils/url */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/utils/url.js")
+  , iframeUtils = __webpack_require__(/*! ../utils/iframe */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/utils/iframe.js")
+  , eventUtils = __webpack_require__(/*! ../utils/event */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/utils/event.js")
+  , random = __webpack_require__(/*! ../utils/random */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/utils/random.js")
   ;
 
 var debug = function() {};
 if (true) {
-  debug = __webpack_require__(/*! debug */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/node_modules/debug/src/browser.js")('sockjs-client:transport:iframe');
+  debug = __webpack_require__(/*! debug */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/node_modules/debug/src/browser.js")('sockjs-client:transport:iframe');
 }
 
 function IframeTransport(transport, transUrl, baseUrl) {
@@ -38186,10 +38186,10 @@ module.exports = IframeTransport;
 
 /***/ }),
 
-/***/ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/transport/jsonp-polling.js":
-/*!***************************************************************************************************************************!*\
-  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/transport/jsonp-polling.js ***!
-  \***************************************************************************************************************************/
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/transport/jsonp-polling.js":
+/*!*********************************************************************************************************************************!*\
+  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/transport/jsonp-polling.js ***!
+  \*********************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -38204,10 +38204,10 @@ module.exports = IframeTransport;
 //   o you will get a spinning cursor
 //   o for Konqueror a dumb timer is needed to detect errors
 
-var inherits = __webpack_require__(/*! inherits */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/inherits/inherits_browser.js")
-  , SenderReceiver = __webpack_require__(/*! ./lib/sender-receiver */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/transport/lib/sender-receiver.js")
-  , JsonpReceiver = __webpack_require__(/*! ./receiver/jsonp */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/transport/receiver/jsonp.js")
-  , jsonpSender = __webpack_require__(/*! ./sender/jsonp */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/transport/sender/jsonp.js")
+var inherits = __webpack_require__(/*! inherits */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/inherits/inherits_browser.js")
+  , SenderReceiver = __webpack_require__(/*! ./lib/sender-receiver */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/transport/lib/sender-receiver.js")
+  , JsonpReceiver = __webpack_require__(/*! ./receiver/jsonp */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/transport/receiver/jsonp.js")
+  , jsonpSender = __webpack_require__(/*! ./sender/jsonp */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/transport/sender/jsonp.js")
   ;
 
 function JsonPTransport(transUrl) {
@@ -38229,28 +38229,28 @@ JsonPTransport.needBody = true;
 
 module.exports = JsonPTransport;
 
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../webpack/buildin/global.js */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/webpack/buildin/global.js")))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../webpack/buildin/global.js */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/webpack/buildin/global.js")))
 
 /***/ }),
 
-/***/ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/transport/lib/ajax-based.js":
-/*!****************************************************************************************************************************!*\
-  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/transport/lib/ajax-based.js ***!
-  \****************************************************************************************************************************/
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/transport/lib/ajax-based.js":
+/*!**********************************************************************************************************************************!*\
+  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/transport/lib/ajax-based.js ***!
+  \**********************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var inherits = __webpack_require__(/*! inherits */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/inherits/inherits_browser.js")
-  , urlUtils = __webpack_require__(/*! ../../utils/url */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/utils/url.js")
-  , SenderReceiver = __webpack_require__(/*! ./sender-receiver */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/transport/lib/sender-receiver.js")
+var inherits = __webpack_require__(/*! inherits */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/inherits/inherits_browser.js")
+  , urlUtils = __webpack_require__(/*! ../../utils/url */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/utils/url.js")
+  , SenderReceiver = __webpack_require__(/*! ./sender-receiver */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/transport/lib/sender-receiver.js")
   ;
 
 var debug = function() {};
 if (true) {
-  debug = __webpack_require__(/*! debug */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/node_modules/debug/src/browser.js")('sockjs-client:ajax-based');
+  debug = __webpack_require__(/*! debug */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/node_modules/debug/src/browser.js")('sockjs-client:ajax-based');
 }
 
 function createAjaxSender(AjaxObject) {
@@ -38294,23 +38294,23 @@ module.exports = AjaxBasedTransport;
 
 /***/ }),
 
-/***/ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/transport/lib/buffered-sender.js":
-/*!*********************************************************************************************************************************!*\
-  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/transport/lib/buffered-sender.js ***!
-  \*********************************************************************************************************************************/
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/transport/lib/buffered-sender.js":
+/*!***************************************************************************************************************************************!*\
+  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/transport/lib/buffered-sender.js ***!
+  \***************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var inherits = __webpack_require__(/*! inherits */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/inherits/inherits_browser.js")
-  , EventEmitter = __webpack_require__(/*! events */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/event/emitter.js").EventEmitter
+var inherits = __webpack_require__(/*! inherits */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/inherits/inherits_browser.js")
+  , EventEmitter = __webpack_require__(/*! events */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/event/emitter.js").EventEmitter
   ;
 
 var debug = function() {};
 if (true) {
-  debug = __webpack_require__(/*! debug */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/node_modules/debug/src/browser.js")('sockjs-client:buffered-sender');
+  debug = __webpack_require__(/*! debug */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/node_modules/debug/src/browser.js")('sockjs-client:buffered-sender');
 }
 
 function BufferedSender(url, sender) {
@@ -38393,19 +38393,19 @@ module.exports = BufferedSender;
 
 /***/ }),
 
-/***/ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/transport/lib/iframe-wrap.js":
-/*!*****************************************************************************************************************************!*\
-  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/transport/lib/iframe-wrap.js ***!
-  \*****************************************************************************************************************************/
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/transport/lib/iframe-wrap.js":
+/*!***********************************************************************************************************************************!*\
+  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/transport/lib/iframe-wrap.js ***!
+  \***********************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(global) {
 
-var inherits = __webpack_require__(/*! inherits */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/inherits/inherits_browser.js")
-  , IframeTransport = __webpack_require__(/*! ../iframe */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/transport/iframe.js")
-  , objectUtils = __webpack_require__(/*! ../../utils/object */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/utils/object.js")
+var inherits = __webpack_require__(/*! inherits */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/inherits/inherits_browser.js")
+  , IframeTransport = __webpack_require__(/*! ../iframe */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/transport/iframe.js")
+  , objectUtils = __webpack_require__(/*! ../../utils/object */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/utils/object.js")
   ;
 
 module.exports = function(transport) {
@@ -38435,27 +38435,27 @@ module.exports = function(transport) {
   return IframeWrapTransport;
 };
 
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../../webpack/buildin/global.js */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/webpack/buildin/global.js")))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../../webpack/buildin/global.js */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/webpack/buildin/global.js")))
 
 /***/ }),
 
-/***/ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/transport/lib/polling.js":
-/*!*************************************************************************************************************************!*\
-  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/transport/lib/polling.js ***!
-  \*************************************************************************************************************************/
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/transport/lib/polling.js":
+/*!*******************************************************************************************************************************!*\
+  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/transport/lib/polling.js ***!
+  \*******************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var inherits = __webpack_require__(/*! inherits */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/inherits/inherits_browser.js")
-  , EventEmitter = __webpack_require__(/*! events */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/event/emitter.js").EventEmitter
+var inherits = __webpack_require__(/*! inherits */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/inherits/inherits_browser.js")
+  , EventEmitter = __webpack_require__(/*! events */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/event/emitter.js").EventEmitter
   ;
 
 var debug = function() {};
 if (true) {
-  debug = __webpack_require__(/*! debug */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/node_modules/debug/src/browser.js")('sockjs-client:polling');
+  debug = __webpack_require__(/*! debug */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/node_modules/debug/src/browser.js")('sockjs-client:polling');
 }
 
 function Polling(Receiver, receiveUrl, AjaxObject) {
@@ -38508,25 +38508,25 @@ module.exports = Polling;
 
 /***/ }),
 
-/***/ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/transport/lib/sender-receiver.js":
-/*!*********************************************************************************************************************************!*\
-  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/transport/lib/sender-receiver.js ***!
-  \*********************************************************************************************************************************/
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/transport/lib/sender-receiver.js":
+/*!***************************************************************************************************************************************!*\
+  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/transport/lib/sender-receiver.js ***!
+  \***************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var inherits = __webpack_require__(/*! inherits */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/inherits/inherits_browser.js")
-  , urlUtils = __webpack_require__(/*! ../../utils/url */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/utils/url.js")
-  , BufferedSender = __webpack_require__(/*! ./buffered-sender */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/transport/lib/buffered-sender.js")
-  , Polling = __webpack_require__(/*! ./polling */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/transport/lib/polling.js")
+var inherits = __webpack_require__(/*! inherits */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/inherits/inherits_browser.js")
+  , urlUtils = __webpack_require__(/*! ../../utils/url */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/utils/url.js")
+  , BufferedSender = __webpack_require__(/*! ./buffered-sender */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/transport/lib/buffered-sender.js")
+  , Polling = __webpack_require__(/*! ./polling */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/transport/lib/polling.js")
   ;
 
 var debug = function() {};
 if (true) {
-  debug = __webpack_require__(/*! debug */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/node_modules/debug/src/browser.js")('sockjs-client:sender-receiver');
+  debug = __webpack_require__(/*! debug */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/node_modules/debug/src/browser.js")('sockjs-client:sender-receiver');
 }
 
 function SenderReceiver(transUrl, urlSuffix, senderFunc, Receiver, AjaxObject) {
@@ -38565,24 +38565,24 @@ module.exports = SenderReceiver;
 
 /***/ }),
 
-/***/ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/transport/receiver/eventsource.js":
-/*!**********************************************************************************************************************************!*\
-  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/transport/receiver/eventsource.js ***!
-  \**********************************************************************************************************************************/
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/transport/receiver/eventsource.js":
+/*!****************************************************************************************************************************************!*\
+  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/transport/receiver/eventsource.js ***!
+  \****************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var inherits = __webpack_require__(/*! inherits */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/inherits/inherits_browser.js")
-  , EventEmitter = __webpack_require__(/*! events */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/event/emitter.js").EventEmitter
-  , EventSourceDriver = __webpack_require__(/*! eventsource */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/transport/browser/eventsource.js")
+var inherits = __webpack_require__(/*! inherits */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/inherits/inherits_browser.js")
+  , EventEmitter = __webpack_require__(/*! events */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/event/emitter.js").EventEmitter
+  , EventSourceDriver = __webpack_require__(/*! eventsource */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/transport/browser/eventsource.js")
   ;
 
 var debug = function() {};
 if (true) {
-  debug = __webpack_require__(/*! debug */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/node_modules/debug/src/browser.js")('sockjs-client:receiver:eventsource');
+  debug = __webpack_require__(/*! debug */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/node_modules/debug/src/browser.js")('sockjs-client:receiver:eventsource');
 }
 
 function EventSourceReceiver(url) {
@@ -38640,26 +38640,26 @@ module.exports = EventSourceReceiver;
 
 /***/ }),
 
-/***/ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/transport/receiver/htmlfile.js":
-/*!*******************************************************************************************************************************!*\
-  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/transport/receiver/htmlfile.js ***!
-  \*******************************************************************************************************************************/
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/transport/receiver/htmlfile.js":
+/*!*************************************************************************************************************************************!*\
+  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/transport/receiver/htmlfile.js ***!
+  \*************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(global) {
 
-var inherits = __webpack_require__(/*! inherits */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/inherits/inherits_browser.js")
-  , iframeUtils = __webpack_require__(/*! ../../utils/iframe */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/utils/iframe.js")
-  , urlUtils = __webpack_require__(/*! ../../utils/url */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/utils/url.js")
-  , EventEmitter = __webpack_require__(/*! events */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/event/emitter.js").EventEmitter
-  , random = __webpack_require__(/*! ../../utils/random */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/utils/random.js")
+var inherits = __webpack_require__(/*! inherits */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/inherits/inherits_browser.js")
+  , iframeUtils = __webpack_require__(/*! ../../utils/iframe */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/utils/iframe.js")
+  , urlUtils = __webpack_require__(/*! ../../utils/url */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/utils/url.js")
+  , EventEmitter = __webpack_require__(/*! events */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/event/emitter.js").EventEmitter
+  , random = __webpack_require__(/*! ../../utils/random */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/utils/random.js")
   ;
 
 var debug = function() {};
 if (true) {
-  debug = __webpack_require__(/*! debug */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/node_modules/debug/src/browser.js")('sockjs-client:receiver:htmlfile');
+  debug = __webpack_require__(/*! debug */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/node_modules/debug/src/browser.js")('sockjs-client:receiver:htmlfile');
 }
 
 function HtmlfileReceiver(url) {
@@ -38736,31 +38736,31 @@ HtmlfileReceiver.enabled = HtmlfileReceiver.htmlfileEnabled || iframeUtils.ifram
 
 module.exports = HtmlfileReceiver;
 
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../../webpack/buildin/global.js */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/webpack/buildin/global.js")))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../../webpack/buildin/global.js */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/webpack/buildin/global.js")))
 
 /***/ }),
 
-/***/ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/transport/receiver/jsonp.js":
-/*!****************************************************************************************************************************!*\
-  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/transport/receiver/jsonp.js ***!
-  \****************************************************************************************************************************/
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/transport/receiver/jsonp.js":
+/*!**********************************************************************************************************************************!*\
+  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/transport/receiver/jsonp.js ***!
+  \**********************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(global) {
 
-var utils = __webpack_require__(/*! ../../utils/iframe */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/utils/iframe.js")
-  , random = __webpack_require__(/*! ../../utils/random */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/utils/random.js")
-  , browser = __webpack_require__(/*! ../../utils/browser */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/utils/browser.js")
-  , urlUtils = __webpack_require__(/*! ../../utils/url */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/utils/url.js")
-  , inherits = __webpack_require__(/*! inherits */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/inherits/inherits_browser.js")
-  , EventEmitter = __webpack_require__(/*! events */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/event/emitter.js").EventEmitter
+var utils = __webpack_require__(/*! ../../utils/iframe */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/utils/iframe.js")
+  , random = __webpack_require__(/*! ../../utils/random */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/utils/random.js")
+  , browser = __webpack_require__(/*! ../../utils/browser */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/utils/browser.js")
+  , urlUtils = __webpack_require__(/*! ../../utils/url */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/utils/url.js")
+  , inherits = __webpack_require__(/*! inherits */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/inherits/inherits_browser.js")
+  , EventEmitter = __webpack_require__(/*! events */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/event/emitter.js").EventEmitter
   ;
 
 var debug = function() {};
 if (true) {
-  debug = __webpack_require__(/*! debug */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/node_modules/debug/src/browser.js")('sockjs-client:receiver:jsonp');
+  debug = __webpack_require__(/*! debug */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/node_modules/debug/src/browser.js")('sockjs-client:receiver:jsonp');
 }
 
 function JsonpReceiver(url) {
@@ -38932,27 +38932,27 @@ JsonpReceiver.prototype._createScript = function(url) {
 
 module.exports = JsonpReceiver;
 
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../../webpack/buildin/global.js */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/webpack/buildin/global.js")))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../../webpack/buildin/global.js */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/webpack/buildin/global.js")))
 
 /***/ }),
 
-/***/ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/transport/receiver/xhr.js":
-/*!**************************************************************************************************************************!*\
-  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/transport/receiver/xhr.js ***!
-  \**************************************************************************************************************************/
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/transport/receiver/xhr.js":
+/*!********************************************************************************************************************************!*\
+  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/transport/receiver/xhr.js ***!
+  \********************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var inherits = __webpack_require__(/*! inherits */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/inherits/inherits_browser.js")
-  , EventEmitter = __webpack_require__(/*! events */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/event/emitter.js").EventEmitter
+var inherits = __webpack_require__(/*! inherits */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/inherits/inherits_browser.js")
+  , EventEmitter = __webpack_require__(/*! events */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/event/emitter.js").EventEmitter
   ;
 
 var debug = function() {};
 if (true) {
-  debug = __webpack_require__(/*! debug */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/node_modules/debug/src/browser.js")('sockjs-client:receiver:xhr');
+  debug = __webpack_require__(/*! debug */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/node_modules/debug/src/browser.js")('sockjs-client:receiver:xhr');
 }
 
 function XhrReceiver(url, AjaxObject) {
@@ -39018,23 +39018,23 @@ module.exports = XhrReceiver;
 
 /***/ }),
 
-/***/ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/transport/sender/jsonp.js":
-/*!**************************************************************************************************************************!*\
-  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/transport/sender/jsonp.js ***!
-  \**************************************************************************************************************************/
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/transport/sender/jsonp.js":
+/*!********************************************************************************************************************************!*\
+  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/transport/sender/jsonp.js ***!
+  \********************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(global) {
 
-var random = __webpack_require__(/*! ../../utils/random */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/utils/random.js")
-  , urlUtils = __webpack_require__(/*! ../../utils/url */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/utils/url.js")
+var random = __webpack_require__(/*! ../../utils/random */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/utils/random.js")
+  , urlUtils = __webpack_require__(/*! ../../utils/url */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/utils/url.js")
   ;
 
 var debug = function() {};
 if (true) {
-  debug = __webpack_require__(/*! debug */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/node_modules/debug/src/browser.js")('sockjs-client:sender:jsonp');
+  debug = __webpack_require__(/*! debug */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/node_modules/debug/src/browser.js")('sockjs-client:sender:jsonp');
 }
 
 var form, area;
@@ -39126,30 +39126,30 @@ module.exports = function(url, payload, callback) {
   };
 };
 
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../../webpack/buildin/global.js */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/webpack/buildin/global.js")))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../../webpack/buildin/global.js */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/webpack/buildin/global.js")))
 
 /***/ }),
 
-/***/ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/transport/sender/xdr.js":
-/*!************************************************************************************************************************!*\
-  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/transport/sender/xdr.js ***!
-  \************************************************************************************************************************/
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/transport/sender/xdr.js":
+/*!******************************************************************************************************************************!*\
+  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/transport/sender/xdr.js ***!
+  \******************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(global) {
 
-var EventEmitter = __webpack_require__(/*! events */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/event/emitter.js").EventEmitter
-  , inherits = __webpack_require__(/*! inherits */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/inherits/inherits_browser.js")
-  , eventUtils = __webpack_require__(/*! ../../utils/event */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/utils/event.js")
-  , browser = __webpack_require__(/*! ../../utils/browser */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/utils/browser.js")
-  , urlUtils = __webpack_require__(/*! ../../utils/url */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/utils/url.js")
+var EventEmitter = __webpack_require__(/*! events */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/event/emitter.js").EventEmitter
+  , inherits = __webpack_require__(/*! inherits */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/inherits/inherits_browser.js")
+  , eventUtils = __webpack_require__(/*! ../../utils/event */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/utils/event.js")
+  , browser = __webpack_require__(/*! ../../utils/browser */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/utils/browser.js")
+  , urlUtils = __webpack_require__(/*! ../../utils/url */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/utils/url.js")
   ;
 
 var debug = function() {};
 if (true) {
-  debug = __webpack_require__(/*! debug */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/node_modules/debug/src/browser.js")('sockjs-client:sender:xdr');
+  debug = __webpack_require__(/*! debug */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/node_modules/debug/src/browser.js")('sockjs-client:sender:xdr');
 }
 
 // References:
@@ -39242,22 +39242,22 @@ XDRObject.enabled = !!(global.XDomainRequest && browser.hasDomain());
 
 module.exports = XDRObject;
 
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../../webpack/buildin/global.js */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/webpack/buildin/global.js")))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../../webpack/buildin/global.js */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/webpack/buildin/global.js")))
 
 /***/ }),
 
-/***/ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/transport/sender/xhr-cors.js":
-/*!*****************************************************************************************************************************!*\
-  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/transport/sender/xhr-cors.js ***!
-  \*****************************************************************************************************************************/
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/transport/sender/xhr-cors.js":
+/*!***********************************************************************************************************************************!*\
+  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/transport/sender/xhr-cors.js ***!
+  \***********************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var inherits = __webpack_require__(/*! inherits */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/inherits/inherits_browser.js")
-  , XhrDriver = __webpack_require__(/*! ../driver/xhr */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/transport/browser/abstract-xhr.js")
+var inherits = __webpack_require__(/*! inherits */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/inherits/inherits_browser.js")
+  , XhrDriver = __webpack_require__(/*! ../driver/xhr */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/transport/browser/abstract-xhr.js")
   ;
 
 function XHRCorsObject(method, url, payload, opts) {
@@ -39273,18 +39273,18 @@ module.exports = XHRCorsObject;
 
 /***/ }),
 
-/***/ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/transport/sender/xhr-fake.js":
-/*!*****************************************************************************************************************************!*\
-  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/transport/sender/xhr-fake.js ***!
-  \*****************************************************************************************************************************/
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/transport/sender/xhr-fake.js":
+/*!***********************************************************************************************************************************!*\
+  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/transport/sender/xhr-fake.js ***!
+  \***********************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var EventEmitter = __webpack_require__(/*! events */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/event/emitter.js").EventEmitter
-  , inherits = __webpack_require__(/*! inherits */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/inherits/inherits_browser.js")
+var EventEmitter = __webpack_require__(/*! events */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/event/emitter.js").EventEmitter
+  , inherits = __webpack_require__(/*! inherits */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/inherits/inherits_browser.js")
   ;
 
 function XHRFake(/* method, url, payload, opts */) {
@@ -39309,18 +39309,18 @@ module.exports = XHRFake;
 
 /***/ }),
 
-/***/ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/transport/sender/xhr-local.js":
-/*!******************************************************************************************************************************!*\
-  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/transport/sender/xhr-local.js ***!
-  \******************************************************************************************************************************/
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/transport/sender/xhr-local.js":
+/*!************************************************************************************************************************************!*\
+  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/transport/sender/xhr-local.js ***!
+  \************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var inherits = __webpack_require__(/*! inherits */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/inherits/inherits_browser.js")
-  , XhrDriver = __webpack_require__(/*! ../driver/xhr */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/transport/browser/abstract-xhr.js")
+var inherits = __webpack_require__(/*! inherits */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/inherits/inherits_browser.js")
+  , XhrDriver = __webpack_require__(/*! ../driver/xhr */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/transport/browser/abstract-xhr.js")
   ;
 
 function XHRLocalObject(method, url, payload /*, opts */) {
@@ -39338,26 +39338,26 @@ module.exports = XHRLocalObject;
 
 /***/ }),
 
-/***/ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/transport/websocket.js":
-/*!***********************************************************************************************************************!*\
-  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/transport/websocket.js ***!
-  \***********************************************************************************************************************/
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/transport/websocket.js":
+/*!*****************************************************************************************************************************!*\
+  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/transport/websocket.js ***!
+  \*****************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var utils = __webpack_require__(/*! ../utils/event */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/utils/event.js")
-  , urlUtils = __webpack_require__(/*! ../utils/url */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/utils/url.js")
-  , inherits = __webpack_require__(/*! inherits */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/inherits/inherits_browser.js")
-  , EventEmitter = __webpack_require__(/*! events */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/event/emitter.js").EventEmitter
-  , WebsocketDriver = __webpack_require__(/*! ./driver/websocket */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/transport/browser/websocket.js")
+var utils = __webpack_require__(/*! ../utils/event */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/utils/event.js")
+  , urlUtils = __webpack_require__(/*! ../utils/url */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/utils/url.js")
+  , inherits = __webpack_require__(/*! inherits */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/inherits/inherits_browser.js")
+  , EventEmitter = __webpack_require__(/*! events */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/event/emitter.js").EventEmitter
+  , WebsocketDriver = __webpack_require__(/*! ./driver/websocket */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/transport/browser/websocket.js")
   ;
 
 var debug = function() {};
 if (true) {
-  debug = __webpack_require__(/*! debug */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/node_modules/debug/src/browser.js")('sockjs-client:websocket');
+  debug = __webpack_require__(/*! debug */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/node_modules/debug/src/browser.js")('sockjs-client:websocket');
 }
 
 function WebSocketTransport(transUrl, ignore, options) {
@@ -39449,21 +39449,21 @@ module.exports = WebSocketTransport;
 
 /***/ }),
 
-/***/ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/transport/xdr-polling.js":
-/*!*************************************************************************************************************************!*\
-  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/transport/xdr-polling.js ***!
-  \*************************************************************************************************************************/
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/transport/xdr-polling.js":
+/*!*******************************************************************************************************************************!*\
+  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/transport/xdr-polling.js ***!
+  \*******************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var inherits = __webpack_require__(/*! inherits */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/inherits/inherits_browser.js")
-  , AjaxBasedTransport = __webpack_require__(/*! ./lib/ajax-based */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/transport/lib/ajax-based.js")
-  , XdrStreamingTransport = __webpack_require__(/*! ./xdr-streaming */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/transport/xdr-streaming.js")
-  , XhrReceiver = __webpack_require__(/*! ./receiver/xhr */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/transport/receiver/xhr.js")
-  , XDRObject = __webpack_require__(/*! ./sender/xdr */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/transport/sender/xdr.js")
+var inherits = __webpack_require__(/*! inherits */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/inherits/inherits_browser.js")
+  , AjaxBasedTransport = __webpack_require__(/*! ./lib/ajax-based */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/transport/lib/ajax-based.js")
+  , XdrStreamingTransport = __webpack_require__(/*! ./xdr-streaming */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/transport/xdr-streaming.js")
+  , XhrReceiver = __webpack_require__(/*! ./receiver/xhr */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/transport/receiver/xhr.js")
+  , XDRObject = __webpack_require__(/*! ./sender/xdr */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/transport/sender/xdr.js")
   ;
 
 function XdrPollingTransport(transUrl) {
@@ -39484,20 +39484,20 @@ module.exports = XdrPollingTransport;
 
 /***/ }),
 
-/***/ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/transport/xdr-streaming.js":
-/*!***************************************************************************************************************************!*\
-  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/transport/xdr-streaming.js ***!
-  \***************************************************************************************************************************/
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/transport/xdr-streaming.js":
+/*!*********************************************************************************************************************************!*\
+  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/transport/xdr-streaming.js ***!
+  \*********************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var inherits = __webpack_require__(/*! inherits */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/inherits/inherits_browser.js")
-  , AjaxBasedTransport = __webpack_require__(/*! ./lib/ajax-based */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/transport/lib/ajax-based.js")
-  , XhrReceiver = __webpack_require__(/*! ./receiver/xhr */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/transport/receiver/xhr.js")
-  , XDRObject = __webpack_require__(/*! ./sender/xdr */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/transport/sender/xdr.js")
+var inherits = __webpack_require__(/*! inherits */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/inherits/inherits_browser.js")
+  , AjaxBasedTransport = __webpack_require__(/*! ./lib/ajax-based */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/transport/lib/ajax-based.js")
+  , XhrReceiver = __webpack_require__(/*! ./receiver/xhr */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/transport/receiver/xhr.js")
+  , XDRObject = __webpack_require__(/*! ./sender/xdr */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/transport/sender/xdr.js")
   ;
 
 // According to:
@@ -39528,21 +39528,21 @@ module.exports = XdrStreamingTransport;
 
 /***/ }),
 
-/***/ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/transport/xhr-polling.js":
-/*!*************************************************************************************************************************!*\
-  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/transport/xhr-polling.js ***!
-  \*************************************************************************************************************************/
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/transport/xhr-polling.js":
+/*!*******************************************************************************************************************************!*\
+  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/transport/xhr-polling.js ***!
+  \*******************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var inherits = __webpack_require__(/*! inherits */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/inherits/inherits_browser.js")
-  , AjaxBasedTransport = __webpack_require__(/*! ./lib/ajax-based */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/transport/lib/ajax-based.js")
-  , XhrReceiver = __webpack_require__(/*! ./receiver/xhr */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/transport/receiver/xhr.js")
-  , XHRCorsObject = __webpack_require__(/*! ./sender/xhr-cors */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/transport/sender/xhr-cors.js")
-  , XHRLocalObject = __webpack_require__(/*! ./sender/xhr-local */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/transport/sender/xhr-local.js")
+var inherits = __webpack_require__(/*! inherits */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/inherits/inherits_browser.js")
+  , AjaxBasedTransport = __webpack_require__(/*! ./lib/ajax-based */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/transport/lib/ajax-based.js")
+  , XhrReceiver = __webpack_require__(/*! ./receiver/xhr */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/transport/receiver/xhr.js")
+  , XHRCorsObject = __webpack_require__(/*! ./sender/xhr-cors */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/transport/sender/xhr-cors.js")
+  , XHRLocalObject = __webpack_require__(/*! ./sender/xhr-local */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/transport/sender/xhr-local.js")
   ;
 
 function XhrPollingTransport(transUrl) {
@@ -39573,22 +39573,22 @@ module.exports = XhrPollingTransport;
 
 /***/ }),
 
-/***/ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/transport/xhr-streaming.js":
-/*!***************************************************************************************************************************!*\
-  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/transport/xhr-streaming.js ***!
-  \***************************************************************************************************************************/
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/transport/xhr-streaming.js":
+/*!*********************************************************************************************************************************!*\
+  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/transport/xhr-streaming.js ***!
+  \*********************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(global) {
 
-var inherits = __webpack_require__(/*! inherits */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/inherits/inherits_browser.js")
-  , AjaxBasedTransport = __webpack_require__(/*! ./lib/ajax-based */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/transport/lib/ajax-based.js")
-  , XhrReceiver = __webpack_require__(/*! ./receiver/xhr */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/transport/receiver/xhr.js")
-  , XHRCorsObject = __webpack_require__(/*! ./sender/xhr-cors */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/transport/sender/xhr-cors.js")
-  , XHRLocalObject = __webpack_require__(/*! ./sender/xhr-local */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/transport/sender/xhr-local.js")
-  , browser = __webpack_require__(/*! ../utils/browser */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/utils/browser.js")
+var inherits = __webpack_require__(/*! inherits */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/inherits/inherits_browser.js")
+  , AjaxBasedTransport = __webpack_require__(/*! ./lib/ajax-based */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/transport/lib/ajax-based.js")
+  , XhrReceiver = __webpack_require__(/*! ./receiver/xhr */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/transport/receiver/xhr.js")
+  , XHRCorsObject = __webpack_require__(/*! ./sender/xhr-cors */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/transport/sender/xhr-cors.js")
+  , XHRLocalObject = __webpack_require__(/*! ./sender/xhr-local */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/transport/sender/xhr-local.js")
+  , browser = __webpack_require__(/*! ../utils/browser */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/utils/browser.js")
   ;
 
 function XhrStreamingTransport(transUrl) {
@@ -39623,14 +39623,14 @@ XhrStreamingTransport.needBody = !!global.document;
 
 module.exports = XhrStreamingTransport;
 
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../webpack/buildin/global.js */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/webpack/buildin/global.js")))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../webpack/buildin/global.js */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/webpack/buildin/global.js")))
 
 /***/ }),
 
-/***/ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/utils/browser-crypto.js":
-/*!************************************************************************************************************************!*\
-  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/utils/browser-crypto.js ***!
-  \************************************************************************************************************************/
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/utils/browser-crypto.js":
+/*!******************************************************************************************************************************!*\
+  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/utils/browser-crypto.js ***!
+  \******************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -39653,14 +39653,14 @@ if (global.crypto && global.crypto.getRandomValues) {
   };
 }
 
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../webpack/buildin/global.js */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/webpack/buildin/global.js")))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../webpack/buildin/global.js */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/webpack/buildin/global.js")))
 
 /***/ }),
 
-/***/ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/utils/browser.js":
-/*!*****************************************************************************************************************!*\
-  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/utils/browser.js ***!
-  \*****************************************************************************************************************/
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/utils/browser.js":
+/*!***********************************************************************************************************************!*\
+  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/utils/browser.js ***!
+  \***********************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -39693,21 +39693,21 @@ module.exports = {
   }
 };
 
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../webpack/buildin/global.js */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/webpack/buildin/global.js")))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../webpack/buildin/global.js */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/webpack/buildin/global.js")))
 
 /***/ }),
 
-/***/ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/utils/escape.js":
-/*!****************************************************************************************************************!*\
-  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/utils/escape.js ***!
-  \****************************************************************************************************************/
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/utils/escape.js":
+/*!**********************************************************************************************************************!*\
+  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/utils/escape.js ***!
+  \**********************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var JSON3 = __webpack_require__(/*! json3 */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/json3/lib/json3.js");
+var JSON3 = __webpack_require__(/*! json3 */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/json3/lib/json3.js");
 
 // Some extra characters that Chrome gets wrong, and substitutes with
 // something else on the wire.
@@ -39759,17 +39759,17 @@ module.exports = {
 
 /***/ }),
 
-/***/ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/utils/event.js":
-/*!***************************************************************************************************************!*\
-  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/utils/event.js ***!
-  \***************************************************************************************************************/
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/utils/event.js":
+/*!*********************************************************************************************************************!*\
+  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/utils/event.js ***!
+  \*********************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(global) {
 
-var random = __webpack_require__(/*! ./random */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/utils/random.js");
+var random = __webpack_require__(/*! ./random */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/utils/random.js");
 
 var onUnload = {}
   , afterUnload = false
@@ -39841,28 +39841,28 @@ if (!isChromePackagedApp) {
   module.exports.attachEvent('unload', unloadTriggered);
 }
 
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../webpack/buildin/global.js */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/webpack/buildin/global.js")))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../webpack/buildin/global.js */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/webpack/buildin/global.js")))
 
 /***/ }),
 
-/***/ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/utils/iframe.js":
-/*!****************************************************************************************************************!*\
-  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/utils/iframe.js ***!
-  \****************************************************************************************************************/
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/utils/iframe.js":
+/*!**********************************************************************************************************************!*\
+  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/utils/iframe.js ***!
+  \**********************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(global) {
 
-var eventUtils = __webpack_require__(/*! ./event */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/utils/event.js")
-  , JSON3 = __webpack_require__(/*! json3 */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/json3/lib/json3.js")
-  , browser = __webpack_require__(/*! ./browser */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/utils/browser.js")
+var eventUtils = __webpack_require__(/*! ./event */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/utils/event.js")
+  , JSON3 = __webpack_require__(/*! json3 */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/json3/lib/json3.js")
+  , browser = __webpack_require__(/*! ./browser */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/utils/browser.js")
   ;
 
 var debug = function() {};
 if (true) {
-  debug = __webpack_require__(/*! debug */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/node_modules/debug/src/browser.js")('sockjs-client:utils:iframe');
+  debug = __webpack_require__(/*! debug */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/node_modules/debug/src/browser.js")('sockjs-client:utils:iframe');
 }
 
 module.exports = {
@@ -40040,14 +40040,14 @@ if (global.document) {
     typeof global.postMessage === 'object') && (!browser.isKonqueror());
 }
 
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../webpack/buildin/global.js */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/webpack/buildin/global.js")))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../webpack/buildin/global.js */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/webpack/buildin/global.js")))
 
 /***/ }),
 
-/***/ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/utils/log.js":
-/*!*************************************************************************************************************!*\
-  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/utils/log.js ***!
-  \*************************************************************************************************************/
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/utils/log.js":
+/*!*******************************************************************************************************************!*\
+  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/utils/log.js ***!
+  \*******************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -40071,14 +40071,14 @@ var logObject = {};
 
 module.exports = logObject;
 
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../webpack/buildin/global.js */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/webpack/buildin/global.js")))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../webpack/buildin/global.js */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/webpack/buildin/global.js")))
 
 /***/ }),
 
-/***/ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/utils/object.js":
-/*!****************************************************************************************************************!*\
-  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/utils/object.js ***!
-  \****************************************************************************************************************/
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/utils/object.js":
+/*!**********************************************************************************************************************!*\
+  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/utils/object.js ***!
+  \**********************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -40111,10 +40111,10 @@ module.exports = {
 
 /***/ }),
 
-/***/ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/utils/random.js":
-/*!****************************************************************************************************************!*\
-  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/utils/random.js ***!
-  \****************************************************************************************************************/
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/utils/random.js":
+/*!**********************************************************************************************************************!*\
+  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/utils/random.js ***!
+  \**********************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -40122,7 +40122,7 @@ module.exports = {
 
 
 /* global crypto:true */
-var crypto = __webpack_require__(/*! crypto */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/utils/browser-crypto.js");
+var crypto = __webpack_require__(/*! crypto */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/utils/browser-crypto.js");
 
 // This string has length 32, a power of 2, so the modulus doesn't introduce a
 // bias.
@@ -40152,10 +40152,10 @@ module.exports = {
 
 /***/ }),
 
-/***/ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/utils/transport.js":
-/*!*******************************************************************************************************************!*\
-  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/utils/transport.js ***!
-  \*******************************************************************************************************************/
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/utils/transport.js":
+/*!*************************************************************************************************************************!*\
+  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/utils/transport.js ***!
+  \*************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -40164,7 +40164,7 @@ module.exports = {
 
 var debug = function() {};
 if (true) {
-  debug = __webpack_require__(/*! debug */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/node_modules/debug/src/browser.js")('sockjs-client:utils:transport');
+  debug = __webpack_require__(/*! debug */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/node_modules/debug/src/browser.js")('sockjs-client:utils:transport');
 }
 
 module.exports = function(availableTransports) {
@@ -40214,21 +40214,21 @@ module.exports = function(availableTransports) {
 
 /***/ }),
 
-/***/ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/utils/url.js":
-/*!*************************************************************************************************************!*\
-  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/utils/url.js ***!
-  \*************************************************************************************************************/
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/utils/url.js":
+/*!*******************************************************************************************************************!*\
+  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/utils/url.js ***!
+  \*******************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var URL = __webpack_require__(/*! url-parse */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/url-parse/index.js");
+var URL = __webpack_require__(/*! url-parse */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/url-parse/index.js");
 
 var debug = function() {};
 if (true) {
-  debug = __webpack_require__(/*! debug */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/node_modules/debug/src/browser.js")('sockjs-client:utils:url');
+  debug = __webpack_require__(/*! debug */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/node_modules/debug/src/browser.js")('sockjs-client:utils:url');
 }
 
 module.exports = {
@@ -40273,10 +40273,10 @@ module.exports = {
 
 /***/ }),
 
-/***/ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/version.js":
-/*!***********************************************************************************************************!*\
-  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/version.js ***!
-  \***********************************************************************************************************/
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/version.js":
+/*!*****************************************************************************************************************!*\
+  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/version.js ***!
+  \*****************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -40285,10 +40285,10 @@ module.exports = '1.4.0';
 
 /***/ }),
 
-/***/ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/node_modules/debug/src/browser.js":
-/*!******************************************************************************************************************************!*\
-  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/node_modules/debug/src/browser.js ***!
-  \******************************************************************************************************************************/
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/node_modules/debug/src/browser.js":
+/*!************************************************************************************************************************************!*\
+  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/node_modules/debug/src/browser.js ***!
+  \************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -40459,7 +40459,7 @@ function localstorage() {
   }
 }
 
-module.exports = __webpack_require__(/*! ./common */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/node_modules/debug/src/common.js")(exports);
+module.exports = __webpack_require__(/*! ./common */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/node_modules/debug/src/common.js")(exports);
 var formatters = module.exports.formatters;
 /**
  * Map %j to `JSON.stringify()`, since no Web Inspectors do that by default.
@@ -40474,14 +40474,14 @@ formatters.j = function (v) {
 };
 
 
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../../process/browser.js */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/process/browser.js")))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../../process/browser.js */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/process/browser.js")))
 
 /***/ }),
 
-/***/ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/node_modules/debug/src/common.js":
-/*!*****************************************************************************************************************************!*\
-  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/node_modules/debug/src/common.js ***!
-  \*****************************************************************************************************************************/
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/node_modules/debug/src/common.js":
+/*!***********************************************************************************************************************************!*\
+  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/node_modules/debug/src/common.js ***!
+  \***********************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -40499,7 +40499,7 @@ function setup(env) {
   createDebug.disable = disable;
   createDebug.enable = enable;
   createDebug.enabled = enabled;
-  createDebug.humanize = __webpack_require__(/*! ms */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/ms/index.js");
+  createDebug.humanize = __webpack_require__(/*! ms */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/ms/index.js");
   Object.keys(env).forEach(function (key) {
     createDebug[key] = env[key];
   });
@@ -40739,10 +40739,10 @@ module.exports = setup;
 
 /***/ }),
 
-/***/ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/stompjs/lib/stomp.js":
-/*!***************************************************************************************************!*\
-  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/demo/node_modules/stompjs/lib/stomp.js ***!
-  \***************************************************************************************************/
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/stompjs/lib/stomp.js":
+/*!*********************************************************************************************************!*\
+  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/node_modules/stompjs/lib/stomp.js ***!
+  \*********************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -41238,18 +41238,18 @@ module.exports = setup;
 
 /***/ }),
 
-/***/ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/url-parse/index.js":
-/*!*************************************************************************************************!*\
-  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/demo/node_modules/url-parse/index.js ***!
-  \*************************************************************************************************/
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/url-parse/index.js":
+/*!*******************************************************************************************************!*\
+  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/node_modules/url-parse/index.js ***!
+  \*******************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(global) {
 
-var required = __webpack_require__(/*! requires-port */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/requires-port/index.js")
-  , qs = __webpack_require__(/*! querystringify */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/querystringify/index.js")
+var required = __webpack_require__(/*! requires-port */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/requires-port/index.js")
+  , qs = __webpack_require__(/*! querystringify */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/querystringify/index.js")
   , slashes = /^[A-Za-z][A-Za-z0-9+-.]*:\/\//
   , protocolre = /^([a-z][a-z0-9.+-]*:)?(\/\/)?([\S\s]*)/i
   , whitespace = '[\\x09\\x0A\\x0B\\x0C\\x0D\\x20\\xA0\\u1680\\u180E\\u2000\\u2001\\u2002\\u2003\\u2004\\u2005\\u2006\\u2007\\u2008\\u2009\\u200A\\u202F\\u205F\\u3000\\u2028\\u2029\\uFEFF]'
@@ -41697,11 +41697,11 @@ Url.qs = qs;
 
 module.exports = Url;
 
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../webpack/buildin/global.js */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/webpack/buildin/global.js")))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../webpack/buildin/global.js */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/webpack/buildin/global.js")))
 
 /***/ }),
 
-/***/ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/webpack/buildin/amd-define.js":
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/webpack/buildin/amd-define.js":
 /*!***************************************!*\
   !*** (webpack)/buildin/amd-define.js ***!
   \***************************************/
@@ -41715,7 +41715,7 @@ module.exports = function() {
 
 /***/ }),
 
-/***/ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/webpack/buildin/amd-options.js":
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/webpack/buildin/amd-options.js":
 /*!****************************************!*\
   !*** (webpack)/buildin/amd-options.js ***!
   \****************************************/
@@ -41729,7 +41729,7 @@ module.exports = __webpack_amd_options__;
 
 /***/ }),
 
-/***/ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/webpack/buildin/global.js":
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/webpack/buildin/global.js":
 /*!***********************************!*\
   !*** (webpack)/buildin/global.js ***!
   \***********************************/
@@ -41760,7 +41760,7 @@ module.exports = g;
 
 /***/ }),
 
-/***/ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/webpack/buildin/module.js":
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/webpack/buildin/module.js":
 /*!***********************************!*\
   !*** (webpack)/buildin/module.js ***!
   \***********************************/
@@ -41793,10 +41793,10 @@ module.exports = function(module) {
 
 /***/ }),
 
-/***/ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/when/lib/Promise.js":
-/*!**************************************************************************************************!*\
-  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/demo/node_modules/when/lib/Promise.js ***!
-  \**************************************************************************************************/
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/when/lib/Promise.js":
+/*!********************************************************************************************************!*\
+  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/node_modules/when/lib/Promise.js ***!
+  \********************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -41807,9 +41807,9 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/** @license MIT License (c) copyright 2010-20
 (function(define) { 'use strict';
 !(__WEBPACK_AMD_DEFINE_RESULT__ = (function (require) {
 
-	var makePromise = __webpack_require__(/*! ./makePromise */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/when/lib/makePromise.js");
-	var Scheduler = __webpack_require__(/*! ./Scheduler */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/when/lib/Scheduler.js");
-	var async = __webpack_require__(/*! ./env */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/when/lib/env.js").asap;
+	var makePromise = __webpack_require__(/*! ./makePromise */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/when/lib/makePromise.js");
+	var Scheduler = __webpack_require__(/*! ./Scheduler */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/when/lib/Scheduler.js");
+	var async = __webpack_require__(/*! ./env */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/when/lib/env.js").asap;
 
 	return makePromise({
 		scheduler: new Scheduler(async)
@@ -41817,15 +41817,15 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/** @license MIT License (c) copyright 2010-20
 
 }).call(exports, __webpack_require__, exports, module),
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
-})(__webpack_require__(/*! !webpack amd define */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/webpack/buildin/amd-define.js"));
+})(__webpack_require__(/*! !webpack amd define */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/webpack/buildin/amd-define.js"));
 
 
 /***/ }),
 
-/***/ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/when/lib/Scheduler.js":
-/*!****************************************************************************************************!*\
-  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/demo/node_modules/when/lib/Scheduler.js ***!
-  \****************************************************************************************************/
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/when/lib/Scheduler.js":
+/*!**********************************************************************************************************!*\
+  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/node_modules/when/lib/Scheduler.js ***!
+  \**********************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -41909,15 +41909,15 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/** @license MIT License (c) copyright 2010-20
 
 }).call(exports, __webpack_require__, exports, module),
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
-}(__webpack_require__(/*! !webpack amd define */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/webpack/buildin/amd-define.js")));
+}(__webpack_require__(/*! !webpack amd define */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/webpack/buildin/amd-define.js")));
 
 
 /***/ }),
 
-/***/ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/when/lib/TimeoutError.js":
-/*!*******************************************************************************************************!*\
-  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/demo/node_modules/when/lib/TimeoutError.js ***!
-  \*******************************************************************************************************/
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/when/lib/TimeoutError.js":
+/*!*************************************************************************************************************!*\
+  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/node_modules/when/lib/TimeoutError.js ***!
+  \*************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -41948,14 +41948,14 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/** @license MIT License (c) copyright 2010-20
 	return TimeoutError;
 }).call(exports, __webpack_require__, exports, module),
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
-}(__webpack_require__(/*! !webpack amd define */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/webpack/buildin/amd-define.js")));
+}(__webpack_require__(/*! !webpack amd define */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/webpack/buildin/amd-define.js")));
 
 /***/ }),
 
-/***/ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/when/lib/apply.js":
-/*!************************************************************************************************!*\
-  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/demo/node_modules/when/lib/apply.js ***!
-  \************************************************************************************************/
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/when/lib/apply.js":
+/*!******************************************************************************************************!*\
+  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/node_modules/when/lib/apply.js ***!
+  \******************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -42012,17 +42012,17 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/** @license MIT License (c) copyright 2010-20
 
 }).call(exports, __webpack_require__, exports, module),
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
-}(__webpack_require__(/*! !webpack amd define */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/webpack/buildin/amd-define.js")));
+}(__webpack_require__(/*! !webpack amd define */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/webpack/buildin/amd-define.js")));
 
 
 
 
 /***/ }),
 
-/***/ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/when/lib/decorators/array.js":
-/*!***********************************************************************************************************!*\
-  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/demo/node_modules/when/lib/decorators/array.js ***!
-  \***********************************************************************************************************/
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/when/lib/decorators/array.js":
+/*!*****************************************************************************************************************!*\
+  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/node_modules/when/lib/decorators/array.js ***!
+  \*****************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -42033,8 +42033,8 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/** @license MIT License (c) copyright 2010-20
 (function(define) { 'use strict';
 !(__WEBPACK_AMD_DEFINE_RESULT__ = (function(require) {
 
-	var state = __webpack_require__(/*! ../state */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/when/lib/state.js");
-	var applier = __webpack_require__(/*! ../apply */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/when/lib/apply.js");
+	var state = __webpack_require__(/*! ../state */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/when/lib/state.js");
+	var applier = __webpack_require__(/*! ../apply */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/when/lib/apply.js");
 
 	return function array(Promise) {
 
@@ -42325,15 +42325,15 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/** @license MIT License (c) copyright 2010-20
 
 }).call(exports, __webpack_require__, exports, module),
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
-}(__webpack_require__(/*! !webpack amd define */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/webpack/buildin/amd-define.js")));
+}(__webpack_require__(/*! !webpack amd define */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/webpack/buildin/amd-define.js")));
 
 
 /***/ }),
 
-/***/ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/when/lib/decorators/flow.js":
-/*!**********************************************************************************************************!*\
-  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/demo/node_modules/when/lib/decorators/flow.js ***!
-  \**********************************************************************************************************/
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/when/lib/decorators/flow.js":
+/*!****************************************************************************************************************!*\
+  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/node_modules/when/lib/decorators/flow.js ***!
+  \****************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -42497,15 +42497,15 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/** @license MIT License (c) copyright 2010-20
 
 }).call(exports, __webpack_require__, exports, module),
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
-}(__webpack_require__(/*! !webpack amd define */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/webpack/buildin/amd-define.js")));
+}(__webpack_require__(/*! !webpack amd define */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/webpack/buildin/amd-define.js")));
 
 
 /***/ }),
 
-/***/ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/when/lib/decorators/fold.js":
-/*!**********************************************************************************************************!*\
-  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/demo/node_modules/when/lib/decorators/fold.js ***!
-  \**********************************************************************************************************/
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/when/lib/decorators/fold.js":
+/*!****************************************************************************************************************!*\
+  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/node_modules/when/lib/decorators/fold.js ***!
+  \****************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -42536,15 +42536,15 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/** @license MIT License (c) copyright 2010-20
 
 }).call(exports, __webpack_require__, exports, module),
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
-}(__webpack_require__(/*! !webpack amd define */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/webpack/buildin/amd-define.js")));
+}(__webpack_require__(/*! !webpack amd define */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/webpack/buildin/amd-define.js")));
 
 
 /***/ }),
 
-/***/ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/when/lib/decorators/inspect.js":
-/*!*************************************************************************************************************!*\
-  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/demo/node_modules/when/lib/decorators/inspect.js ***!
-  \*************************************************************************************************************/
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/when/lib/decorators/inspect.js":
+/*!*******************************************************************************************************************!*\
+  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/node_modules/when/lib/decorators/inspect.js ***!
+  \*******************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -42555,7 +42555,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/** @license MIT License (c) copyright 2010-20
 (function(define) { 'use strict';
 !(__WEBPACK_AMD_DEFINE_RESULT__ = (function(require) {
 
-	var inspect = __webpack_require__(/*! ../state */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/when/lib/state.js").inspect;
+	var inspect = __webpack_require__(/*! ../state */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/when/lib/state.js").inspect;
 
 	return function inspection(Promise) {
 
@@ -42568,15 +42568,15 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/** @license MIT License (c) copyright 2010-20
 
 }).call(exports, __webpack_require__, exports, module),
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
-}(__webpack_require__(/*! !webpack amd define */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/webpack/buildin/amd-define.js")));
+}(__webpack_require__(/*! !webpack amd define */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/webpack/buildin/amd-define.js")));
 
 
 /***/ }),
 
-/***/ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/when/lib/decorators/iterate.js":
-/*!*************************************************************************************************************!*\
-  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/demo/node_modules/when/lib/decorators/iterate.js ***!
-  \*************************************************************************************************************/
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/when/lib/decorators/iterate.js":
+/*!*******************************************************************************************************************!*\
+  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/node_modules/when/lib/decorators/iterate.js ***!
+  \*******************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -42645,15 +42645,15 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/** @license MIT License (c) copyright 2010-20
 
 }).call(exports, __webpack_require__, exports, module),
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
-}(__webpack_require__(/*! !webpack amd define */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/webpack/buildin/amd-define.js")));
+}(__webpack_require__(/*! !webpack amd define */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/webpack/buildin/amd-define.js")));
 
 
 /***/ }),
 
-/***/ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/when/lib/decorators/progress.js":
-/*!**************************************************************************************************************!*\
-  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/demo/node_modules/when/lib/decorators/progress.js ***!
-  \**************************************************************************************************************/
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/when/lib/decorators/progress.js":
+/*!********************************************************************************************************************!*\
+  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/node_modules/when/lib/decorators/progress.js ***!
+  \********************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -42681,15 +42681,15 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/** @license MIT License (c) copyright 2010-20
 
 }).call(exports, __webpack_require__, exports, module),
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
-}(__webpack_require__(/*! !webpack amd define */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/webpack/buildin/amd-define.js")));
+}(__webpack_require__(/*! !webpack amd define */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/webpack/buildin/amd-define.js")));
 
 
 /***/ }),
 
-/***/ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/when/lib/decorators/timed.js":
-/*!***********************************************************************************************************!*\
-  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/demo/node_modules/when/lib/decorators/timed.js ***!
-  \***********************************************************************************************************/
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/when/lib/decorators/timed.js":
+/*!*****************************************************************************************************************!*\
+  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/node_modules/when/lib/decorators/timed.js ***!
+  \*****************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -42700,8 +42700,8 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/** @license MIT License (c) copyright 2010-20
 (function(define) { 'use strict';
 !(__WEBPACK_AMD_DEFINE_RESULT__ = (function(require) {
 
-	var env = __webpack_require__(/*! ../env */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/when/lib/env.js");
-	var TimeoutError = __webpack_require__(/*! ../TimeoutError */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/when/lib/TimeoutError.js");
+	var env = __webpack_require__(/*! ../env */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/when/lib/env.js");
+	var TimeoutError = __webpack_require__(/*! ../TimeoutError */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/when/lib/TimeoutError.js");
 
 	function setTimeout(f, ms, x, y) {
 		return env.setTimer(function() {
@@ -42771,15 +42771,15 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/** @license MIT License (c) copyright 2010-20
 
 }).call(exports, __webpack_require__, exports, module),
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
-}(__webpack_require__(/*! !webpack amd define */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/webpack/buildin/amd-define.js")));
+}(__webpack_require__(/*! !webpack amd define */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/webpack/buildin/amd-define.js")));
 
 
 /***/ }),
 
-/***/ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/when/lib/decorators/unhandledRejection.js":
-/*!************************************************************************************************************************!*\
-  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/demo/node_modules/when/lib/decorators/unhandledRejection.js ***!
-  \************************************************************************************************************************/
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/when/lib/decorators/unhandledRejection.js":
+/*!******************************************************************************************************************************!*\
+  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/node_modules/when/lib/decorators/unhandledRejection.js ***!
+  \******************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -42790,8 +42790,8 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/** @license MIT License (c) copyright 2010-20
 (function(define) { 'use strict';
 !(__WEBPACK_AMD_DEFINE_RESULT__ = (function(require) {
 
-	var setTimer = __webpack_require__(/*! ../env */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/when/lib/env.js").setTimer;
-	var format = __webpack_require__(/*! ../format */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/when/lib/format.js");
+	var setTimer = __webpack_require__(/*! ../env */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/when/lib/env.js").setTimer;
+	var format = __webpack_require__(/*! ../format */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/when/lib/format.js");
 
 	return function unhandledRejection(Promise) {
 
@@ -42869,15 +42869,15 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/** @license MIT License (c) copyright 2010-20
 
 }).call(exports, __webpack_require__, exports, module),
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
-}(__webpack_require__(/*! !webpack amd define */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/webpack/buildin/amd-define.js")));
+}(__webpack_require__(/*! !webpack amd define */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/webpack/buildin/amd-define.js")));
 
 
 /***/ }),
 
-/***/ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/when/lib/decorators/with.js":
-/*!**********************************************************************************************************!*\
-  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/demo/node_modules/when/lib/decorators/with.js ***!
-  \**********************************************************************************************************/
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/when/lib/decorators/with.js":
+/*!****************************************************************************************************************!*\
+  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/node_modules/when/lib/decorators/with.js ***!
+  \****************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -42918,16 +42918,16 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/** @license MIT License (c) copyright 2010-20
 
 }).call(exports, __webpack_require__, exports, module),
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
-}(__webpack_require__(/*! !webpack amd define */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/webpack/buildin/amd-define.js")));
+}(__webpack_require__(/*! !webpack amd define */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/webpack/buildin/amd-define.js")));
 
 
 
 /***/ }),
 
-/***/ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/when/lib/env.js":
-/*!**********************************************************************************************!*\
-  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/demo/node_modules/when/lib/env.js ***!
-  \**********************************************************************************************/
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/when/lib/env.js":
+/*!****************************************************************************************************!*\
+  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/node_modules/when/lib/env.js ***!
+  \****************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -43004,16 +43004,16 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/** @license MIT License (c) copyright 2010-20
 	}
 }).call(exports, __webpack_require__, exports, module),
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
-}(__webpack_require__(/*! !webpack amd define */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/webpack/buildin/amd-define.js")));
+}(__webpack_require__(/*! !webpack amd define */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/webpack/buildin/amd-define.js")));
 
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../process/browser.js */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/process/browser.js")))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../process/browser.js */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/process/browser.js")))
 
 /***/ }),
 
-/***/ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/when/lib/format.js":
-/*!*************************************************************************************************!*\
-  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/demo/node_modules/when/lib/format.js ***!
-  \*************************************************************************************************/
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/when/lib/format.js":
+/*!*******************************************************************************************************!*\
+  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/node_modules/when/lib/format.js ***!
+  \*******************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -43073,15 +43073,15 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/** @license MIT License (c) copyright 2010-20
 
 }).call(exports, __webpack_require__, exports, module),
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
-}(__webpack_require__(/*! !webpack amd define */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/webpack/buildin/amd-define.js")));
+}(__webpack_require__(/*! !webpack amd define */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/webpack/buildin/amd-define.js")));
 
 
 /***/ }),
 
-/***/ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/when/lib/makePromise.js":
-/*!******************************************************************************************************!*\
-  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/demo/node_modules/when/lib/makePromise.js ***!
-  \******************************************************************************************************/
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/when/lib/makePromise.js":
+/*!************************************************************************************************************!*\
+  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/node_modules/when/lib/makePromise.js ***!
+  \************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -44040,16 +44040,16 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/** @license MIT License (c) copyright 2010-20
 	};
 }).call(exports, __webpack_require__, exports, module),
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
-}(__webpack_require__(/*! !webpack amd define */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/webpack/buildin/amd-define.js")));
+}(__webpack_require__(/*! !webpack amd define */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/webpack/buildin/amd-define.js")));
 
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../process/browser.js */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/process/browser.js")))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../process/browser.js */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/process/browser.js")))
 
 /***/ }),
 
-/***/ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/when/lib/state.js":
-/*!************************************************************************************************!*\
-  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/demo/node_modules/when/lib/state.js ***!
-  \************************************************************************************************/
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/when/lib/state.js":
+/*!******************************************************************************************************!*\
+  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/node_modules/when/lib/state.js ***!
+  \******************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -44088,15 +44088,15 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/** @license MIT License (c) copyright 2010-20
 
 }).call(exports, __webpack_require__, exports, module),
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
-}(__webpack_require__(/*! !webpack amd define */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/webpack/buildin/amd-define.js")));
+}(__webpack_require__(/*! !webpack amd define */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/webpack/buildin/amd-define.js")));
 
 
 /***/ }),
 
-/***/ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/when/when.js":
-/*!*******************************************************************************************!*\
-  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/demo/node_modules/when/when.js ***!
-  \*******************************************************************************************/
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/when/when.js":
+/*!*************************************************************************************************!*\
+  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/node_modules/when/when.js ***!
+  \*************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -44111,24 +44111,24 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/** @license MIT License (c) copyright 2010-20
 (function(define) { 'use strict';
 !(__WEBPACK_AMD_DEFINE_RESULT__ = (function (require) {
 
-	var timed = __webpack_require__(/*! ./lib/decorators/timed */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/when/lib/decorators/timed.js");
-	var array = __webpack_require__(/*! ./lib/decorators/array */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/when/lib/decorators/array.js");
-	var flow = __webpack_require__(/*! ./lib/decorators/flow */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/when/lib/decorators/flow.js");
-	var fold = __webpack_require__(/*! ./lib/decorators/fold */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/when/lib/decorators/fold.js");
-	var inspect = __webpack_require__(/*! ./lib/decorators/inspect */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/when/lib/decorators/inspect.js");
-	var generate = __webpack_require__(/*! ./lib/decorators/iterate */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/when/lib/decorators/iterate.js");
-	var progress = __webpack_require__(/*! ./lib/decorators/progress */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/when/lib/decorators/progress.js");
-	var withThis = __webpack_require__(/*! ./lib/decorators/with */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/when/lib/decorators/with.js");
-	var unhandledRejection = __webpack_require__(/*! ./lib/decorators/unhandledRejection */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/when/lib/decorators/unhandledRejection.js");
-	var TimeoutError = __webpack_require__(/*! ./lib/TimeoutError */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/when/lib/TimeoutError.js");
+	var timed = __webpack_require__(/*! ./lib/decorators/timed */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/when/lib/decorators/timed.js");
+	var array = __webpack_require__(/*! ./lib/decorators/array */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/when/lib/decorators/array.js");
+	var flow = __webpack_require__(/*! ./lib/decorators/flow */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/when/lib/decorators/flow.js");
+	var fold = __webpack_require__(/*! ./lib/decorators/fold */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/when/lib/decorators/fold.js");
+	var inspect = __webpack_require__(/*! ./lib/decorators/inspect */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/when/lib/decorators/inspect.js");
+	var generate = __webpack_require__(/*! ./lib/decorators/iterate */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/when/lib/decorators/iterate.js");
+	var progress = __webpack_require__(/*! ./lib/decorators/progress */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/when/lib/decorators/progress.js");
+	var withThis = __webpack_require__(/*! ./lib/decorators/with */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/when/lib/decorators/with.js");
+	var unhandledRejection = __webpack_require__(/*! ./lib/decorators/unhandledRejection */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/when/lib/decorators/unhandledRejection.js");
+	var TimeoutError = __webpack_require__(/*! ./lib/TimeoutError */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/when/lib/TimeoutError.js");
 
 	var Promise = [array, flow, fold, generate, progress,
 		inspect, withThis, timed, unhandledRejection]
 		.reduce(function(Promise, feature) {
 			return feature(Promise);
-		}, __webpack_require__(/*! ./lib/Promise */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/when/lib/Promise.js"));
+		}, __webpack_require__(/*! ./lib/Promise */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/when/lib/Promise.js"));
 
-	var apply = __webpack_require__(/*! ./lib/apply */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/when/lib/apply.js")(Promise);
+	var apply = __webpack_require__(/*! ./lib/apply */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/when/lib/apply.js")(Promise);
 
 	// Public API
 
@@ -44328,15 +44328,15 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/** @license MIT License (c) copyright 2010-20
 	return when;
 }).call(exports, __webpack_require__, exports, module),
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
-})(__webpack_require__(/*! !webpack amd define */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/webpack/buildin/amd-define.js"));
+})(__webpack_require__(/*! !webpack amd define */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/webpack/buildin/amd-define.js"));
 
 
 /***/ }),
 
-/***/ "../../../../../Documents/React/MyStuff/recipe-app/demo/src/main/js/api/uriListConverter.js":
-/*!*****************************************************************************************************!*\
-  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/demo/src/main/js/api/uriListConverter.js ***!
-  \*****************************************************************************************************/
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/src/main/js/api/uriListConverter.js":
+/*!***********************************************************************************************************!*\
+  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/src/main/js/api/uriListConverter.js ***!
+  \***********************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -44366,17 +44366,17 @@ var __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_RESULT__ = (function ()
 
 /***/ }),
 
-/***/ "../../../../../Documents/React/MyStuff/recipe-app/demo/src/main/js/api/uriTemplateInterceptor.js":
-/*!***********************************************************************************************************!*\
-  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/demo/src/main/js/api/uriTemplateInterceptor.js ***!
-  \***********************************************************************************************************/
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/src/main/js/api/uriTemplateInterceptor.js":
+/*!*****************************************************************************************************************!*\
+  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/src/main/js/api/uriTemplateInterceptor.js ***!
+  \*****************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_RESULT__ = (function (require) {
   'use strict';
 
-  var interceptor = __webpack_require__(/*! rest/interceptor */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/rest/interceptor.js");
+  var interceptor = __webpack_require__(/*! rest/interceptor */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/rest/interceptor.js");
 
   return interceptor({
     request: function request(_request
@@ -44395,22 +44395,22 @@ var __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_RESULT__ = (function (r
 
 /***/ }),
 
-/***/ "../../../../../Documents/React/MyStuff/recipe-app/demo/src/main/js/app.js":
-/*!************************************************************************************!*\
-  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/demo/src/main/js/app.js ***!
-  \************************************************************************************/
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/src/main/js/app.js":
+/*!******************************************************************************************!*\
+  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/src/main/js/app.js ***!
+  \******************************************************************************************/
 /*! no exports provided */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/react-dom/index.js");
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/react-dom/index.js");
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _client__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./client */ "../../../../../Documents/React/MyStuff/recipe-app/demo/src/main/js/client.js");
+/* harmony import */ var _client__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./client */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/src/main/js/client.js");
 /* harmony import */ var _client__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_client__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var when__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! when */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/when/when.js");
+/* harmony import */ var when__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! when */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/when/when.js");
 /* harmony import */ var when__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(when__WEBPACK_IMPORTED_MODULE_3__);
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -44435,9 +44435,9 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 
 
-var follow = __webpack_require__(/*! ./follow */ "../../../../../Documents/React/MyStuff/recipe-app/demo/src/main/js/follow.js");
+var follow = __webpack_require__(/*! ./follow */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/src/main/js/follow.js");
 
-var stompClient = __webpack_require__(/*! ./websocket-listener */ "../../../../../Documents/React/MyStuff/recipe-app/demo/src/main/js/websocket-listener.js");
+var stompClient = __webpack_require__(/*! ./websocket-listener */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/src/main/js/websocket-listener.js");
 
 var root = '/api';
 
@@ -44535,12 +44535,6 @@ function (_React$Component) {
   }, {
     key: "onUpdate",
     value: function onUpdate(recipe, updatedRecipe) {
-      console.log("onUpdate: ------->");
-      console.log("chef name: " + recipe.entity.chef.name);
-      console.log("loggedInChef: " + this.state.loggedInChef);
-      console.log("_+_+_+_+_+_+ this state: ");
-      console.log(this.state);
-
       if (recipe.entity.chef.name === this.state.loggedInChef) {
         updatedRecipe['chef'] = recipe.entity.chef;
         _client__WEBPACK_IMPORTED_MODULE_2___default()({
@@ -44644,7 +44638,6 @@ function (_React$Component) {
           page: this.state.page.number
         }
       }]).then(function (recipeCollection) {
-        console.log(recipeCollection.entity);
         _this5.links = recipeCollection.entity._links;
         _this5.page = recipeCollection.entity.page;
         return recipeCollection.entity._embedded.recipes.map(function (recipe) {
@@ -44965,8 +44958,6 @@ function (_React$Component5) {
   }, {
     key: "render",
     value: function render() {
-      console.log("+++++++++++++++++==========+++++++++++++++++++");
-      console.log(this.props);
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, this.props.recipe.entity.recipeTitle), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, this.props.recipe.entity.description), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, this.props.recipe.entity.ingredient), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, this.props.recipe.entity.chef.name), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(UpdateDialog, {
         recipe: this.props.recipe,
         attributes: this.props.attributes,
@@ -44987,31 +44978,31 @@ react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_
 
 /***/ }),
 
-/***/ "../../../../../Documents/React/MyStuff/recipe-app/demo/src/main/js/client.js":
-/*!***************************************************************************************!*\
-  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/demo/src/main/js/client.js ***!
-  \***************************************************************************************/
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/src/main/js/client.js":
+/*!*********************************************************************************************!*\
+  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/src/main/js/client.js ***!
+  \*********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var rest = __webpack_require__(/*! rest */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/rest/browser.js");
+var rest = __webpack_require__(/*! rest */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/rest/browser.js");
 
-var defaultRequest = __webpack_require__(/*! rest/interceptor/defaultRequest */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/rest/interceptor/defaultRequest.js");
+var defaultRequest = __webpack_require__(/*! rest/interceptor/defaultRequest */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/rest/interceptor/defaultRequest.js");
 
-var mime = __webpack_require__(/*! rest/interceptor/mime */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/rest/interceptor/mime.js");
+var mime = __webpack_require__(/*! rest/interceptor/mime */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/rest/interceptor/mime.js");
 
-var uriTemplateInterceptor = __webpack_require__(/*! ./api/uriTemplateInterceptor */ "../../../../../Documents/React/MyStuff/recipe-app/demo/src/main/js/api/uriTemplateInterceptor.js");
+var uriTemplateInterceptor = __webpack_require__(/*! ./api/uriTemplateInterceptor */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/src/main/js/api/uriTemplateInterceptor.js");
 
-var errorCode = __webpack_require__(/*! rest/interceptor/errorCode */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/rest/interceptor/errorCode.js");
+var errorCode = __webpack_require__(/*! rest/interceptor/errorCode */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/rest/interceptor/errorCode.js");
 
-var baseRegistry = __webpack_require__(/*! rest/mime/registry */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/rest/mime/registry.js");
+var baseRegistry = __webpack_require__(/*! rest/mime/registry */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/rest/mime/registry.js");
 
 var registry = baseRegistry.child();
-registry.register('text/uri-list', __webpack_require__(/*! ./api/uriListConverter */ "../../../../../Documents/React/MyStuff/recipe-app/demo/src/main/js/api/uriListConverter.js"));
-registry.register('application/hal+json', __webpack_require__(/*! rest/mime/type/application/hal */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/rest/mime/type/application/hal.js"));
+registry.register('text/uri-list', __webpack_require__(/*! ./api/uriListConverter */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/src/main/js/api/uriListConverter.js"));
+registry.register('application/hal+json', __webpack_require__(/*! rest/mime/type/application/hal */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/rest/mime/type/application/hal.js"));
 module.exports = rest.wrap(mime, {
   registry: registry
 }).wrap(uriTemplateInterceptor).wrap(errorCode).wrap(defaultRequest, {
@@ -45022,10 +45013,10 @@ module.exports = rest.wrap(mime, {
 
 /***/ }),
 
-/***/ "../../../../../Documents/React/MyStuff/recipe-app/demo/src/main/js/follow.js":
-/*!***************************************************************************************!*\
-  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/demo/src/main/js/follow.js ***!
-  \***************************************************************************************/
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/src/main/js/follow.js":
+/*!*********************************************************************************************!*\
+  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/src/main/js/follow.js ***!
+  \*********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -45071,16 +45062,16 @@ module.exports = function follow(api, rootPath, relArray) {
 
 /***/ }),
 
-/***/ "../../../../../Documents/React/MyStuff/recipe-app/demo/src/main/js/websocket-listener.js":
-/*!***************************************************************************************************!*\
-  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/demo/src/main/js/websocket-listener.js ***!
-  \***************************************************************************************************/
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/src/main/js/websocket-listener.js":
+/*!*********************************************************************************************************!*\
+  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/src/main/js/websocket-listener.js ***!
+  \*********************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-var SockJS = __webpack_require__(/*! sockjs-client */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/sockjs-client/lib/entry.js");
+var SockJS = __webpack_require__(/*! sockjs-client */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sockjs-client/lib/entry.js");
 
-__webpack_require__(/*! stompjs */ "../../../../../Documents/React/MyStuff/recipe-app/demo/node_modules/stompjs/lib/stomp.js");
+__webpack_require__(/*! stompjs */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/stompjs/lib/stomp.js");
 
 function register(registrations) {
   var socket = SockJS('/recipes');

@@ -1,4 +1,4 @@
-package com.hediger.recipes;
+package com.hediger.recipes.config;
 
 import org.springframework.messaging.simp.config.MessageBrokerRegistry;
 import org.springframework.stereotype.Component;
@@ -10,7 +10,7 @@ import org.springframework.web.socket.config.annotation.WebSocketMessageBrokerCo
 @EnableWebSocketMessageBroker
 public class WebSocketConfiguration implements WebSocketMessageBrokerConfigurer {
 
-	static final String MESSAGE_PREFIX = "/topic";
+	static public final String MESSAGE_PREFIX = "/topic";
 
 	@Override
 	public void registerStompEndpoints(StompEndpointRegistry registry) {

@@ -1,4 +1,4 @@
-package com.hediger.recipes;
+package com.hediger.recipes.models.recipe;
 
 import org.springframework.data.repository.PagingAndSortingRepository;
 import org.springframework.data.repository.query.Param;

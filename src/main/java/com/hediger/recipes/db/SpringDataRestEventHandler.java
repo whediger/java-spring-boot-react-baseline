@@ -1,4 +1,4 @@
-package com.hediger.recipes;
+package com.hediger.recipes.db;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.rest.core.annotation.HandleBeforeCreate;
@@ -6,6 +6,9 @@ import org.springframework.data.rest.core.annotation.HandleBeforeSave;
 import org.springframework.data.rest.core.annotation.RepositoryEventHandler;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Component;
+
+import com.hediger.recipes.models.chef.*;
+import com.hediger.recipes.models.recipe.*;
 
 @Component
 @RepositoryEventHandler(Recipe.class)

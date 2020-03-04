@@ -1,4 +1,4 @@
-package com.hediger.recipes;
+package com.hediger.recipes.models.recipe;
 
 import java.util.Objects;
 
@@ -9,6 +9,8 @@ import javax.persistence.ManyToOne;
 import javax.persistence.Version;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+
+import com.hediger.recipes.models.chef.*;
 
 @Entity
 public class Recipe {
