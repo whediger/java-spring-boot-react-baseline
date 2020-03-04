@@ -38,7 +38,7 @@ public class DatabaseLoader implements CommandLineRunner {
 			new UsernamePasswordAuthenticationToken("oliver", "doesn't matter",
 				AuthorityUtils.createAuthorityList("ROLE_CHEF")));
 
-		this.recipes.save(new Recipe("pizza", "colorado pizza", "cheese, bread, olive oil", oliver));
+		this.recipes.save(new Recipe("pizza", "chicago pizza", "extra cheese, bread, tomatos", oliver));
 		this.recipes.save(new Recipe("soup", "poboy soup", "water, dirt and rocks", oliver));
 		this.recipes.save(new Recipe("curry", "coconut curry", "cocnut, curry and yummyness", oliver));
 

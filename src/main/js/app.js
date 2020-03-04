@@ -77,11 +77,6 @@ class App extends React.Component {
 	}
 
 	onUpdate(recipe, updatedRecipe) {
-		console.log("onUpdate: ------->");
-		console.log("chef name: " + recipe.entity.chef.name);
-		console.log("loggedInChef: " + this.state.loggedInChef);
-		console.log(("_+_+_+_+_+_+ this state: "));
-		console.log(this.state);
 		if(recipe.entity.chef.name === this.state.loggedInChef) {
 			updatedRecipe['chef'] = recipe.entity.chef
 			client({
@@ -173,7 +168,6 @@ class App extends React.Component {
 				page: this.state.page.number
 			}
 		}]).then(recipeCollection => {
-			console.log(recipeCollection.entity);
 			this.links = recipeCollection.entity._links
 			this.page = recipeCollection.entity.page
 
@@ -422,8 +416,6 @@ class Recipe extends React.Component {
 	}
 
 	render() {
-		console.log("+++++++++++++++++==========+++++++++++++++++++");
-		console.log(this.props);
 		return (
 			<tr>
 				<td>{this.props.recipe.entity.recipeTitle}</td>
