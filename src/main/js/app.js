@@ -13,7 +13,8 @@ class App extends React.Component {
 
 	constructor(props) {
 		super(props);
-		this.state = {recipes: [], attributes: [], page: 1, pageSize: 2, links: {}};
+		this.state = {recipes: [], attributes: [], page: 1, pageSize: 2, links: {},
+			loggedInChef: this.props.loggedInChef};
 		this.updatePageSize = this.updatePageSize.bind(this)
 		this.onCreate = this.onCreate.bind(this)
 		this.onUpdate = this.onUpdate.bind(this)
@@ -76,6 +77,11 @@ class App extends React.Component {
 	}
 
 	onUpdate(recipe, updatedRecipe) {
+		console.log("onUpdate: ------->");
+		console.log("chef name: " + recipe.entity.chef.name);
+		console.log("loggedInChef: " + this.state.loggedInChef);
+		console.log(("_+_+_+_+_+_+ this state: "));
+		console.log(this.state);
 		if(recipe.entity.chef.name === this.state.loggedInChef) {
 			updatedRecipe['chef'] = recipe.entity.chef
 			client({
@@ -88,16 +94,16 @@ class App extends React.Component {
 				}
 			}).done(response => {
 			/*let the websocket handler update the state*/
-		}, response => {
-			if(response.status.code === 403) {
-				alert('ACCESS DENIED: You are not authorized to update' +
-					recipe.entity._links.self.href)
-			}
-			if(response.status.code === 412) {
-				alert('DENIED: unable to update ' +
-						recipe.entity._links.self.href + ". your copy is stale")
-			}
-		})
+			}, response => {
+				if(response.status.code === 403) {
+					alert('ACCESS DENIED: You are not authorized to update' +
+						recipe.entity._links.self.href)
+				}
+				if(response.status.code === 412) {
+					alert('DENIED: unable to update ' +
+							recipe.entity._links.self.href + ". your copy is stale")
+				}
+			})
 		} else {
 			alert("☠ ACCESS DENIED : You are not authorized to update record ☠")
 		}
@@ -212,6 +218,7 @@ class App extends React.Component {
 							onUpdate={this.onUpdate}
 							onDelete={this.onDelete}
 							updatePageSize={this.updatePageSize} />
+							loggedInChef={this.state.loggedInChef}
 			</div>
 		)
 	}
@@ -296,7 +303,7 @@ class UpdateDialog extends React.Component {
 
 		const dialogId = "updateRecipe-" + this.props.recipe.entity._links.self.href
 
-		const isChefCorrect = this.props.recipe.entity.chef.name == this.props.loggedInManager
+		const isChefCorrect = this.props.recipe.entity.chef.name == this.props.loggedInChef
 
 		return (
 			<div key={this.props.recipe.entity._links.self.href}>
@@ -364,7 +371,8 @@ class RecipeList extends React.Component {
 					recipe={recipe}
 					attributes={this.props.attributes}
 					onUpdate={this.props.onUpdate}
-					onDelete={this.props.onDelete} />
+					onDelete={this.props.onDelete}
+					loggedInChef={this.props.loggedInChef} />
 		)
 
 		const navLinks = [];
@@ -437,6 +445,6 @@ class Recipe extends React.Component {
 }
 
 ReactDOM.render(
-	<App />,
+	<App loggedInChef={document.getElementById('chefname').innerHTML}/>,
 	document.getElementById('react-container')
 )

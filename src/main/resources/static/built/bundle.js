@@ -44457,7 +44457,8 @@ function (_React$Component) {
       attributes: [],
       page: 1,
       pageSize: 2,
-      links: {}
+      links: {},
+      loggedInChef: _this.props.loggedInChef
     };
     _this.updatePageSize = _this.updatePageSize.bind(_assertThisInitialized(_this));
     _this.onCreate = _this.onCreate.bind(_assertThisInitialized(_this));
@@ -44534,6 +44535,12 @@ function (_React$Component) {
   }, {
     key: "onUpdate",
     value: function onUpdate(recipe, updatedRecipe) {
+      console.log("onUpdate: ------->");
+      console.log("chef name: " + recipe.entity.chef.name);
+      console.log("loggedInChef: " + this.state.loggedInChef);
+      console.log("_+_+_+_+_+_+ this state: ");
+      console.log(this.state);
+
       if (recipe.entity.chef.name === this.state.loggedInChef) {
         updatedRecipe['chef'] = recipe.entity.chef;
         _client__WEBPACK_IMPORTED_MODULE_2___default()({
@@ -44689,7 +44696,7 @@ function (_React$Component) {
         onUpdate: this.onUpdate,
         onDelete: this.onDelete,
         updatePageSize: this.updatePageSize
-      }));
+      }), "loggedInChef=", this.state.loggedInChef);
     }
   }]);
 
@@ -44803,7 +44810,7 @@ function (_React$Component3) {
         }));
       });
       var dialogId = "updateRecipe-" + this.props.recipe.entity._links.self.href;
-      var isChefCorrect = this.props.recipe.entity.chef.name == this.props.loggedInManager;
+      var isChefCorrect = this.props.recipe.entity.chef.name == this.props.loggedInChef;
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         key: this.props.recipe.entity._links.self.href
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
@@ -44890,7 +44897,8 @@ function (_React$Component4) {
           recipe: recipe,
           attributes: _this12.props.attributes,
           onUpdate: _this12.props.onUpdate,
-          onDelete: _this12.props.onDelete
+          onDelete: _this12.props.onDelete,
+          loggedInChef: _this12.props.loggedInChef
         });
       });
       var navLinks = [];
@@ -44973,7 +44981,9 @@ function (_React$Component5) {
   return Recipe;
 }(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
 
-react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(App, null), document.getElementById('react-container'));
+react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(App, {
+  loggedInChef: document.getElementById('chefname').innerHTML
+}), document.getElementById('react-container'));
 
 /***/ }),
 
