@@ -81,7 +81,7 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/src/main/js/app.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/src/main/js/index.js");
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -44798,11 +44798,11 @@ var __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_RESULT__ = (function (r
 
 /***/ }),
 
-/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/src/main/js/app.js":
-/*!******************************************************************************************!*\
-  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/src/main/js/app.js ***!
-  \******************************************************************************************/
-/*! no exports provided */
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/src/main/js/components/App.js":
+/*!*****************************************************************************************************!*\
+  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/src/main/js/components/App.js ***!
+  \*****************************************************************************************************/
+/*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -44811,11 +44811,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/react-dom/index.js");
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _client__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./client */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/src/main/js/client.js");
-/* harmony import */ var _client__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_client__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _lib_client__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../lib/client */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/src/main/js/lib/client.js");
+/* harmony import */ var _lib_client__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_lib_client__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var when__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! when */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/when/when.js");
 /* harmony import */ var when__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(when__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _stylesheets_main_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../stylesheets/main.scss */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/src/main/stylesheets/main.scss");
+/* harmony import */ var _stylesheets_main_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../stylesheets/main.scss */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/src/main/stylesheets/main.scss");
 /* harmony import */ var _stylesheets_main_scss__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_stylesheets_main_scss__WEBPACK_IMPORTED_MODULE_4__);
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -44841,9 +44841,9 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 
 
-var follow = __webpack_require__(/*! ./follow */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/src/main/js/follow.js");
+var follow = __webpack_require__(/*! ../lib/follow */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/src/main/js/lib/follow.js");
 
-var stompClient = __webpack_require__(/*! ./websocket-listener */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/src/main/js/websocket-listener.js");
+var stompClient = __webpack_require__(/*! ../websocket-listener */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/src/main/js/websocket-listener.js");
 
 var root = '/api';
 
@@ -44881,13 +44881,13 @@ function (_React$Component) {
     value: function loadFromServer(pageSize) {
       var _this2 = this;
 
-      follow(_client__WEBPACK_IMPORTED_MODULE_2___default.a, root, [{
+      follow(_lib_client__WEBPACK_IMPORTED_MODULE_2___default.a, root, [{
         rel: 'recipes',
         params: {
           size: pageSize
         }
       }]).then(function (recipeCollection) {
-        return _client__WEBPACK_IMPORTED_MODULE_2___default()({
+        return _lib_client__WEBPACK_IMPORTED_MODULE_2___default()({
           method: 'GET',
           path: recipeCollection.entity._links.profile.href,
           headers: {
@@ -44908,7 +44908,7 @@ function (_React$Component) {
         });
       }).then(function (recipeCollection) {
         return recipeCollection.entity._embedded.recipes.map(function (recipe) {
-          return _client__WEBPACK_IMPORTED_MODULE_2___default()({
+          return _lib_client__WEBPACK_IMPORTED_MODULE_2___default()({
             method: 'GET',
             path: recipe._links.self.href
           });
@@ -44927,8 +44927,8 @@ function (_React$Component) {
   }, {
     key: "onCreate",
     value: function onCreate(newRecipe) {
-      follow(_client__WEBPACK_IMPORTED_MODULE_2___default.a, root, ['recipes']).done(function (response) {
-        _client__WEBPACK_IMPORTED_MODULE_2___default()({
+      follow(_lib_client__WEBPACK_IMPORTED_MODULE_2___default.a, root, ['recipes']).done(function (response) {
+        _lib_client__WEBPACK_IMPORTED_MODULE_2___default()({
           method: 'POST',
           path: response.entity._links.self.href,
           entity: newRecipe,
@@ -44943,7 +44943,7 @@ function (_React$Component) {
     value: function onUpdate(recipe, updatedRecipe) {
       if (recipe.entity.chef.name === this.state.loggedInChef) {
         updatedRecipe['chef'] = recipe.entity.chef;
-        _client__WEBPACK_IMPORTED_MODULE_2___default()({
+        _lib_client__WEBPACK_IMPORTED_MODULE_2___default()({
           method: 'PUT',
           path: recipe.entity._links.self.href,
           entity: updatedRecipe,
@@ -44969,7 +44969,7 @@ function (_React$Component) {
   }, {
     key: "onDelete",
     value: function onDelete(recipe) {
-      _client__WEBPACK_IMPORTED_MODULE_2___default()({
+      _lib_client__WEBPACK_IMPORTED_MODULE_2___default()({
         method: 'DELETE',
         path: recipe.entity._links.self.href
       }).done(function (response) {
@@ -44985,13 +44985,13 @@ function (_React$Component) {
     value: function onNavigate(navUri) {
       var _this3 = this;
 
-      _client__WEBPACK_IMPORTED_MODULE_2___default()({
+      _lib_client__WEBPACK_IMPORTED_MODULE_2___default()({
         method: 'GET',
         path: navUri
       }).then(function (recipeCollection) {
         _this3.links = recipeCollection.entity._links;
         return recipeCollection.entity._embedded.recipes.map(function (recipe) {
-          return _client__WEBPACK_IMPORTED_MODULE_2___default()({
+          return _lib_client__WEBPACK_IMPORTED_MODULE_2___default()({
             method: 'GET',
             path: recipe._links.self.href
           });
@@ -45019,7 +45019,7 @@ function (_React$Component) {
     value: function refreshAndGoToLastPage(message) {
       var _this4 = this;
 
-      follow(_client__WEBPACK_IMPORTED_MODULE_2___default.a, root, [{
+      follow(_lib_client__WEBPACK_IMPORTED_MODULE_2___default.a, root, [{
         rel: 'recipes',
         params: {
           size: this.state.pageSize
@@ -45037,7 +45037,7 @@ function (_React$Component) {
     value: function refreshCurrentPage(message) {
       var _this5 = this;
 
-      follow(_client__WEBPACK_IMPORTED_MODULE_2___default.a, root, [{
+      follow(_lib_client__WEBPACK_IMPORTED_MODULE_2___default.a, root, [{
         rel: 'recipes',
         params: {
           size: this.state.pageSize,
@@ -45047,7 +45047,7 @@ function (_React$Component) {
         _this5.links = recipeCollection.entity._links;
         _this5.page = recipeCollection.entity.page;
         return recipeCollection.entity._embedded.recipes.map(function (recipe) {
-          return _client__WEBPACK_IMPORTED_MODULE_2___default()({
+          return _lib_client__WEBPACK_IMPORTED_MODULE_2___default()({
             method: 'GET',
             path: recipe._links.self.href
           });
@@ -45378,16 +45378,38 @@ function (_React$Component5) {
   return Recipe;
 }(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
 
-react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(App, {
+/* harmony default export */ __webpack_exports__["default"] = (App);
+
+/***/ }),
+
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/src/main/js/index.js":
+/*!********************************************************************************************!*\
+  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/src/main/js/index.js ***!
+  \********************************************************************************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/react-dom/index.js");
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _components_App__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/App */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/src/main/js/components/App.js");
+
+
+
+window.React = react__WEBPACK_IMPORTED_MODULE_0___default.a;
+Object(react_dom__WEBPACK_IMPORTED_MODULE_1__["render"])(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_App__WEBPACK_IMPORTED_MODULE_2__["default"], {
   loggedInChef: document.getElementById('chefname').innerHTML
 }), document.getElementById('react-container'));
 
 /***/ }),
 
-/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/src/main/js/client.js":
-/*!*********************************************************************************************!*\
-  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/src/main/js/client.js ***!
-  \*********************************************************************************************/
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/src/main/js/lib/client.js":
+/*!*************************************************************************************************!*\
+  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/src/main/js/lib/client.js ***!
+  \*************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -45400,14 +45422,14 @@ var defaultRequest = __webpack_require__(/*! rest/interceptor/defaultRequest */ 
 
 var mime = __webpack_require__(/*! rest/interceptor/mime */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/rest/interceptor/mime.js");
 
-var uriTemplateInterceptor = __webpack_require__(/*! ./api/uriTemplateInterceptor */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/src/main/js/api/uriTemplateInterceptor.js");
+var uriTemplateInterceptor = __webpack_require__(/*! ../api/uriTemplateInterceptor */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/src/main/js/api/uriTemplateInterceptor.js");
 
 var errorCode = __webpack_require__(/*! rest/interceptor/errorCode */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/rest/interceptor/errorCode.js");
 
 var baseRegistry = __webpack_require__(/*! rest/mime/registry */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/rest/mime/registry.js");
 
 var registry = baseRegistry.child();
-registry.register('text/uri-list', __webpack_require__(/*! ./api/uriListConverter */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/src/main/js/api/uriListConverter.js"));
+registry.register('text/uri-list', __webpack_require__(/*! ../api/uriListConverter */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/src/main/js/api/uriListConverter.js"));
 registry.register('application/hal+json', __webpack_require__(/*! rest/mime/type/application/hal */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/rest/mime/type/application/hal.js"));
 module.exports = rest.wrap(mime, {
   registry: registry
@@ -45419,10 +45441,10 @@ module.exports = rest.wrap(mime, {
 
 /***/ }),
 
-/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/src/main/js/follow.js":
-/*!*********************************************************************************************!*\
-  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/src/main/js/follow.js ***!
-  \*********************************************************************************************/
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/src/main/js/lib/follow.js":
+/*!*************************************************************************************************!*\
+  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/src/main/js/lib/follow.js ***!
+  \*************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 

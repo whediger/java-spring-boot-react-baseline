@@ -1,13 +1,13 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import client from './client'
+import client from '../lib/client'
 import when from 'when'
 
-import '../stylesheets/main.scss'
+import '../../stylesheets/main.scss'
 
-const follow = require('./follow')
+const follow = require('../lib/follow')
 
-const stompClient = require('./websocket-listener')
+const stompClient = require('../websocket-listener')
 
 const root = '/api'
 
@@ -438,7 +438,4 @@ class Recipe extends React.Component {
 	}
 }
 
-ReactDOM.render(
-	<App loggedInChef={document.getElementById('chefname').innerHTML}/>,
-	document.getElementById('react-container')
-)
+export default App

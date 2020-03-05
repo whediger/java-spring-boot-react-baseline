@@ -2,9 +2,10 @@
   "name": "spring-data-rest-and-reactjs",
   "version": "0.1.0",
   "description": "Demo of ReactJS + Spring Data REST",
+  "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git@github.com:spring-guides/tut-react-and-spring-data-rest.git"
+    "url": "https://github.com/whediger/java-spring-boot-react-baseline"
   },
   "keywords": [
     "React",
