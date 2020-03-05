@@ -27,7 +27,9 @@
     "rest": "^1.3.1"
   },
   "scripts": {
-    "watch": "webpack --watch -d"
+    "watch": "webpack --watch -d",
+    "lint": "eslint .",
+    "posttest": "npm run lint"
   },
   "devDependencies": {
     "@babel/core": "^7.1.0",
@@ -36,6 +38,8 @@
     "autoprefixer": "^9.7.4",
     "babel-loader": "^8.0.2",
     "css-loader": "^3.4.2",
+    "eslint": "^6.8.0",
+    "eslint-plugin-react": "^7.18.3",
     "node-sass": "4.13.1",
     "postcss-loader": "3.0.0",
     "sass-loader": "8.0.2",
