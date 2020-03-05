@@ -86,15 +86,15 @@
 /************************************************************************/
 /******/ ({
 
-/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/css-loader/dist/cjs.js!../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/postcss-loader/src/index.js?!../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sass-loader/dist/cjs.js!../../../../../Documents/React/MyStuff/recipe-app/recipe-app/src/main/js/stylesheets/main.scss":
-/*!****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/node_modules/css-loader/dist/cjs.js!C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/node_modules/postcss-loader/src??ref--6-2!C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sass-loader/dist/cjs.js!C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/src/main/js/stylesheets/main.scss ***!
-  \****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/css-loader/dist/cjs.js!../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/postcss-loader/src/index.js?!../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sass-loader/dist/cjs.js!../../../../../Documents/React/MyStuff/recipe-app/recipe-app/src/main/stylesheets/main.scss":
+/*!*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/node_modules/css-loader/dist/cjs.js!C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/node_modules/postcss-loader/src??ref--6-2!C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sass-loader/dist/cjs.js!C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/src/main/stylesheets/main.scss ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 // Imports
-var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/css-loader/dist/runtime/api.js");
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
 exports.push([module.i, "input.field {\n  width: 90%; }\n\ntable {\n  border-collapse: collapse; }\n\ntd, th {\n  border: 1px solid #999;\n  padding: 0.5rem;\n  text-align: left; }\n\n/*Classes for creating dialogs*/\n.modalDialog {\n  position: fixed;\n  font-family: Arial, Helvetica, sans-serif;\n  top: 0;\n  right: 0;\n  bottom: 0;\n  left: 0;\n  background: rgba(0, 0, 0, 0.8);\n  z-index: 99999;\n  opacity: 0;\n  transition: opacity 400ms ease-in;\n  pointer-events: none; }\n\n.modalDialog:target {\n  opacity: 1;\n  pointer-events: auto; }\n\n.modalDialog > div {\n  width: 400px;\n  position: relative;\n  margin: 10% auto;\n  padding: 5px 20px 13px 20px;\n  border-radius: 10px;\n  background: #fff;\n  background: -o-linear-gradient(#fff, #999); }\n\n.close {\n  background: #606061;\n  color: #FFFFFF;\n  line-height: 25px;\n  position: absolute;\n  right: -12px;\n  text-align: center;\n  top: -10px;\n  width: 24px;\n  text-decoration: none;\n  font-weight: bold;\n  border-radius: 12px;\n  box-shadow: 1px 1px 3px #000; }\n\n.close:hover {\n  background: #00d9ff; }\n", ""]);
@@ -44815,7 +44815,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _client__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_client__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var when__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! when */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/when/when.js");
 /* harmony import */ var when__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(when__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _stylesheets_main_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./stylesheets/main.scss */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/src/main/js/stylesheets/main.scss");
+/* harmony import */ var _stylesheets_main_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../stylesheets/main.scss */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/src/main/stylesheets/main.scss");
 /* harmony import */ var _stylesheets_main_scss__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_stylesheets_main_scss__WEBPACK_IMPORTED_MODULE_4__);
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -45468,32 +45468,6 @@ module.exports = function follow(api, rootPath, relArray) {
 
 /***/ }),
 
-/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/src/main/js/stylesheets/main.scss":
-/*!*********************************************************************************************************!*\
-  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/src/main/js/stylesheets/main.scss ***!
-  \*********************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-var api = __webpack_require__(/*! ../../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
-
-var content = __webpack_require__(/*! !../../../../node_modules/css-loader/dist/cjs.js!../../../../node_modules/postcss-loader/src??ref--6-2!../../../../node_modules/sass-loader/dist/cjs.js!./main.scss */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/css-loader/dist/cjs.js!../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/postcss-loader/src/index.js?!../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sass-loader/dist/cjs.js!../../../../../Documents/React/MyStuff/recipe-app/recipe-app/src/main/js/stylesheets/main.scss");
-
-content = content.__esModule ? content["default"] : content;
-
-if (typeof content === 'string') {
-  content = [[module.i, content, '']];
-}
-
-var options = {};
-options.insert = "head";
-options.singleton = false;
-var update = api(content, options);
-var exported = content.locals ? content.locals : {};
-module.exports = exported;
-
-/***/ }),
-
 /***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/src/main/js/websocket-listener.js":
 /*!*********************************************************************************************************!*\
   !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/src/main/js/websocket-listener.js ***!
@@ -45516,6 +45490,32 @@ function register(registrations) {
 }
 
 module.exports.register = register;
+
+/***/ }),
+
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/src/main/stylesheets/main.scss":
+/*!******************************************************************************************************!*\
+  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/src/main/stylesheets/main.scss ***!
+  \******************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var api = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+
+var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/postcss-loader/src??ref--6-2!../../../node_modules/sass-loader/dist/cjs.js!./main.scss */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/css-loader/dist/cjs.js!../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/postcss-loader/src/index.js?!../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/sass-loader/dist/cjs.js!../../../../../Documents/React/MyStuff/recipe-app/recipe-app/src/main/stylesheets/main.scss");
+
+content = content.__esModule ? content["default"] : content;
+
+if (typeof content === 'string') {
+  content = [[module.i, content, '']];
+}
+
+var options = {};
+options.insert = "head";
+options.singleton = false;
+var update = api(content, options);
+var exported = content.locals ? content.locals : {};
+module.exports = exported;
 
 /***/ }),
 

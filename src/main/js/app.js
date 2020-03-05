@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom'
 import client from './client'
 import when from 'when'
 
-import './stylesheets/main.scss'
+import '../stylesheets/main.scss'
 
 const follow = require('./follow')
 
