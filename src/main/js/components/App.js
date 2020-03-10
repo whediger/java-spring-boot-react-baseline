@@ -2,6 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import client from '../lib/client'
 import when from 'when'
+import { addRecipe } from '../actions'
 
 import '../../stylesheets/main.scss'
 
@@ -213,8 +214,8 @@ class App extends React.Component {
 							onNavigate={this.onNavigate}
 							onUpdate={this.onUpdate}
 							onDelete={this.onDelete}
-							updatePageSize={this.updatePageSize} />
-							loggedInChef={this.state.loggedInChef}
+							updatePageSize={this.updatePageSize}
+							loggedInChef={this.state.loggedInChef} />
 			</div>
 		)
 	}
@@ -234,6 +235,18 @@ class CreateDialog extends React.Component {
 			newRecipe[attribute] = ReactDOM.findDOMNode(this.refs[attribute]).value.trim()
 		})
 		this.props.onCreate(newRecipe)
+
+		const chefStore = store.getState()
+
+		const action = addRecipe(
+							ReactDOM.findDOMNode(this.refs["recipeTitle"]).value.trim(),
+							ReactDOM.findDOMNode(this.refs["description"]).value.trim(),
+							ReactDOM.findDOMNode(this.refs["ingredient"]).value.trim(),
+							chefStore.chef.name
+						)
+		//TODO: remove scaffolding
+		console.log("App action +==}========>");
+		console.log(action);
 
 		this.props.attributes.forEach(attribute => {
 			ReactDOM.findDOMNode(this.refs[attribute]).value = ''
