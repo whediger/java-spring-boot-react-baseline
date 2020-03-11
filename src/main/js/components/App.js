@@ -1,20 +1,16 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import client from '../lib/client'
 import when from 'when'
-
-import '../../stylesheets/main.scss'
-
-var chefStore = {}
-
-const follow = require('../lib/follow')
-
-const stompClient = require('../websocket-listener')
-
-const root = '/api'
-
 import RecipeList from './RecipeList'
 import CreateDialog from './CreateDialog'
+import client from '../lib/client'
+import '../../stylesheets/main.scss'
+
+const follow = require('../lib/follow')
+const stompClient = require('../websocket-listener')
+const root = '/api'
+
+var chefStore = {}
 
 class App extends React.Component {
 
@@ -227,6 +223,5 @@ class App extends React.Component {
 		)
 	}
 }
-
 
 export default App
