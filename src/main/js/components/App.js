@@ -6,6 +6,9 @@ import { addRecipe } from '../actions'
 
 import '../../stylesheets/main.scss'
 
+
+var chefStore = {}
+
 const follow = require('../lib/follow')
 
 const stompClient = require('../websocket-listener')
@@ -16,8 +19,9 @@ class App extends React.Component {
 
 	constructor(props) {
 		super(props);
+		chefStore = store.getState()
 		this.state = {recipes: [], attributes: [], page: 1, pageSize: 2, links: {},
-			loggedInChef: this.props.loggedInChef};
+			loggedInChef: chefStore.loggedInChef.name };
 		this.updatePageSize = this.updatePageSize.bind(this)
 		this.onCreate = this.onCreate.bind(this)
 		this.onUpdate = this.onUpdate.bind(this)
@@ -69,6 +73,8 @@ class App extends React.Component {
 	}
 
 	onCreate(newRecipe) {
+		console.log("newRecipe contents: -----------");
+		console.log(newRecipe);
 		follow(client, root, ['recipes']).done(response => {
 			client({
 				method: 'POST',
@@ -225,6 +231,7 @@ class CreateDialog extends React.Component {
 
 	constructor(props) {
 		super(props)
+		chefStore = store.getState()
 		this.handleSubmit = this.handleSubmit.bind(this)
 	}
 
@@ -236,13 +243,13 @@ class CreateDialog extends React.Component {
 		})
 		this.props.onCreate(newRecipe)
 
-		const chefStore = store.getState()
+		//TODO: +==}========>
 
 		const action = addRecipe(
 							ReactDOM.findDOMNode(this.refs["recipeTitle"]).value.trim(),
 							ReactDOM.findDOMNode(this.refs["description"]).value.trim(),
 							ReactDOM.findDOMNode(this.refs["ingredient"]).value.trim(),
-							chefStore.chef.name
+							chefStore.loggedInChef.name
 						)
 		//TODO: remove scaffolding
 		console.log("App action +==}========>");
@@ -285,6 +292,7 @@ class UpdateDialog extends React.Component {
 
 	constructor(props) {
 		super(props)
+		chefStore = store.getState()
 		this.handleSubmit = this.handleSubmit.bind(this)
 	}
 
@@ -312,7 +320,7 @@ class UpdateDialog extends React.Component {
 
 		const dialogId = "updateRecipe-" + this.props.recipe.entity._links.self.href
 
-		const isChefCorrect = this.props.recipe.entity.chef.name == this.props.loggedInChef
+		const isChefCorrect = this.props.recipe.entity.chef.name == chefStore.loggedInChef.name
 
 		return (
 			<div key={this.props.recipe.entity._links.self.href}>
@@ -335,6 +343,7 @@ class UpdateDialog extends React.Component {
 class RecipeList extends React.Component {
 
 	constructor(props) {
+		chefStore = store.getState()
 		super(props)
 		this.handleNavFirst = this.handleNavFirst.bind(this)
 		this.handleNavPrev = this.handleNavPrev.bind(this)
@@ -381,7 +390,7 @@ class RecipeList extends React.Component {
 					attributes={this.props.attributes}
 					onUpdate={this.props.onUpdate}
 					onDelete={this.props.onDelete}
-					loggedInChef={this.props.loggedInChef} />
+					loggedInChef={chefStore.loggedInChef.name} />
 		)
 
 		const navLinks = [];

@@ -48363,6 +48363,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 
 
+var chefStore = {};
 
 var follow = __webpack_require__(/*! ../lib/follow */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/src/main/js/lib/follow.js");
 
@@ -48381,13 +48382,14 @@ function (_React$Component) {
     _classCallCheck(this, App);
 
     _this = _possibleConstructorReturn(this, _getPrototypeOf(App).call(this, props));
+    chefStore = store.getState();
     _this.state = {
       recipes: [],
       attributes: [],
       page: 1,
       pageSize: 2,
       links: {},
-      loggedInChef: _this.props.loggedInChef
+      loggedInChef: chefStore.loggedInChef.name
     };
     _this.updatePageSize = _this.updatePageSize.bind(_assertThisInitialized(_this));
     _this.onCreate = _this.onCreate.bind(_assertThisInitialized(_this));
@@ -48450,6 +48452,8 @@ function (_React$Component) {
   }, {
     key: "onCreate",
     value: function onCreate(newRecipe) {
+      console.log("newRecipe contents: -----------");
+      console.log(newRecipe);
       follow(_lib_client__WEBPACK_IMPORTED_MODULE_2___default.a, root, ['recipes']).done(function (response) {
         _lib_client__WEBPACK_IMPORTED_MODULE_2___default()({
           method: 'POST',
@@ -48637,6 +48641,7 @@ function (_React$Component2) {
     _classCallCheck(this, CreateDialog);
 
     _this6 = _possibleConstructorReturn(this, _getPrototypeOf(CreateDialog).call(this, props));
+    chefStore = store.getState();
     _this6.handleSubmit = _this6.handleSubmit.bind(_assertThisInitialized(_this6));
     return _this6;
   }
@@ -48651,11 +48656,11 @@ function (_React$Component2) {
       this.props.attributes.forEach(function (attribute) {
         newRecipe[attribute] = react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.findDOMNode(_this7.refs[attribute]).value.trim();
       });
-      this.props.onCreate(newRecipe);
-      var chefStore = store.getState();
-      var action = Object(_actions__WEBPACK_IMPORTED_MODULE_4__["addRecipe"])(react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.findDOMNode(this.refs["recipeTitle"]).value.trim(), react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.findDOMNode(this.refs["description"]).value.trim(), react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.findDOMNode(this.refs["ingredient"]).value.trim(), chefStore.chef.name); //TODO: remove scaffolding
+      this.props.onCreate(newRecipe); //TODO: +==}========>
 
-      console.log("testing action construction +==}========>");
+      var action = Object(_actions__WEBPACK_IMPORTED_MODULE_4__["addRecipe"])(react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.findDOMNode(this.refs["recipeTitle"]).value.trim(), react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.findDOMNode(this.refs["description"]).value.trim(), react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.findDOMNode(this.refs["ingredient"]).value.trim(), chefStore.loggedInChef.name); //TODO: remove scaffolding
+
+      console.log("App action +==}========>");
       console.log(action);
       this.props.attributes.forEach(function (attribute) {
         react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.findDOMNode(_this7.refs[attribute]).value = '';
@@ -48704,6 +48709,7 @@ function (_React$Component3) {
     _classCallCheck(this, UpdateDialog);
 
     _this8 = _possibleConstructorReturn(this, _getPrototypeOf(UpdateDialog).call(this, props));
+    chefStore = store.getState();
     _this8.handleSubmit = _this8.handleSubmit.bind(_assertThisInitialized(_this8));
     return _this8;
   }
@@ -48738,7 +48744,7 @@ function (_React$Component3) {
         }));
       });
       var dialogId = "updateRecipe-" + this.props.recipe.entity._links.self.href;
-      var isChefCorrect = this.props.recipe.entity.chef.name == this.props.loggedInChef;
+      var isChefCorrect = this.props.recipe.entity.chef.name == chefStore.loggedInChef.name;
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         key: this.props.recipe.entity._links.self.href
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
@@ -48769,6 +48775,7 @@ function (_React$Component4) {
 
     _classCallCheck(this, RecipeList);
 
+    chefStore = store.getState();
     _this11 = _possibleConstructorReturn(this, _getPrototypeOf(RecipeList).call(this, props));
     _this11.handleNavFirst = _this11.handleNavFirst.bind(_assertThisInitialized(_this11));
     _this11.handleNavPrev = _this11.handleNavPrev.bind(_assertThisInitialized(_this11));
@@ -48826,7 +48833,7 @@ function (_React$Component4) {
           attributes: _this12.props.attributes,
           onUpdate: _this12.props.onUpdate,
           onDelete: _this12.props.onDelete,
-          loggedInChef: _this12.props.loggedInChef
+          loggedInChef: chefStore.loggedInChef.name
         });
       });
       var navLinks = [];
@@ -48954,22 +48961,21 @@ __webpack_require__.r(__webpack_exports__);
 
 var combined = Object(redux__WEBPACK_IMPORTED_MODULE_3__["combineReducers"])({
   recipe: _store_reducers__WEBPACK_IMPORTED_MODULE_4__["recipe"],
-  chef: _store_reducers__WEBPACK_IMPORTED_MODULE_4__["chef"]
+  loggedInChef: _store_reducers__WEBPACK_IMPORTED_MODULE_4__["loggedInChef"]
 });
 var store = Object(redux__WEBPACK_IMPORTED_MODULE_3__["createStore"])(combined, {
-  chef: {
+  loggedInChef: {
     name: document.getElementById('chefname').innerHTML
   }
 });
 console.log("___-------CHEF VALUE _----get state---->>>>>>>");
 console.log(store.getState());
 window.React = react__WEBPACK_IMPORTED_MODULE_0___default.a;
-window.store = store;
+window.store = store; //<App loggedInChef={document.getElementById('chefname').innerHTML}/>
+
 Object(react_dom__WEBPACK_IMPORTED_MODULE_1__["render"])(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_redux__WEBPACK_IMPORTED_MODULE_2__["Provider"], {
   store: store
-}, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_App__WEBPACK_IMPORTED_MODULE_5__["default"], {
-  loggedInChef: document.getElementById('chefname').innerHTML
-})), document.getElementById('react-container'));
+}, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_App__WEBPACK_IMPORTED_MODULE_5__["default"], null)), document.getElementById('react-container'));
 
 /***/ }),
 
@@ -49061,13 +49067,13 @@ module.exports = function follow(api, rootPath, relArray) {
 /*!*****************************************************************************************************!*\
   !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/src/main/js/store/reducers.js ***!
   \*****************************************************************************************************/
-/*! exports provided: recipe, chef */
+/*! exports provided: recipe, loggedInChef */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "recipe", function() { return recipe; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "chef", function() { return chef; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "loggedInChef", function() { return loggedInChef; });
 /* harmony import */ var _constants__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../constants */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/src/main/js/constants.js");
 
 var recipe = function recipe() {
@@ -49089,7 +49095,7 @@ var recipe = function recipe() {
       return state;
   }
 };
-var chef = function chef() {
+var loggedInChef = function loggedInChef() {
   var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
   var action = arguments.length > 1 ? arguments[1] : undefined;
 

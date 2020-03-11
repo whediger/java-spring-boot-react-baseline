@@ -15,7 +15,7 @@ export const recipe = (state={}, action) => {
 	}
 }
 
-export const chef = (state={}, action) => {
+export const loggedInChef = (state={}, action) => {
 	switch (action.type) {
 		case C.SET_CHEF_NAME :
 			return state = (state) =>
