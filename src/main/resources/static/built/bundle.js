@@ -48336,10 +48336,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _lib_client__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_lib_client__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var when__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! when */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/when/when.js");
 /* harmony import */ var when__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(when__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _actions__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../actions */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/src/main/js/actions.js");
-/* harmony import */ var _stylesheets_main_scss__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../stylesheets/main.scss */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/src/main/stylesheets/main.scss");
-/* harmony import */ var _stylesheets_main_scss__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_stylesheets_main_scss__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _RecipeList__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./RecipeList */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/src/main/js/components/RecipeList.js");
+/* harmony import */ var _stylesheets_main_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../stylesheets/main.scss */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/src/main/stylesheets/main.scss");
+/* harmony import */ var _stylesheets_main_scss__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_stylesheets_main_scss__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _RecipeList__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./RecipeList */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/src/main/js/components/RecipeList.js");
+/* harmony import */ var _CreateDialog__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./CreateDialog */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/src/main/js/components/CreateDialog.js");
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -48363,7 +48363,6 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 
 
-
 var chefStore = {};
 
 var follow = __webpack_require__(/*! ../lib/follow */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/src/main/js/lib/follow.js");
@@ -48371,6 +48370,7 @@ var follow = __webpack_require__(/*! ../lib/follow */ "../../../../../Documents/
 var stompClient = __webpack_require__(/*! ../websocket-listener */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/src/main/js/websocket-listener.js");
 
 var root = '/api';
+
 
 
 var App =
@@ -48611,10 +48611,10 @@ function (_React$Component) {
   }, {
     key: "render",
     value: function render() {
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(CreateDialog, {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_CreateDialog__WEBPACK_IMPORTED_MODULE_6__["default"], {
         attributes: this.state.attributes,
         onCreate: this.onCreate
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_RecipeList__WEBPACK_IMPORTED_MODULE_6__["default"], {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_RecipeList__WEBPACK_IMPORTED_MODULE_5__["default"], {
         page: this.state.page,
         recipes: this.state.recipes,
         links: this.state.links,
@@ -48632,40 +48632,81 @@ function (_React$Component) {
   return App;
 }(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
 
+/* harmony default export */ __webpack_exports__["default"] = (App);
+
+/***/ }),
+
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/src/main/js/components/CreateDialog.js":
+/*!**************************************************************************************************************!*\
+  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/src/main/js/components/CreateDialog.js ***!
+  \**************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/react-dom/index.js");
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _actions__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../actions */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/src/main/js/actions.js");
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+
+
+
+var chefStore = {};
+
 var CreateDialog =
 /*#__PURE__*/
-function (_React$Component2) {
-  _inherits(CreateDialog, _React$Component2);
+function (_React$Component) {
+  _inherits(CreateDialog, _React$Component);
 
   function CreateDialog(props) {
-    var _this6;
+    var _this;
 
     _classCallCheck(this, CreateDialog);
 
-    _this6 = _possibleConstructorReturn(this, _getPrototypeOf(CreateDialog).call(this, props));
+    _this = _possibleConstructorReturn(this, _getPrototypeOf(CreateDialog).call(this, props));
     chefStore = store.getState();
-    _this6.handleSubmit = _this6.handleSubmit.bind(_assertThisInitialized(_this6));
-    return _this6;
+    _this.handleSubmit = _this.handleSubmit.bind(_assertThisInitialized(_this));
+    return _this;
   }
 
   _createClass(CreateDialog, [{
     key: "handleSubmit",
     value: function handleSubmit(e) {
-      var _this7 = this;
+      var _this2 = this;
 
       e.preventDefault();
       var newRecipe = {};
       this.props.attributes.forEach(function (attribute) {
-        newRecipe[attribute] = react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.findDOMNode(_this7.refs[attribute]).value.trim();
+        newRecipe[attribute] = react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.findDOMNode(_this2.refs[attribute]).value.trim();
       });
       this.props.onCreate(newRecipe); //TODO: +==}========>
 
-      var action = Object(_actions__WEBPACK_IMPORTED_MODULE_4__["addRecipe"])(react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.findDOMNode(this.refs["recipeTitle"]).value.trim(), react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.findDOMNode(this.refs["description"]).value.trim(), react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.findDOMNode(this.refs["ingredient"]).value.trim(), chefStore.loggedInChef.name); //TODO: remove scaffolding
+      var action = Object(_actions__WEBPACK_IMPORTED_MODULE_2__["addRecipe"])(react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.findDOMNode(this.refs["recipeTitle"]).value.trim(), react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.findDOMNode(this.refs["description"]).value.trim(), react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.findDOMNode(this.refs["ingredient"]).value.trim(), chefStore.loggedInChef.name); //TODO: remove scaffolding
 
       console.log("App action +==}========>");
       console.log(action);
       this.props.attributes.forEach(function (attribute) {
-        react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.findDOMNode(_this7.refs[attribute]).value = '';
+        react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.findDOMNode(_this2.refs[attribute]).value = '';
       });
       window.location = '#';
     }
@@ -48700,7 +48741,7 @@ function (_React$Component2) {
   return CreateDialog;
 }(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
 
-/* harmony default export */ __webpack_exports__["default"] = (App);
+/* harmony default export */ __webpack_exports__["default"] = (CreateDialog);
 
 /***/ }),
 
