@@ -48332,14 +48332,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/react-dom/index.js");
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _lib_client__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../lib/client */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/src/main/js/lib/client.js");
-/* harmony import */ var _lib_client__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_lib_client__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var when__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! when */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/when/when.js");
-/* harmony import */ var when__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(when__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _stylesheets_main_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../stylesheets/main.scss */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/src/main/stylesheets/main.scss");
-/* harmony import */ var _stylesheets_main_scss__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_stylesheets_main_scss__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _RecipeList__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./RecipeList */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/src/main/js/components/RecipeList.js");
-/* harmony import */ var _CreateDialog__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./CreateDialog */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/src/main/js/components/CreateDialog.js");
+/* harmony import */ var when__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! when */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/when/when.js");
+/* harmony import */ var when__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(when__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _RecipeList__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./RecipeList */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/src/main/js/components/RecipeList.js");
+/* harmony import */ var _CreateDialog__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./CreateDialog */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/src/main/js/components/CreateDialog.js");
+/* harmony import */ var _lib_client__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../lib/client */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/src/main/js/lib/client.js");
+/* harmony import */ var _lib_client__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_lib_client__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _stylesheets_main_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../stylesheets/main.scss */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/src/main/stylesheets/main.scss");
+/* harmony import */ var _stylesheets_main_scss__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_stylesheets_main_scss__WEBPACK_IMPORTED_MODULE_6__);
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -48363,15 +48363,15 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 
 
-var chefStore = {};
+
+
 
 var follow = __webpack_require__(/*! ../lib/follow */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/src/main/js/lib/follow.js");
 
 var stompClient = __webpack_require__(/*! ../websocket-listener */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/src/main/js/websocket-listener.js");
 
 var root = '/api';
-
-
+var chefStore = {};
 
 var App =
 /*#__PURE__*/
@@ -48408,13 +48408,13 @@ function (_React$Component) {
     value: function loadFromServer(pageSize) {
       var _this2 = this;
 
-      follow(_lib_client__WEBPACK_IMPORTED_MODULE_2___default.a, root, [{
+      follow(_lib_client__WEBPACK_IMPORTED_MODULE_5___default.a, root, [{
         rel: 'recipes',
         params: {
           size: pageSize
         }
       }]).then(function (recipeCollection) {
-        return _lib_client__WEBPACK_IMPORTED_MODULE_2___default()({
+        return _lib_client__WEBPACK_IMPORTED_MODULE_5___default()({
           method: 'GET',
           path: recipeCollection.entity._links.profile.href,
           headers: {
@@ -48435,13 +48435,13 @@ function (_React$Component) {
         });
       }).then(function (recipeCollection) {
         return recipeCollection.entity._embedded.recipes.map(function (recipe) {
-          return _lib_client__WEBPACK_IMPORTED_MODULE_2___default()({
+          return _lib_client__WEBPACK_IMPORTED_MODULE_5___default()({
             method: 'GET',
             path: recipe._links.self.href
           });
         });
       }).then(function (recipePromises) {
-        return when__WEBPACK_IMPORTED_MODULE_3___default.a.all(recipePromises);
+        return when__WEBPACK_IMPORTED_MODULE_2___default.a.all(recipePromises);
       }).done(function (recipes) {
         _this2.setState({
           recipes: recipes,
@@ -48456,8 +48456,8 @@ function (_React$Component) {
     value: function onCreate(newRecipe) {
       console.log("newRecipe contents: -----------");
       console.log(newRecipe);
-      follow(_lib_client__WEBPACK_IMPORTED_MODULE_2___default.a, root, ['recipes']).done(function (response) {
-        _lib_client__WEBPACK_IMPORTED_MODULE_2___default()({
+      follow(_lib_client__WEBPACK_IMPORTED_MODULE_5___default.a, root, ['recipes']).done(function (response) {
+        _lib_client__WEBPACK_IMPORTED_MODULE_5___default()({
           method: 'POST',
           path: response.entity._links.self.href,
           entity: newRecipe,
@@ -48472,7 +48472,7 @@ function (_React$Component) {
     value: function onUpdate(recipe, updatedRecipe) {
       if (recipe.entity.chef.name === this.state.loggedInChef) {
         updatedRecipe['chef'] = recipe.entity.chef;
-        _lib_client__WEBPACK_IMPORTED_MODULE_2___default()({
+        _lib_client__WEBPACK_IMPORTED_MODULE_5___default()({
           method: 'PUT',
           path: recipe.entity._links.self.href,
           entity: updatedRecipe,
@@ -48498,7 +48498,7 @@ function (_React$Component) {
   }, {
     key: "onDelete",
     value: function onDelete(recipe) {
-      _lib_client__WEBPACK_IMPORTED_MODULE_2___default()({
+      _lib_client__WEBPACK_IMPORTED_MODULE_5___default()({
         method: 'DELETE',
         path: recipe.entity._links.self.href
       }).done(function (response) {
@@ -48514,19 +48514,19 @@ function (_React$Component) {
     value: function onNavigate(navUri) {
       var _this3 = this;
 
-      _lib_client__WEBPACK_IMPORTED_MODULE_2___default()({
+      _lib_client__WEBPACK_IMPORTED_MODULE_5___default()({
         method: 'GET',
         path: navUri
       }).then(function (recipeCollection) {
         _this3.links = recipeCollection.entity._links;
         return recipeCollection.entity._embedded.recipes.map(function (recipe) {
-          return _lib_client__WEBPACK_IMPORTED_MODULE_2___default()({
+          return _lib_client__WEBPACK_IMPORTED_MODULE_5___default()({
             method: 'GET',
             path: recipe._links.self.href
           });
         });
       }).then(function (recipePromises) {
-        return when__WEBPACK_IMPORTED_MODULE_3___default.a.all(recipePromises);
+        return when__WEBPACK_IMPORTED_MODULE_2___default.a.all(recipePromises);
       }).done(function (recipes) {
         _this3.setState({
           recipes: recipes,
@@ -48548,7 +48548,7 @@ function (_React$Component) {
     value: function refreshAndGoToLastPage(message) {
       var _this4 = this;
 
-      follow(_lib_client__WEBPACK_IMPORTED_MODULE_2___default.a, root, [{
+      follow(_lib_client__WEBPACK_IMPORTED_MODULE_5___default.a, root, [{
         rel: 'recipes',
         params: {
           size: this.state.pageSize
@@ -48566,7 +48566,7 @@ function (_React$Component) {
     value: function refreshCurrentPage(message) {
       var _this5 = this;
 
-      follow(_lib_client__WEBPACK_IMPORTED_MODULE_2___default.a, root, [{
+      follow(_lib_client__WEBPACK_IMPORTED_MODULE_5___default.a, root, [{
         rel: 'recipes',
         params: {
           size: this.state.pageSize,
@@ -48576,13 +48576,13 @@ function (_React$Component) {
         _this5.links = recipeCollection.entity._links;
         _this5.page = recipeCollection.entity.page;
         return recipeCollection.entity._embedded.recipes.map(function (recipe) {
-          return _lib_client__WEBPACK_IMPORTED_MODULE_2___default()({
+          return _lib_client__WEBPACK_IMPORTED_MODULE_5___default()({
             method: 'GET',
             path: recipe._links.self.href
           });
         });
       }).then(function (recipePromises) {
-        return when__WEBPACK_IMPORTED_MODULE_3___default.a.all(recipePromises);
+        return when__WEBPACK_IMPORTED_MODULE_2___default.a.all(recipePromises);
       }).then(function (recipes) {
         _this5.setState({
           page: _this5.page,
@@ -48611,10 +48611,10 @@ function (_React$Component) {
   }, {
     key: "render",
     value: function render() {
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_CreateDialog__WEBPACK_IMPORTED_MODULE_6__["default"], {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_CreateDialog__WEBPACK_IMPORTED_MODULE_4__["default"], {
         attributes: this.state.attributes,
         onCreate: this.onCreate
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_RecipeList__WEBPACK_IMPORTED_MODULE_5__["default"], {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_RecipeList__WEBPACK_IMPORTED_MODULE_3__["default"], {
         page: this.state.page,
         recipes: this.state.recipes,
         links: this.state.links,
@@ -48984,100 +48984,119 @@ function (_React$Component) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/react-dom/index.js");
-/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
-function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+var UpdateDialog = function UpdateDialog(_ref) {
+  var _ref$onNewRecipe = _ref.onNewRecipe,
+      onNewRecipe = _ref$onNewRecipe === void 0 ? function (f) {
+    return f;
+  } : _ref$onNewRecipe;
 
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+  var _recipeTitle, _description, _ingredient;
 
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+  var handleSubmit = function handleSubmit(e) {
+    e.preventDefault();
+    onNewRecipe(_recipeTitle.value, _description.value, _ingredient.value);
+    _recipeTitle.value = "";
+    _description.value = "";
+    _ingredient.value = "";
 
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+    _recipeTitle.focus();
+  };
 
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+  return React.createElement("div", null, React.createElement("p", {
+    key: "recipeTitle"
+  }, React.createElement("input", {
+    type: "text",
+    placeholder: "recipe title...",
+    ref: function ref(input) {
+      return _recipeTitle = input;
+    },
+    className: "field",
+    required: true
+  })), React.createElement("p", {
+    key: "description"
+  }, React.createElement("input", {
+    type: "text",
+    placeholder: "description...",
+    ref: function ref(input) {
+      return _description = input;
+    },
+    className: "field",
+    required: true
+  })), React.createElement("p", {
+    key: "ingredient"
+  }, React.createElement("input", {
+    type: "text",
+    placeholder: "ingredient...",
+    ref: function ref(input) {
+      return _ingredient = input;
+    },
+    className: "field",
+    required: true
+  })));
+};
 
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-
-
-var chefStore = {};
-
-var UpdateDialog =
-/*#__PURE__*/
-function (_React$Component) {
-  _inherits(UpdateDialog, _React$Component);
-
-  function UpdateDialog(props) {
-    var _this;
-
-    _classCallCheck(this, UpdateDialog);
-
-    _this = _possibleConstructorReturn(this, _getPrototypeOf(UpdateDialog).call(this, props));
-    chefStore = store.getState();
-    _this.handleSubmit = _this.handleSubmit.bind(_assertThisInitialized(_this));
-    return _this;
-  }
-
-  _createClass(UpdateDialog, [{
-    key: "handleSubmit",
-    value: function handleSubmit(e) {
-      var _this2 = this;
-
-      e.preventDefault();
-      var updatedRecipe = {};
-      this.props.attributes.forEach(function (attribute) {
-        updatedRecipe[attribute] = react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.findDOMNode(_this2.refs[attribute]).value.trim();
-      });
-      this.props.onUpdate(this.props.recipe, updatedRecipe);
-      window.location = '#';
-    }
-  }, {
-    key: "render",
-    value: function render() {
-      var _this3 = this;
-
-      var inputs = this.props.attributes.map(function (attribute) {
-        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-          key: _this3.props.recipe.entity[attribute]
-        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-          type: "text",
-          placeholder: attribute,
-          defaultValue: _this3.props.recipe.entity[attribute],
-          ref: attribute,
-          className: "field"
-        }));
-      });
-      var dialogId = "updateRecipe-" + this.props.recipe.entity._links.self.href;
-      var isChefCorrect = this.props.recipe.entity.chef.name == chefStore.loggedInChef.name;
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        key: this.props.recipe.entity._links.self.href
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "#" + dialogId
-      }, "Update"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        id: dialogId,
-        className: "modalDialog"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "#",
-        title: "Close",
-        className: "close"
-      }, "X"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Update a Recipe"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", null, inputs, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
-        onClick: this.handleSubmit
-      }, "Update")))));
-    }
-  }]);
-
-  return UpdateDialog;
-}(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
-
-/* harmony default export */ __webpack_exports__["default"] = (UpdateDialog);
+/* harmony default export */ __webpack_exports__["default"] = (UpdateDialog); //TODO: keep working on converting to redux form
+//+================NEW STUFF IS ABOVE ========================
+//+================OLD STUFF IS BELOW ========================
+// var chefStore = {}
+//
+// class UpdateDialog extends React.Component {
+//
+// 	constructor(props) {
+// 		super(props)
+// 		onNewRecipe=f=>f
+// 		let _recipeTitle, _description, _ingredient
+// 		chefStore = store.getState()
+// 		this.handleSubmit = this.handleSubmit.bind(this)
+// 	}
+//
+// 	handleSubmit(e) {
+// 		e.preventDefault()
+// 		const updatedRecipe = {}
+// 		onNewRecipe(_recipeTitle.value, _description.value, _ingredient.value)
+// 		this.props.attributes.forEach(attribute => {
+// 			updatedRecipe[attribute] =
+// 				ReactDOM.findDOMNode(this.refs[attribute]).value.trim()
+// 		})
+// 		this.props.onUpdate(this.props.recipe, updatedRecipe)
+// 		window.location = '#'
+// 	}
+//
+// 	render() {
+// 		const inputs = this.props.attributes.map(attribute =>
+// 				<p key={this.props.recipe.entity[attribute]}>
+// 					<input type="text"
+// 							placeholder={attribute}
+// 							defaultValue={this.props.recipe.entity[attribute]}
+// 							ref={input => _ref = input}
+// 							className="field" />
+// 				</p>
+// 		)
+//
+// 		const dialogId = "updateRecipe-" + this.props.recipe.entity._links.self.href
+//
+//
+// 		const isChefCorrect = this.props.recipe.entity.chef.name == chefStore.loggedInChef.name
+//
+// 		return (
+// 			<div key={this.props.recipe.entity._links.self.href}>
+// 				<a href={"#" + dialogId}>Update</a>
+// 				<div id={dialogId} className="modalDialog">
+// 					<div>
+// 						<a href="#" title="Close" className="close">X</a>
+// 						<h2>Update a Recipe</h2>
+// 						<form>
+// 							{inputs}
+// 							<button onClick={this.handleSubmit}>Update</button>
+// 						</form>
+// 					</div>
+// 				</div>
+// 			</div>
+// 		)
+// 	}
+// }
+//
+// export default UpdateDialog
 
 /***/ }),
 
