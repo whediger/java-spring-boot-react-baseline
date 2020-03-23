@@ -23,14 +23,15 @@ class CreateDialog extends React.Component {
 
 		//TODO: +==}========>
 
-		const action = addRecipe(
-							ReactDOM.findDOMNode(this.refs["recipeTitle"]).value.trim(),
-							ReactDOM.findDOMNode(this.refs["description"]).value.trim(),
-							ReactDOM.findDOMNode(this.refs["ingredient"]).value.trim(),
-							chefStore.loggedInChef.name
-						)
+		onNewRecipe(
+			ReactDOM.findDOMNode(this.refs["recipeTitle"]).value.trim(),
+			ReactDOM.findDOMNode(this.refs["description"]).value.trim(),
+			ReactDOM.findDOMNode(this.refs["ingredient"]).value.trim(),
+			chefStore.loggedInChef.name
+		)
+
 		//TODO: remove scaffolding
-		console.log("App action +==}========>");
+		console.log("CreateDialog: App action +==}========>");
 		console.log(action);
 
 		this.props.attributes.forEach(attribute => {

@@ -7,6 +7,8 @@ class UpdateDialog extends React.Component {
 
 	constructor(props) {
 		super(props)
+		console.log("UpdateDialog: constructor props: ");
+		console.log(props);
 		chefStore = store.getState()
 		this.handleSubmit = this.handleSubmit.bind(this)
 	}
@@ -33,6 +35,8 @@ class UpdateDialog extends React.Component {
 				</p>
 		)
 
+		console.log("UpdateDialog: this.props.recipe contents //////////////////");
+		console.log(this.props);
 		const dialogId = "updateRecipe-" + this.props.recipe.entity._links.self.href
 
 

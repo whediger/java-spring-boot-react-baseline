@@ -2,7 +2,7 @@ import { connect } from 'react-redux'
 import { addRecipe } from '../actions'
 import UpdateDialog from './UpdateDialog'
 
-export const NewRecipe = connect(
+export const NewDialog = connect(
 	null,
 	dispatch =>
 		({
