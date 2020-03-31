@@ -1,7 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-import { addRecipe } from '../actions'
 
 var chefStore = {}
 
@@ -23,16 +22,16 @@ class CreateDialog extends React.Component {
 
 		//TODO: +==}========>
 
+		console.log("CreateDialog: props: ");
+		console.log(this.props);
+
+		const { onNewRecipe } = this.props
 		onNewRecipe(
 			ReactDOM.findDOMNode(this.refs["recipeTitle"]).value.trim(),
 			ReactDOM.findDOMNode(this.refs["description"]).value.trim(),
 			ReactDOM.findDOMNode(this.refs["ingredient"]).value.trim(),
 			chefStore.loggedInChef.name
 		)
-
-		//TODO: remove scaffolding
-		console.log("CreateDialog: App action +==}========>");
-		console.log(action);
 
 		this.props.attributes.forEach(attribute => {
 			ReactDOM.findDOMNode(this.refs[attribute]).value = ''

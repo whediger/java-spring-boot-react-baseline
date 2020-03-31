@@ -10,6 +10,8 @@ class UpdateDialog extends React.Component {
 		console.log("UpdateDialog: constructor props: ");
 		console.log(props);
 		chefStore = store.getState()
+		console.log("UpdateDialog: constructor chefStore value");
+		console.log(chefStore);
 		this.handleSubmit = this.handleSubmit.bind(this)
 	}
 
@@ -26,19 +28,19 @@ class UpdateDialog extends React.Component {
 
 	render() {
 		const inputs = this.props.attributes.map(attribute =>
-				<p key={this.props.recipe.entity[attribute]}>
-					<input type="text"
-							placeholder={attribute}
-							defaultValue={this.props.recipe.entity[attribute]}
-							ref={attribute}
-							className="field" />
-				</p>
+			<p key={this.props.recipe.entity[attribute]}>
+				<input type="text"
+						placeholder={attribute}
+						defaultValue={this.props.recipe.entity[attribute]}
+						ref={attribute}
+						className="field" />
+			</p>
 		)
 
-		console.log("UpdateDialog: this.props.recipe contents //////////////////");
-		console.log(this.props);
+		console.log("UpdateDialog: this contents //////////////////");
+		console.log(this);
+		let stuff = store.getState()
 		const dialogId = "updateRecipe-" + this.props.recipe.entity._links.self.href
-
 
 		const isChefCorrect = this.props.recipe.entity.chef.name == chefStore.loggedInChef.name
 

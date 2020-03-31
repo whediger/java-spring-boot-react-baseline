@@ -1,6 +1,6 @@
 import { connect } from 'react-redux'
 import { addRecipe } from '../actions'
-import UpdateDialog from './UpdateDialog'
+import CreateDialog from './CreateDialog'
 
 export const NewDialog = connect(
 	null,
@@ -10,4 +10,4 @@ export const NewDialog = connect(
 				dispatch(addRecipe(recipeTitle, description, ingredient, chef))
 			}
 		})
-)(UpdateDialog)
+)(CreateDialog)

@@ -48386,7 +48386,8 @@ function (_React$Component) {
     _classCallCheck(this, App);
 
     _this = _possibleConstructorReturn(this, _getPrototypeOf(App).call(this, props));
-    chefStore = store.getState();
+    chefStore = store.getState(); //NOTE: next line sets state in constructor
+
     _this.state = {
       recipes: [],
       attributes: [],
@@ -48410,7 +48411,7 @@ function (_React$Component) {
     value: function loadFromServer(pageSize) {
       var _this2 = this;
 
-      console.log("loadFromServer function was hit");
+      console.log("App.js loadFromServer function was hit");
       follow(_lib_client__WEBPACK_IMPORTED_MODULE_5___default.a, root, [{
         rel: 'recipes',
         params: {
@@ -48446,7 +48447,7 @@ function (_React$Component) {
       }).then(function (recipePromises) {
         return when__WEBPACK_IMPORTED_MODULE_2___default.a.all(recipePromises);
       }).done(function (recipes) {
-        console.log("Object.keys(this.shema.properties)");
+        console.log("App.js Object.keys(this.shema.properties)");
         console.log(_this2.schema.properties);
 
         _this2.setState({
@@ -48460,7 +48461,7 @@ function (_React$Component) {
   }, {
     key: "onCreate",
     value: function onCreate(newRecipe) {
-      console.log("newRecipe contents: -----------");
+      console.log("App.js newRecipe contents: -----------");
       console.log(newRecipe);
       follow(_lib_client__WEBPACK_IMPORTED_MODULE_5___default.a, root, ['recipes']).done(function (response) {
         _lib_client__WEBPACK_IMPORTED_MODULE_5___default()({
@@ -48602,7 +48603,7 @@ function (_React$Component) {
   }, {
     key: "componentDidMount",
     value: function componentDidMount() {
-      console.log("component did mount was hit");
+      console.log("App.js component did mount was hit");
       this.loadFromServer(this.state.pageSize);
       stompClient.register([{
         route: '/topic/newRecipe',
@@ -48618,7 +48619,7 @@ function (_React$Component) {
   }, {
     key: "render",
     value: function render() {
-      console.log("state from APP component --------------"); //is returning 0 attributes
+      console.log("App.js state from APP component --------------"); //is returning 0 attributes
 
       console.log(this.state);
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_containers__WEBPACK_IMPORTED_MODULE_7__["NewDialog"], {
@@ -48659,7 +48660,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/react-dom/index.js");
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _actions__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../actions */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/src/main/js/actions.js");
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -48677,7 +48677,6 @@ function _assertThisInitialized(self) { if (self === void 0) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
 
 
 
@@ -48711,10 +48710,10 @@ function (_React$Component) {
       });
       this.props.onCreate(newRecipe); //TODO: +==}========>
 
-      onNewRecipe(react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.findDOMNode(this.refs["recipeTitle"]).value.trim(), react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.findDOMNode(this.refs["description"]).value.trim(), react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.findDOMNode(this.refs["ingredient"]).value.trim(), chefStore.loggedInChef.name); //TODO: remove scaffolding
-
-      console.log("App action +==}========>");
-      console.log(action);
+      console.log("CreateDialog: props: ");
+      console.log(this.props);
+      var onNewRecipe = this.props.onNewRecipe;
+      onNewRecipe(react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.findDOMNode(this.refs["recipeTitle"]).value.trim(), react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.findDOMNode(this.refs["description"]).value.trim(), react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.findDOMNode(this.refs["ingredient"]).value.trim(), chefStore.loggedInChef.name);
       this.props.attributes.forEach(function (attribute) {
         react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.findDOMNode(_this2.refs[attribute]).value = '';
       });
@@ -49031,9 +49030,11 @@ function (_React$Component) {
     _classCallCheck(this, UpdateDialog);
 
     _this = _possibleConstructorReturn(this, _getPrototypeOf(UpdateDialog).call(this, props));
-    console.log("constructor props: ");
+    console.log("UpdateDialog: constructor props: ");
     console.log(props);
     chefStore = store.getState();
+    console.log("UpdateDialog: constructor chefStore value");
+    console.log(chefStore);
     _this.handleSubmit = _this.handleSubmit.bind(_assertThisInitialized(_this));
     return _this;
   }
@@ -49067,8 +49068,9 @@ function (_React$Component) {
           className: "field"
         }));
       });
-      console.log("this.props.recipe contents //////////////////");
-      console.log(this.props);
+      console.log("UpdateDialog: this contents //////////////////");
+      console.log(this);
+      var stuff = store.getState();
       var dialogId = "updateRecipe-" + this.props.recipe.entity._links.self.href;
       var isChefCorrect = this.props.recipe.entity.chef.name == chefStore.loggedInChef.name;
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -49107,7 +49109,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NewDialog", function() { return NewDialog; });
 /* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react-redux */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/react-redux/es/index.js");
 /* harmony import */ var _actions__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../actions */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/src/main/js/actions.js");
-/* harmony import */ var _UpdateDialog__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./UpdateDialog */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/src/main/js/components/UpdateDialog.js");
+/* harmony import */ var _CreateDialog__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./CreateDialog */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/src/main/js/components/CreateDialog.js");
 
 
 
@@ -49117,7 +49119,7 @@ var NewDialog = Object(react_redux__WEBPACK_IMPORTED_MODULE_0__["connect"])(null
       dispatch(Object(_actions__WEBPACK_IMPORTED_MODULE_1__["addRecipe"])(recipeTitle, description, ingredient, chef));
     }
   };
-})(_UpdateDialog__WEBPACK_IMPORTED_MODULE_2__["default"]);
+})(_CreateDialog__WEBPACK_IMPORTED_MODULE_2__["default"]);
 
 /***/ }),
 

@@ -19,6 +19,7 @@ class App extends React.Component {
 	constructor(props) {
 		super(props);
 		chefStore = store.getState()
+		//NOTE: next line sets state in constructor
 		this.state = {recipes: [], attributes: [], page: 1, pageSize: 2, links: {},
 			loggedInChef: chefStore.loggedInChef.name };
 		this.updatePageSize = this.updatePageSize.bind(this)
