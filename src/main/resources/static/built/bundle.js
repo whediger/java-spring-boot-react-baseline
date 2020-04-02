@@ -48411,7 +48411,6 @@ function (_React$Component) {
     value: function loadFromServer(pageSize) {
       var _this2 = this;
 
-      console.log("App.js loadFromServer function was hit");
       follow(_lib_client__WEBPACK_IMPORTED_MODULE_5___default.a, root, [{
         rel: 'recipes',
         params: {
@@ -48447,9 +48446,6 @@ function (_React$Component) {
       }).then(function (recipePromises) {
         return when__WEBPACK_IMPORTED_MODULE_2___default.a.all(recipePromises);
       }).done(function (recipes) {
-        console.log("App.js Object.keys(this.shema.properties)");
-        console.log(_this2.schema.properties);
-
         _this2.setState({
           recipes: recipes,
           attributes: Object.keys(_this2.schema.properties),
@@ -48461,8 +48457,6 @@ function (_React$Component) {
   }, {
     key: "onCreate",
     value: function onCreate(newRecipe) {
-      console.log("App.js newRecipe contents: -----------");
-      console.log(newRecipe);
       follow(_lib_client__WEBPACK_IMPORTED_MODULE_5___default.a, root, ['recipes']).done(function (response) {
         _lib_client__WEBPACK_IMPORTED_MODULE_5___default()({
           method: 'POST',
@@ -48603,7 +48597,6 @@ function (_React$Component) {
   }, {
     key: "componentDidMount",
     value: function componentDidMount() {
-      console.log("App.js component did mount was hit");
       this.loadFromServer(this.state.pageSize);
       stompClient.register([{
         route: '/topic/newRecipe',
@@ -48619,9 +48612,6 @@ function (_React$Component) {
   }, {
     key: "render",
     value: function render() {
-      console.log("App.js state from APP component --------------"); //is returning 0 attributes
-
-      console.log(this.state);
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_containers__WEBPACK_IMPORTED_MODULE_7__["NewDialog"], {
         attributes: this.state.attributes,
         onCreate: this.onCreate
@@ -49155,29 +49145,23 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/react-dom/index.js");
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-redux */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/react-redux/es/index.js");
-/* harmony import */ var redux__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! redux */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/redux/es/redux.js");
-/* harmony import */ var _store_reducers__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./store/reducers */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/src/main/js/store/reducers.js");
-/* harmony import */ var _components_App__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/App */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/src/main/js/components/App.js");
+/* harmony import */ var _store__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./store */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/src/main/js/store/index.js");
+/* harmony import */ var _components_App__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/App */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/src/main/js/components/App.js");
 
 
 
+ // import { recipe, loggedInChef } from './store/reducers'
 
+ //MOVED TO index.js in store
+// const combined = combineReducers({ recipe, loggedInChef })
+// const store = createStore(combined, { loggedInChef: { name: document.getElementById('chefname').innerHTML }})
 
-
-var combined = Object(redux__WEBPACK_IMPORTED_MODULE_3__["combineReducers"])({
-  recipe: _store_reducers__WEBPACK_IMPORTED_MODULE_4__["recipe"],
-  loggedInChef: _store_reducers__WEBPACK_IMPORTED_MODULE_4__["loggedInChef"]
-});
-var store = Object(redux__WEBPACK_IMPORTED_MODULE_3__["createStore"])(combined, {
-  loggedInChef: {
-    name: document.getElementById('chefname').innerHTML
-  }
-});
+var store = Object(_store__WEBPACK_IMPORTED_MODULE_3__["default"])();
 window.React = react__WEBPACK_IMPORTED_MODULE_0___default.a;
 window.store = store;
 Object(react_dom__WEBPACK_IMPORTED_MODULE_1__["render"])(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_redux__WEBPACK_IMPORTED_MODULE_2__["Provider"], {
   store: store
-}, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_App__WEBPACK_IMPORTED_MODULE_5__["default"], null)), document.getElementById('react-container'));
+}, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_App__WEBPACK_IMPORTED_MODULE_4__["default"], null)), document.getElementById('react-container'));
 
 /***/ }),
 
@@ -49265,18 +49249,153 @@ module.exports = function follow(api, rootPath, relArray) {
 
 /***/ }),
 
+/***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/src/main/js/store/index.js":
+/*!**************************************************************************************************!*\
+  !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/src/main/js/store/index.js ***!
+  \**************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var redux__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! redux */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/redux/es/redux.js");
+/* harmony import */ var _reducers__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./reducers */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/src/main/js/store/reducers.js");
+/* harmony import */ var _lib_client__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../lib/client */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/src/main/js/lib/client.js");
+/* harmony import */ var _lib_client__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_lib_client__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var when__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! when */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/when/when.js");
+/* harmony import */ var when__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(when__WEBPACK_IMPORTED_MODULE_3__);
+
+
+
+
+var root = '/api';
+
+var follow = __webpack_require__(/*! ../lib/follow */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/src/main/js/lib/follow.js"); //import stateData from '../../NOT USING FILE FOR THIS'
+
+
+var initialRecipes = [];
+
+function loadFromServer() {
+  var pageSize = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 2;
+  follow(_lib_client__WEBPACK_IMPORTED_MODULE_2___default.a, root, [{
+    rel: 'recipes',
+    params: {
+      size: pageSize
+    }
+  }]).then(function (recipeCollection) {
+    return _lib_client__WEBPACK_IMPORTED_MODULE_2___default()({
+      method: 'GET',
+      path: recipeCollection.entity._links.profile.href,
+      headers: {
+        'Accept': 'application/schema+json'
+      }
+    }).then(function (schema) {
+      //filter unneeded JSON schema properties out
+      Object.keys(schema.entity.properties).forEach(function (property) {
+        if (schema.entity.properties[property].hasOwnProperty('format') && schema.entity.properties[property].format === 'uri') {
+          delete schema.entity.properties[property];
+        } else if (schema.entity.properties[property].hasOwnProperty('$ref')) {
+          delete schema.entity.properties[property];
+        }
+      });
+      return recipeCollection;
+    });
+  }).then(function (recipeCollection) {
+    return recipeCollection.entity._embedded.recipes.map(function (recipe) {
+      return _lib_client__WEBPACK_IMPORTED_MODULE_2___default()({
+        method: 'GET',
+        path: recipe._links.self.href
+      });
+    });
+  }).then(function (recipePromises) {
+    return when__WEBPACK_IMPORTED_MODULE_3___default.a.all(recipePromises);
+  }).done(function (recipes) {
+    initialRecipes = recipes;
+    console.log("index.js: initialRecipes (last callback)");
+    console.log(initialRecipes);
+    initialState();
+    return recipes; // setState({
+    // 	recipes: recipes,
+    // 	attributes: Object.keys(this.schema.properties),
+    // 	pageSize: pageSize,
+    // 	links: this.links
+    // })
+  });
+}
+
+function initialState() {
+  console.log("index.js: chefname ");
+  console.log(document.getElementById('chefname').innerHTML);
+  var dataStore = {
+    loggedInChef: {
+      name: document.getElementById('chefname').innerHTML
+    },
+    recipes: initialRecipes
+  };
+  console.log("index.js: initialState: dataStore:");
+  console.log(dataStore);
+  return dataStore;
+}
+
+var console = window.console;
+
+var logger = function logger(store) {
+  return function (next) {
+    return function (action) {
+      var result;
+      console.groupCollapsed("dispatching", action.type);
+      console.log('action', action);
+      result = next(action);
+      console.log('next state', store.getState());
+      console.groupEnd();
+      return result;
+    };
+  };
+};
+
+var saver = function saver(store) {
+  return function (next) {
+    return function (action) {
+      var result = next(action); //TODO: put code to send save to db here
+      //add code to save state here
+    };
+  };
+}; // const storeFactory = (initialState=**stateDataNOTUSINGTHIS**) =>
+//NEED TO MKE CALL TO GET INTIAL STATE
+
+
+var storeFactory = function storeFactory() {
+  return Object(redux__WEBPACK_IMPORTED_MODULE_0__["applyMiddleware"])(logger, saver)(redux__WEBPACK_IMPORTED_MODULE_0__["createStore"])(Object(redux__WEBPACK_IMPORTED_MODULE_0__["combineReducers"])({
+    recipes: _reducers__WEBPACK_IMPORTED_MODULE_1__["recipes"],
+    loggedInChef: _reducers__WEBPACK_IMPORTED_MODULE_1__["loggedInChef"]
+  }), loadFromServer());
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (storeFactory);
+
+/***/ }),
+
 /***/ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/src/main/js/store/reducers.js":
 /*!*****************************************************************************************************!*\
   !*** C:/Users/whediger/Documents/React/MyStuff/recipe-app/recipe-app/src/main/js/store/reducers.js ***!
   \*****************************************************************************************************/
-/*! exports provided: recipe, loggedInChef */
+/*! exports provided: recipe, recipes, loggedInChef */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "recipe", function() { return recipe; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "recipes", function() { return recipes; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "loggedInChef", function() { return loggedInChef; });
 /* harmony import */ var _constants__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../constants */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/src/main/js/constants.js");
+function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _nonIterableSpread(); }
+
+function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance"); }
+
+function _iterableToArray(iter) { if (Symbol.iterator in Object(iter) || Object.prototype.toString.call(iter) === "[object Arguments]") return Array.from(iter); }
+
+function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = new Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } }
+
 
 var recipe = function recipe() {
   var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
@@ -49284,14 +49403,24 @@ var recipe = function recipe() {
 
   switch (action.type) {
     case _constants__WEBPACK_IMPORTED_MODULE_0__["default"].ADD_RECIPE:
-      return state = function state(_state) {
-        return {
-          recipeTitle: action.recipeTitle,
-          description: action.description,
-          ingredient: action.ingredient,
-          chef: action.chef
-        };
+      return {
+        recipeTitle: action.recipeTitle,
+        description: action.description,
+        ingredient: action.ingredient,
+        chef: action.chef
       };
+
+    default:
+      return state;
+  }
+};
+var recipes = function recipes() {
+  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];
+  var action = arguments.length > 1 ? arguments[1] : undefined;
+
+  switch (action.type) {
+    case _constants__WEBPACK_IMPORTED_MODULE_0__["default"].ADD_RECIPE:
+      return [].concat(_toConsumableArray(state), [recipe({}, action)]);
 
     default:
       return state;
@@ -49303,7 +49432,7 @@ var loggedInChef = function loggedInChef() {
 
   switch (action.type) {
     case _constants__WEBPACK_IMPORTED_MODULE_0__["default"].SET_CHEF_NAME:
-      return state = function state(_state2) {
+      return state = function state(_state) {
         return {
           name: action.name
         };

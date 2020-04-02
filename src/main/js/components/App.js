@@ -32,7 +32,6 @@ class App extends React.Component {
 	}
 
 	loadFromServer(pageSize) {
-		console.log("App.js loadFromServer function was hit");
 		follow(client, root, [
 			{rel: 'recipes', params: {size: pageSize}}]
 		).then(recipeCollection => {
@@ -64,8 +63,6 @@ class App extends React.Component {
 		}).then(recipePromises => {
 			return when.all(recipePromises);
 		}).done(recipes => {
-			console.log("App.js Object.keys(this.shema.properties)");
-			console.log(this.schema.properties);
 			this.setState({
 				recipes: recipes,
 				attributes: Object.keys(this.schema.properties),
@@ -76,8 +73,6 @@ class App extends React.Component {
 	}
 
 	onCreate(newRecipe) {
-		console.log("App.js newRecipe contents: -----------");
-		console.log(newRecipe);
 		follow(client, root, ['recipes']).done(response => {
 			client({
 				method: 'POST',
@@ -203,7 +198,6 @@ class App extends React.Component {
 	}
 
 	componentDidMount() {
-		console.log("App.js component did mount was hit");
 		this.loadFromServer(this.state.pageSize)
 		stompClient.register([
 			{route: '/topic/newRecipe', callback: this.refreshAndGoToLastPage},
@@ -213,9 +207,6 @@ class App extends React.Component {
 	}
 
 	render() {
-		console.log("App.js state from APP component --------------");
-		//is returning 0 attributes
-		console.log(this.state);
 		return (
 			<div>
 				<NewDialog attributes={this.state.attributes} onCreate={this.onCreate} />

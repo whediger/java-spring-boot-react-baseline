@@ -3,13 +3,24 @@ import C from "../constants"
 export const recipe = (state={}, action) => {
 	switch (action.type) {
 		case C.ADD_RECIPE :
-			return state = (state) =>
-			({
+			return {
 				recipeTitle: action.recipeTitle,
 				description: action.description,
 				ingredient: action.ingredient,
 				chef: action.chef
-			})
+			}
+		default :
+			return state
+	}
+}
+
+export const recipes = (state=[], action) => {
+	switch (action.type) {
+		case C.ADD_RECIPE :
+			return [
+				...state,
+				recipe({}, action)
+			]
 		default :
 			return state
 	}
