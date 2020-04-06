@@ -7,7 +7,9 @@ const root = '/api'
 const follow = require('../lib/follow')
 //import stateData from '../../NOT USING FILE FOR THIS'
 
-var initialRecipes = []
+// var initialRecipes = []
+// var stateData = loadFromServer()
+var stateData = {}
 
 function loadFromServer(pageSize=2) {
 	follow(client, root, [
@@ -37,33 +39,22 @@ function loadFromServer(pageSize=2) {
 						}))
 	}).then(recipePromises => {
 		return when.all(recipePromises);
-	}).done(recipes => {
-		initialRecipes = recipes
-		console.log("index.js: initialRecipes (last callback)");
-		console.log(initialRecipes);
+	}).done(initialRecipes => {
 
-		initialState()
-		return recipes
-		// setState({
-		// 	recipes: recipes,
-		// 	attributes: Object.keys(this.schema.properties),
-		// 	pageSize: pageSize,
-		// 	links: this.links
-		// })
+		return initState(initialRecipes)
+
 	})
 }
 
-function initialState() {
-	console.log("index.js: chefname ");
-	console.log(document.getElementById('chefname').innerHTML);
-	var dataStore = {loggedInChef: {
-		name: document.getElementById('chefname').innerHTML
+function initState(initialRecipes) {
+	stateData =  {
+		loggedInChef: {
+			name: document.getElementById('chefname').innerHTML
 		},
 		recipes: initialRecipes
 	}
-	console.log("index.js: initialState: dataStore:");
-	console.log(dataStore);
-	return dataStore
+
+	return stateData
 }
 
 let console = window.console
@@ -73,23 +64,23 @@ const logger = store => next => action => {
 	console.groupCollapsed("dispatching", action.type)
 	console.log('action', action)
 	result = next(action)
-	console.log('next state', store.getState())
-	console.groupEnd()
 	return result
 }
 
 const saver = store => next => action => {
 	let result = next(action)
+	return result
 	//TODO: put code to send save to db here
 	//add code to save state here
 }
 
 // const storeFactory = (initialState=**stateDataNOTUSINGTHIS**) =>
 //NEED TO MKE CALL TO GET INTIAL STATE
-const storeFactory = () =>
+const storeFactory = (initialState=stateData) =>
 	applyMiddleware(logger, saver)(createStore)(
 		combineReducers({recipes, loggedInChef}),
 			loadFromServer()
 	)
+
 
 export default storeFactory

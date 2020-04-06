@@ -49145,23 +49145,31 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/react-dom/index.js");
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-redux */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/node_modules/react-redux/es/index.js");
-/* harmony import */ var _store__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./store */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/src/main/js/store/index.js");
-/* harmony import */ var _components_App__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/App */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/src/main/js/components/App.js");
+/* harmony import */ var _components_App__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/App */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/src/main/js/components/App.js");
+/* harmony import */ var _store__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./store */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/src/main/js/store/index.js");
+ // import { createStore, combineReducers } from 'redux'
+
 
 
 
  // import { recipe, loggedInChef } from './store/reducers'
-
- //MOVED TO index.js in store
+//MOVED TO index.js in store
 // const combined = combineReducers({ recipe, loggedInChef })
 // const store = createStore(combined, { loggedInChef: { name: document.getElementById('chefname').innerHTML }})
 
-var store = Object(_store__WEBPACK_IMPORTED_MODULE_3__["default"])();
+function results() {
+  console.log("store value from results: ");
+  console.log(store);
+}
+
+var store = Object(_store__WEBPACK_IMPORTED_MODULE_4__["default"])();
+console.log("index.js: Provider: store");
+console.log(store);
 window.React = react__WEBPACK_IMPORTED_MODULE_0___default.a;
 window.store = store;
 Object(react_dom__WEBPACK_IMPORTED_MODULE_1__["render"])(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_redux__WEBPACK_IMPORTED_MODULE_2__["Provider"], {
   store: store
-}, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_App__WEBPACK_IMPORTED_MODULE_4__["default"], null)), document.getElementById('react-container'));
+}, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_App__WEBPACK_IMPORTED_MODULE_3__["default"], null)), document.getElementById('react-container'));
 
 /***/ }),
 
@@ -49271,9 +49279,10 @@ __webpack_require__.r(__webpack_exports__);
 var root = '/api';
 
 var follow = __webpack_require__(/*! ../lib/follow */ "../../../../../Documents/React/MyStuff/recipe-app/recipe-app/src/main/js/lib/follow.js"); //import stateData from '../../NOT USING FILE FOR THIS'
+// var initialRecipes = []
 
 
-var initialRecipes = [];
+var stateData = loadFromServer(); // var stateData = {}
 
 function loadFromServer() {
   var pageSize = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 2;
@@ -49309,32 +49318,19 @@ function loadFromServer() {
     });
   }).then(function (recipePromises) {
     return when__WEBPACK_IMPORTED_MODULE_3___default.a.all(recipePromises);
-  }).done(function (recipes) {
-    initialRecipes = recipes;
-    console.log("index.js: initialRecipes (last callback)");
-    console.log(initialRecipes);
-    initialState();
-    return recipes; // setState({
-    // 	recipes: recipes,
-    // 	attributes: Object.keys(this.schema.properties),
-    // 	pageSize: pageSize,
-    // 	links: this.links
-    // })
+  }).done(function (initialRecipes) {
+    return initState(initialRecipes);
   });
 }
 
-function initialState() {
-  console.log("index.js: chefname ");
-  console.log(document.getElementById('chefname').innerHTML);
-  var dataStore = {
+function initState(initialRecipes) {
+  stateData = {
     loggedInChef: {
       name: document.getElementById('chefname').innerHTML
     },
     recipes: initialRecipes
   };
-  console.log("index.js: initialState: dataStore:");
-  console.log(dataStore);
-  return dataStore;
+  return stateData;
 }
 
 var console = window.console;
@@ -49346,8 +49342,6 @@ var logger = function logger(store) {
       console.groupCollapsed("dispatching", action.type);
       console.log('action', action);
       result = next(action);
-      console.log('next state', store.getState());
-      console.groupEnd();
       return result;
     };
   };
@@ -49356,7 +49350,8 @@ var logger = function logger(store) {
 var saver = function saver(store) {
   return function (next) {
     return function (action) {
-      var result = next(action); //TODO: put code to send save to db here
+      var result = next(action);
+      return result; //TODO: put code to send save to db here
       //add code to save state here
     };
   };
@@ -49365,6 +49360,7 @@ var saver = function saver(store) {
 
 
 var storeFactory = function storeFactory() {
+  var initialState = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : stateData;
   return Object(redux__WEBPACK_IMPORTED_MODULE_0__["applyMiddleware"])(logger, saver)(redux__WEBPACK_IMPORTED_MODULE_0__["createStore"])(Object(redux__WEBPACK_IMPORTED_MODULE_0__["combineReducers"])({
     recipes: _reducers__WEBPACK_IMPORTED_MODULE_1__["recipes"],
     loggedInChef: _reducers__WEBPACK_IMPORTED_MODULE_1__["loggedInChef"]
